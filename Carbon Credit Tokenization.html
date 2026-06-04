@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Tokenization 101: The Executive’s Guide | W3SaaS</title>
+<title>Carbon Credit Tokenization | W3SaaS</title>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Syne:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -909,6 +909,71 @@ footer{
 .re-phase-grid.four{grid-template-columns:repeat(4,1fr);gap:1.1rem;}
 @media (max-width:1100px){ .re-phase-grid.four{grid-template-columns:1fr 1fr;} }
 .re-row.simple .re-row-top{margin-bottom:0;}
+
+/* two-column agentic section */
+.re-twocol{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:start;margin-top:2.5rem;}
+.re-twocol .col-head .section-label{margin-bottom:.5rem;}
+.re-twocol .col-lead{font-size:16px;line-height:1.7;color:rgba(13,31,60,0.62);margin:.5rem 0 1.6rem;}
+.re-cap-card{background:rgba(255,255,255,0.74);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,0.85);border-radius:16px;padding:1.7rem 1.8rem;box-shadow:0 12px 40px rgba(10,22,40,0.08);}
+.re-cap-card .re-cardhead{display:flex;align-items:center;gap:.55rem;margin-bottom:1.1rem;}
+/* dark agent status panel */
+.re-statuspanel{background:linear-gradient(160deg,#12305a 0%,#1a3a6e 100%);
+  border:1px solid rgba(120,165,220,0.25);border-radius:18px;padding:1.7rem;
+  box-shadow:0 20px 56px rgba(8,20,40,0.34);}
+.re-status-label{font-family:'Courier New',monospace;font-size:11px;letter-spacing:1.5px;
+  color:rgba(150,195,250,0.7);text-transform:uppercase;margin-bottom:1.3rem;display:flex;align-items:center;gap:.5rem;}
+.re-status-label::before{content:"";width:8px;height:8px;border-radius:50%;background:#36d07a;box-shadow:0 0 10px #36d07a;}
+.re-status-row{background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.09);
+  border-radius:12px;padding:1.05rem 1.15rem;margin-bottom:.85rem;}
+.re-status-row:last-child{margin-bottom:0;}
+.re-status-row .top{display:flex;justify-content:space-between;align-items:center;gap:.75rem;margin-bottom:.5rem;}
+.re-status-row .name{font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:14.5px;}
+.re-status-pill{font-size:10.5px;font-weight:700;padding:3px 11px;border-radius:999px;white-space:nowrap;letter-spacing:.3px;}
+.re-status-pill.verify{background:rgba(247,181,0,0.16);color:#ffc733;border:1px solid rgba(247,181,0,0.4);}
+.re-status-pill.route{background:rgba(59,158,255,0.16);color:#6bbaff;border:1px solid rgba(59,158,255,0.4);}
+.re-status-row p{font-size:12.5px;line-height:1.5;color:rgba(255,255,255,0.6);}
+.re-status-row p strong{color:rgba(255,255,255,0.92);font-weight:700;}
+.re-storage-note{font-size:13px;line-height:1.6;color:rgba(13,31,60,0.5);font-style:italic;max-width:900px;margin:2.5rem auto 0;text-align:center;}
+/* Best-for tag */
+.re-tag{display:inline-block;background:rgba(247,181,0,0.14);color:#b07f06;
+  border:1px solid rgba(247,181,0,0.32);font-size:11.5px;font-weight:700;letter-spacing:.2px;
+  padding:4px 12px;border-radius:999px;margin-bottom:.85rem;}
+.re-foundation-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;max-width:880px;margin:3rem auto 0;}
+.re-foundation-grid .feat-card{text-align:left;}
+.re-foundation-grid .re-card-desc{margin-bottom:0;}
+/* numbered roadmap */
+.re-roadmap{max-width:840px;margin:3rem auto 0;display:flex;flex-direction:column;gap:1.4rem;}
+.re-step{display:flex;gap:1.2rem;align-items:flex-start;}
+.re-step-num{flex-shrink:0;width:40px;height:40px;border-radius:50%;
+  background:linear-gradient(135deg,var(--blue) 0%,var(--navy) 100%);color:#fff;
+  font-family:'Syne',sans-serif;font-weight:800;display:flex;align-items:center;justify-content:center;
+  font-size:16px;box-shadow:0 6px 16px rgba(26,95,170,0.35);}
+.re-step h3{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:.3rem;}
+.re-step p{font-size:14px;line-height:1.62;color:rgba(13,31,60,0.6);}
+@media (max-width:920px){
+  .re-twocol{grid-template-columns:1fr;}
+  .re-foundation-grid{grid-template-columns:1fr;}
+}
+
+/* carbon stat panel (blue, matches site) */
+.re-statpanel{background:rgba(244,247,251,0.85);border:1px solid rgba(26,95,170,0.16);
+  border-radius:18px;padding:1.7rem;box-shadow:0 16px 48px rgba(10,22,40,0.10);}
+.re-stat-card{background:#fff;border:1px solid rgba(13,31,60,0.07);border-radius:12px;
+  padding:1.1rem 1.25rem;margin-bottom:.85rem;box-shadow:0 4px 14px rgba(10,22,40,0.05);}
+.re-stat-card:last-child{margin-bottom:0;}
+.re-stat-label{font-size:10.5px;letter-spacing:1px;text-transform:uppercase;
+  color:rgba(13,31,60,0.42);margin-bottom:.45rem;font-weight:700;}
+.re-stat-big{font-family:'Syne',sans-serif;font-size:27px;font-weight:800;color:var(--blue);margin-bottom:.65rem;}
+.re-progress{height:7px;border-radius:99px;background:rgba(26,95,170,0.14);overflow:hidden;}
+.re-progress > i{display:block;height:100%;width:84%;background:linear-gradient(90deg,var(--blue),var(--blue-light));border-radius:99px;}
+.re-stat-verified{display:flex;align-items:center;gap:.45rem;font-family:'Syne',sans-serif;
+  font-weight:700;color:var(--blue);font-size:15px;}
+.re-stat-row{display:flex;justify-content:space-between;align-items:baseline;font-size:12.5px;color:rgba(13,31,60,0.6);gap:.75rem;}
+.re-stat-row .pct{font-family:'Syne',sans-serif;font-weight:700;color:var(--blue);font-size:14px;}
+.re-fair-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;max-width:780px;margin:3rem auto 0;}
+.re-fair-grid .feat-card{text-align:left;}
+.re-fair-grid .re-card-desc{margin-bottom:0;}
 </style>
 </head>
 <body>
@@ -959,7 +1024,7 @@ footer{
         <li><a href="Real%20Estate%20Tokenization.html">Real Estate Tokenization</a></li>
         <li><a href="Private%20Equity%20Tokenization.html">Private Equity Tokenization</a></li>
         <li><a href="Private%20Credit%20Tokenization.html">Private Credit Tokenization</a></li>
-        <li><a href="Carbon%20Credit%20Tokenization.html">Carbon Credit Tokenization</a></li>
+        <li><a href="Carbon%20Credit%20Tokenization.html" class="active">Carbon Credit Tokenization</a></li>
         <li><a href="index.html">Custom Tokenization Platform</a></li>
       </ul>
     </li>
@@ -968,7 +1033,7 @@ footer{
       <button type="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></button>
       <ul class="dropdown-menu">
         <li><a href="Strategic%20Use%20Cases%20for%20RWAs.html">Strategic Use Cases for RWAs</a></li>
-        <li><a href="Tokenization%20101.html" class="active">Tokenization 101</a></li>
+        <li><a href="Tokenization%20101.html">Tokenization 101</a></li>
         <li><a href="Applied%20AI.html">Applied AI</a></li>
         <li><a href="index.html">Legal &amp; Privacy</a></li>
       </ul>
@@ -979,180 +1044,143 @@ footer{
 </nav>
 
 <!-- HERO -->
-<section class="re-hero" data-screen-label="Tok101 Hero">
+<section class="re-hero" data-screen-label="Carbon Hero">
   <div class="re-hero-box">
-    <span class="re-badge">📚 Knowledge Hub</span>
-    <h1>Tokenization 101: The Executive’s Guide to Tokenized Assets</h1>
-    <p class="re-sub">DLT/Blockchain infrastructure is modernizing private markets, automating compliance, and unlocking liquidity for real-world assets</p>
+    <span class="re-badge">🌿 Sustainable Finance</span>
+    <h1>Carbon Credit Tokenization: Transforming Environmental Markets</h1>
+    <p class="re-sub">Restore integrity to environmental markets and democratize access to green investment through immutable blockchain infrastructure</p>
   </div>
 </section>
 
-<!-- WHAT IS -->
-<div class="section re-whatis">
-  <div class="section-label">Foundations</div>
-  <div class="section-title">What is Tokenization?</div>
-  <p>At its simplest level, tokenization is the process of creating a digital representation of a real-world asset (RWA) on a distributed ledger. Think of it as creating a "digital twin" for a physical or financial asset.</p>
-  <div class="re-callout">
-    <h4>RWA Tokens vs. Cryptocurrencies</h4>
-    <p>RWAs are <strong>not</strong> cryptocurrencies like Bitcoin or Stablecoins. They are <strong>tokens that represent ownership of an asset</strong> — financial instruments that leverage tokenization technology to make the underlying asset smarter, faster, and easier to trade.</p>
-  </div>
+<!-- INTRO -->
+<div class="re-intro">
+  <p>The global transition to a net-zero economy requires massive capital mobilization. However, the Voluntary Carbon Market (VCM) and broader Environmental, Social, and Governance (ESG) investment landscape face a crisis of confidence. Issues like double-counting of credits, lack of pricing transparency, and "greenwashing" accusations stifle growth. Tokenization offers the structural solution. By recording environmental assets on a blockchain, issuers can prove provenance, prevent fraud, and unlock global liquidity for sustainability initiatives.</p>
 </div>
 
-<!-- WHY TOKENIZE -->
+<!-- REASONS -->
 <div class="section">
   <div class="re-centerhead">
-    <div class="section-label">The Business Case</div>
-    <div class="section-title">The Strategic Business Case: Why Tokenize?</div>
-    <p class="section-sub">For asset owners and fund managers, the transition to digital securities offers four primary competitive advantages</p>
+    <div class="section-label">The Advantage</div>
+    <div class="section-title">The Reasons for Tokenizing Green Assets</div>
+    <p class="section-sub">Moving ESG assets on-chain converts abstract promises into verifiable digital proofs</p>
   </div>
-  <div class="re-uc-grid">
+  <div class="re-why-grid">
 
     <div class="feat-card">
-      <div class="feat-icon">💧</div>
-      <div class="re-cardhead">1. Liquidity and Fractionalization</div>
-      <p class="re-card-desc">The most transformative benefit is fractionalization. High-value assets can be divided into smaller, more affordable tokenized shares.</p>
+      <div class="feat-icon">🛡️</div>
+      <div class="re-cardhead">1. Integrity &amp; Provenance</div>
+      <p class="re-card-desc">The solution to "double-counting" and fraud in carbon markets.</p>
       <ul class="re-bullets">
-        <li><span><strong>Democratization:</strong> Tap into global retail &amp; accredited investors by lowering minimums and streamlining KYC/AML processes</span></li>
-        <li><span><strong>Secondary Markets:</strong> Enable 24/7 trading on a permissioned decentralized exchange, instead of locking up capital for years</span></li>
+        <li><span><strong>Immutable Tracking:</strong> Once a credit is retired on chain, it is permanently burned</span></li>
+        <li><span><strong>Verifiable History:</strong> Trace lineage back to the source (e.g., a specific solar farm)</span></li>
+      </ul>
+    </div>
+
+    <div class="feat-card">
+      <div class="feat-icon">🌐</div>
+      <div class="re-cardhead">2. Democratization</div>
+      <p class="re-card-desc">Historically reserved for giants, green infrastructure is now accessible to all.</p>
+      <ul class="re-bullets">
+        <li><span><strong>Global Access:</strong> Retail investors can buy fractions of green projects</span></li>
+        <li><span><strong>Financial Inclusion:</strong> Capital flows easily to emerging economies</span></li>
       </ul>
     </div>
 
     <div class="feat-card">
       <div class="feat-icon">⚡</div>
-      <div class="re-cardhead">2. Operational Efficiency</div>
-      <p class="re-card-desc">Tokenization automates the heavy lifting of the back office through transparent and immutable record keeping on the blockchain.</p>
+      <div class="re-cardhead">3. Accelerated Financing</div>
+      <p class="re-card-desc">Create efficient capital pipelines for project developers.</p>
       <ul class="re-bullets">
-        <li><span><strong>Cost Reduction:</strong> Reduce admin costs by up to 10x by digitizing manual processes</span></li>
-        <li><span><strong>Automated Lifecycle:</strong> Dividends, voting, and cap table updates in a unified ledger</span></li>
-      </ul>
-    </div>
-
-    <div class="feat-card">
-      <div class="feat-icon">🛡️</div>
-      <div class="re-cardhead">3. Compliance by Design</div>
-      <p class="re-card-desc">RWA tokens embed regulatory compliance directly into the token itself, "baking in" compliance rules.</p>
-      <ul class="re-bullets">
-        <li><span><strong>Programmable Rules:</strong> Enforce Reg D/S rules on chain. Tokens reject transfers if the wallet hasn’t passed KYC/AML checks</span></li>
-        <li><span><strong>Global Reach:</strong> Blockchain enables token issuers to market across borders while respecting local laws</span></li>
-      </ul>
-    </div>
-
-    <div class="feat-card">
-      <div class="feat-icon">🔍</div>
-      <div class="re-cardhead">4. Transparency and Trust</div>
-      <p class="re-card-desc">Tokenization provides a timestamped record, meaning once a transaction is recorded, it provides an immutable record.</p>
-      <ul class="re-bullets">
-        <li><span><strong>Real-Time Auditing:</strong> Investors and auditors can verify ownership instantly on the blockchain</span></li>
-        <li><span><strong>Corporate Governance:</strong> Shareholder voting is visible, transparent, and tamper-proof with token gating</span></li>
+        <li><span><strong>Instant Tokenization:</strong> Get liquidity for future renewables</span></li>
+        <li><span><strong>Liquidity Channels:</strong> Attract investors who need exit options</span></li>
       </ul>
     </div>
   </div>
 </div>
 
-<!-- LIFECYCLE -->
-<section class="re-lifecycle" data-screen-label="Tok101 Lifecycle">
+<!-- BUILDING A FAIRER MARKET -->
+<div class="section">
+  <div class="re-centerhead">
+    <div class="section-label">Impact</div>
+    <div class="section-title">Building a Fairer Market</div>
+    <p class="section-sub">Tokenization aligns with Environmental, Social, and Governance goals by fostering financial inclusion</p>
+  </div>
+  <div class="re-fair-grid">
+    <div class="feat-card">
+      <div class="re-cardhead">Social Impact</div>
+      <p class="re-card-desc">By lowering entry barriers, tokenization allows a wider demographic to access wealth-generating assets, helping to close the global wealth gap.</p>
+    </div>
+    <div class="feat-card">
+      <div class="re-cardhead">Transparency</div>
+      <p class="re-card-desc">The immutable nature of the blockchain provides a clear audit trail of ownership and fund usage, fighting corruption and enhancing trust.</p>
+    </div>
+  </div>
+</div>
+
+<!-- GOVERNANCE & TRANSPARENCY -->
+<div class="section">
+  <div class="re-twocol">
+    <div class="col-head">
+      <span class="re-tag" style="background:rgba(26,95,170,0.10);color:var(--blue);border-color:rgba(26,95,170,0.28);">The "G" in ESG</span>
+      <div class="section-title" style="font-size:32px;">Governance and Transparency</div>
+      <p class="col-lead">Corporate responsibility requires transparency and blockchain provides the ultimate audit trail. Tokenization revolutionizes governance by making actions visible and rules automated.</p>
+      <ul class="re-bullets">
+        <li><span><strong>Transparent Corporate Actions:</strong> On-chain voting allows shareholders to participate in ESG mandates directly. Real-time fund tracking proves to auditors that capital is used for green initiatives.</span></li>
+        <li><span><strong>Automated Compliance:</strong> Policy rules enforce KYC/AML automatically. Reporting limits provide real-time data on environmental output, reducing admin costs.</span></li>
+      </ul>
+    </div>
+    <div class="re-statpanel">
+      <div class="re-stat-card">
+        <div class="re-stat-label">Total Carbon Offset</div>
+        <div class="re-stat-big">1,402 Tons CO2e</div>
+        <div class="re-progress"><i></i></div>
+      </div>
+      <div class="re-stat-card">
+        <div class="re-stat-label">Project Status</div>
+        <div class="re-stat-verified">✓ Verified dMRV</div>
+      </div>
+      <div class="re-stat-card">
+        <div class="re-stat-label">Fund Usage Audit</div>
+        <div class="re-stat-row"><span class="pct">84%</span><span>of 100% — Tree Planting</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ESG USE CASES (dark translucent band) -->
+<section class="re-lifecycle" data-screen-label="ESG Use Cases">
   <div class="re-lifecycle-box">
     <div class="re-centerhead">
-      <div class="section-label">Lifecycle</div>
-      <div class="section-title">The Tokenization Lifecycle</div>
-      <p class="section-sub">The process of tokenizing an asset involves several key steps, each designed to ensure compliance, security, and efficient management of the digital asset</p>
+      <div class="section-label">Asset Coverage</div>
+      <div class="section-title">ESG Tokenization Use Cases</div>
+      <p class="section-sub">Directing capital to compliant, verifiable, impact-driven assets</p>
     </div>
-    <div class="re-phase-grid four">
-
+    <div class="re-phase-grid">
       <div class="re-phase">
-        <div class="re-phase-label">Phase 1</div>
-        <h3>Structuring</h3>
-        <p>Define the legal structure (SPV) and token rights — equity, debt, or revenue share.</p>
+        <div class="re-phase-label">🌳</div>
+        <h3>Carbon Credits &amp; Offsets</h3>
+        <p>Forestry projects issue tokens representing 1 ton of removed CO2. Retired tokens are publicly recorded to prove corporate compliance.</p>
       </div>
-
       <div class="re-phase">
-        <div class="re-phase-label">Phase 2</div>
-        <h3>Issuance</h3>
-        <p>The asset is minted as tokens on a blockchain network with KYC/AML compliance baked in.</p>
+        <div class="re-phase-label">☀️</div>
+        <h3>Renewable Energy Financing</h3>
+        <p>Developers tokenize equity in new solar parks. Global investors fund construction by purchasing tokens representing energy revenue.</p>
       </div>
-
       <div class="re-phase">
-        <div class="re-phase-label">Phase 3</div>
-        <h3>Distribution</h3>
-        <p>Investors subscribe via your white-label portal, complete KYC/AML, and fund via fiat or stablecoin.</p>
-      </div>
-
-      <div class="re-phase">
-        <div class="re-phase-label">Phase 4</div>
-        <h3>Management</h3>
-        <p>Platform handles dividends, communications, governance votes, and secondary trading.</p>
+        <div class="re-phase-label">📦</div>
+        <h3>Supply Chain Sustainability</h3>
+        <p>Tokenize invoices to verify supplier ESG credentials, ensuring financing is directed only to compliant partners.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WHAT CAN BE TOKENIZED -->
-<div class="section" id="what-can">
-  <div class="re-centerhead">
-    <div class="section-label">Asset Coverage</div>
-    <div class="section-title">What Can Be Tokenized</div>
-    <p class="section-sub">Virtually any asset with clear ownership and cash flow can be tokenized. Our platform supports:</p>
-  </div>
-  <div class="re-rows">
-
-    <div class="re-row simple">
-      <div class="re-row-top">
-        <div class="feat-icon">🏢</div>
-        <div>
-          <div class="re-row-title">Real Estate</div>
-          <p class="re-row-desc">Developers raise capital for properties or portfolios. Investors gain access to fractional ownership of assets.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="re-row simple">
-      <div class="re-row-top">
-        <div class="feat-icon">💼</div>
-        <div>
-          <div class="re-row-title">Private Equity &amp; VC Funds</div>
-          <p class="re-row-desc">Funds tokenize to streamline operations and offer LPs "navigable" liquidity via secondary markets.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="re-row simple">
-      <div class="re-row-top">
-        <div class="feat-icon">💳</div>
-        <div>
-          <div class="re-row-title">Private Credit &amp; Lending</div>
-          <p class="re-row-desc">Automate interest payments to bond holders via stablecoins, reducing costs and administrative friction.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="re-row simple">
-      <div class="re-row-top">
-        <div class="feat-icon">📦</div>
-        <div>
-          <div class="re-row-title">Supply Chain &amp; Invoices</div>
-          <p class="re-row-desc">Sell tokenized invoices to investors to improve cash flow. An immutable ledger prevents fraud and double-financing.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="re-row simple">
-      <div class="re-row-top">
-        <div class="feat-icon">🌱</div>
-        <div>
-          <div class="re-row-title">ESG &amp; Carbon Credits</div>
-          <p class="re-row-desc">Track carbon credits on an immutable ledger to prevent "double counting" and ensure verifiable environmental records.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- FUTURE + CTA -->
 <div class="re-future">
-  <div class="section-title">The Future of Business and Industry will be Tokenized</div>
-  <p class="re-future-lines">The transition to Asset Tokenization is not merely a technological upgrade.<br/>It is a fundamental restructuring of how value is created, moved, and analyzed.<br/>The winners will be those who treat Tokenization as the new operating system of the global economy.</p>
+  <div class="section-title">The Future of Green Finance</div>
+  <p class="re-future-lines">We are moving toward a world where every investment has an accountable impact.<br/>Tokenization moves ESG investments from hard to track, to verifiable assets.</p>
   <div class="re-cta-box">
-    <h2>Ready to Modernize Your Assets?</h2>
+    <h2>Ready to Tokenize Your ESG Assets?</h2>
     <a href="index.html#apply" class="btn-inv" style="text-decoration:none;display:inline-block;">Schedule a Demo →</a>
   </div>
 </div>
