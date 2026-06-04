@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Tokenization 101: The Executive’s Guide | W3SaaS</title>
+<title>Custom Tokenization Platform | W3SaaS</title>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Syne:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
@@ -909,6 +909,52 @@ footer{
 .re-phase-grid.four{grid-template-columns:repeat(4,1fr);gap:1.1rem;}
 @media (max-width:1100px){ .re-phase-grid.four{grid-template-columns:1fr 1fr;} }
 .re-row.simple .re-row-top{margin-bottom:0;}
+
+/* two-column agentic section */
+.re-twocol{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:start;margin-top:2.5rem;}
+.re-twocol .col-head .section-label{margin-bottom:.5rem;}
+.re-twocol .col-lead{font-size:16px;line-height:1.7;color:rgba(13,31,60,0.62);margin:.5rem 0 1.6rem;}
+.re-cap-card{background:rgba(255,255,255,0.74);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
+  border:1px solid rgba(255,255,255,0.85);border-radius:16px;padding:1.7rem 1.8rem;box-shadow:0 12px 40px rgba(10,22,40,0.08);}
+.re-cap-card .re-cardhead{display:flex;align-items:center;gap:.55rem;margin-bottom:1.1rem;}
+/* dark agent status panel */
+.re-statuspanel{background:linear-gradient(160deg,#12305a 0%,#1a3a6e 100%);
+  border:1px solid rgba(120,165,220,0.25);border-radius:18px;padding:1.7rem;
+  box-shadow:0 20px 56px rgba(8,20,40,0.34);}
+.re-status-label{font-family:'Courier New',monospace;font-size:11px;letter-spacing:1.5px;
+  color:rgba(150,195,250,0.7);text-transform:uppercase;margin-bottom:1.3rem;display:flex;align-items:center;gap:.5rem;}
+.re-status-label::before{content:"";width:8px;height:8px;border-radius:50%;background:#36d07a;box-shadow:0 0 10px #36d07a;}
+.re-status-row{background:rgba(255,255,255,0.045);border:1px solid rgba(255,255,255,0.09);
+  border-radius:12px;padding:1.05rem 1.15rem;margin-bottom:.85rem;}
+.re-status-row:last-child{margin-bottom:0;}
+.re-status-row .top{display:flex;justify-content:space-between;align-items:center;gap:.75rem;margin-bottom:.5rem;}
+.re-status-row .name{font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:14.5px;}
+.re-status-pill{font-size:10.5px;font-weight:700;padding:3px 11px;border-radius:999px;white-space:nowrap;letter-spacing:.3px;}
+.re-status-pill.verify{background:rgba(247,181,0,0.16);color:#ffc733;border:1px solid rgba(247,181,0,0.4);}
+.re-status-pill.route{background:rgba(59,158,255,0.16);color:#6bbaff;border:1px solid rgba(59,158,255,0.4);}
+.re-status-row p{font-size:12.5px;line-height:1.5;color:rgba(255,255,255,0.6);}
+.re-status-row p strong{color:rgba(255,255,255,0.92);font-weight:700;}
+.re-storage-note{font-size:13px;line-height:1.6;color:rgba(13,31,60,0.5);font-style:italic;max-width:900px;margin:2.5rem auto 0;text-align:center;}
+/* Best-for tag */
+.re-tag{display:inline-block;background:rgba(247,181,0,0.14);color:#b07f06;
+  border:1px solid rgba(247,181,0,0.32);font-size:11.5px;font-weight:700;letter-spacing:.2px;
+  padding:4px 12px;border-radius:999px;margin-bottom:.85rem;}
+.re-foundation-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.25rem;max-width:880px;margin:3rem auto 0;}
+.re-foundation-grid .feat-card{text-align:left;}
+.re-foundation-grid .re-card-desc{margin-bottom:0;}
+/* numbered roadmap */
+.re-roadmap{max-width:840px;margin:3rem auto 0;display:flex;flex-direction:column;gap:1.4rem;}
+.re-step{display:flex;gap:1.2rem;align-items:flex-start;}
+.re-step-num{flex-shrink:0;width:40px;height:40px;border-radius:50%;
+  background:linear-gradient(135deg,var(--blue) 0%,var(--navy) 100%);color:#fff;
+  font-family:'Syne',sans-serif;font-weight:800;display:flex;align-items:center;justify-content:center;
+  font-size:16px;box-shadow:0 6px 16px rgba(26,95,170,0.35);}
+.re-step h3{font-family:'Syne',sans-serif;font-size:18px;font-weight:700;color:var(--navy);margin-bottom:.3rem;}
+.re-step p{font-size:14px;line-height:1.62;color:rgba(13,31,60,0.6);}
+@media (max-width:920px){
+  .re-twocol{grid-template-columns:1fr;}
+  .re-foundation-grid{grid-template-columns:1fr;}
+}
 </style>
 </head>
 <body>
@@ -960,7 +1006,7 @@ footer{
         <li><a href="Private%20Equity%20Tokenization.html">Private Equity Tokenization</a></li>
         <li><a href="Private%20Credit%20Tokenization.html">Private Credit Tokenization</a></li>
         <li><a href="Carbon%20Credit%20Tokenization.html">Carbon Credit Tokenization</a></li>
-        <li><a href="Custom%20Tokenization%20Platform.html">Custom Tokenization Platform</a></li>
+        <li><a href="Custom%20Tokenization%20Platform.html" class="active">Custom Tokenization Platform</a></li>
       </ul>
     </li>
     <li><a href="index.html#industries">Industries</a></li>
@@ -968,7 +1014,7 @@ footer{
       <button type="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></button>
       <ul class="dropdown-menu">
         <li><a href="Strategic%20Use%20Cases%20for%20RWAs.html">Strategic Use Cases for RWAs</a></li>
-        <li><a href="Tokenization%20101.html" class="active">Tokenization 101</a></li>
+        <li><a href="Tokenization%20101.html">Tokenization 101</a></li>
         <li><a href="Applied%20AI.html">Applied AI</a></li>
         <li><a href="index.html">Legal &amp; Privacy</a></li>
       </ul>
@@ -979,180 +1025,154 @@ footer{
 </nav>
 
 <!-- HERO -->
-<section class="re-hero" data-screen-label="Tok101 Hero">
+<section class="re-hero" data-screen-label="Custom Hero">
   <div class="re-hero-box">
-    <span class="re-badge">📚 Knowledge Hub</span>
-    <h1>Tokenization 101: The Executive’s Guide to Tokenized Assets</h1>
-    <p class="re-sub">DLT/Blockchain infrastructure is modernizing private markets, automating compliance, and unlocking liquidity for real-world assets</p>
+    <span class="re-badge">🎨 White-Label Platform</span>
+    <h1>Custom Tokenization Platform: White-Label Infrastructure for Any Industry</h1>
+    <p class="re-sub">Reusable modules, custom policies, and full branding control to build your own tokenization platform</p>
   </div>
 </section>
 
-<!-- WHAT IS -->
-<div class="section re-whatis">
-  <div class="section-label">Foundations</div>
-  <div class="section-title">What is Tokenization?</div>
-  <p>At its simplest level, tokenization is the process of creating a digital representation of a real-world asset (RWA) on a distributed ledger. Think of it as creating a "digital twin" for a physical or financial asset.</p>
-  <div class="re-callout">
-    <h4>RWA Tokens vs. Cryptocurrencies</h4>
-    <p>RWAs are <strong>not</strong> cryptocurrencies like Bitcoin or Stablecoins. They are <strong>tokens that represent ownership of an asset</strong> — financial instruments that leverage tokenization technology to make the underlying asset smarter, faster, and easier to trade.</p>
-  </div>
+<!-- INTRO -->
+<div class="re-intro">
+  <p>Every industry has unique requirements for tokenizing assets. W3SaaS provides a fully white-label tokenization platform that can be customized and branded for any business vertical. With reusable modules, configurable compliance policies, and flexible smart contract templates, organizations can launch their own branded tokenization infrastructure without building from scratch.</p>
 </div>
 
-<!-- WHY TOKENIZE -->
+<!-- WHY WHITE-LABEL -->
 <div class="section">
   <div class="re-centerhead">
-    <div class="section-label">The Business Case</div>
-    <div class="section-title">The Strategic Business Case: Why Tokenize?</div>
-    <p class="section-sub">For asset owners and fund managers, the transition to digital securities offers four primary competitive advantages</p>
+    <div class="section-label">The Advantage</div>
+    <div class="section-title">Why White-Label with W3SaaS</div>
+    <p class="section-sub">A modular platform designed to be customized, branded, and deployed for any asset class or industry vertical</p>
   </div>
   <div class="re-uc-grid">
 
     <div class="feat-card">
-      <div class="feat-icon">💧</div>
-      <div class="re-cardhead">1. Liquidity and Fractionalization</div>
-      <p class="re-card-desc">The most transformative benefit is fractionalization. High-value assets can be divided into smaller, more affordable tokenized shares.</p>
+      <div class="feat-icon">🎨</div>
+      <div class="re-cardhead">1. Full White-Label Branding</div>
+      <p class="re-card-desc">Deploy a tokenization platform under your own brand with complete control over the look, feel, and user experience.</p>
       <ul class="re-bullets">
-        <li><span><strong>Democratization:</strong> Tap into global retail &amp; accredited investors by lowering minimums and streamlining KYC/AML processes</span></li>
-        <li><span><strong>Secondary Markets:</strong> Enable 24/7 trading on a permissioned decentralized exchange, instead of locking up capital for years</span></li>
+        <li><span><strong>Custom Domains &amp; Branding:</strong> Your logo, colors, and domain name across every interface and investor portal</span></li>
+        <li><span><strong>Branded Communications:</strong> Emails, reports, and dashboards all carry your corporate identity</span></li>
       </ul>
     </div>
 
     <div class="feat-card">
-      <div class="feat-icon">⚡</div>
-      <div class="re-cardhead">2. Operational Efficiency</div>
-      <p class="re-card-desc">Tokenization automates the heavy lifting of the back office through transparent and immutable record keeping on the blockchain.</p>
+      <div class="feat-icon">🧩</div>
+      <div class="re-cardhead">2. Reusable Modules</div>
+      <p class="re-card-desc">Pre-built, production-ready modules that can be composed together to accelerate deployment across any asset class.</p>
       <ul class="re-bullets">
-        <li><span><strong>Cost Reduction:</strong> Reduce admin costs by up to 10x by digitizing manual processes</span></li>
-        <li><span><strong>Automated Lifecycle:</strong> Dividends, voting, and cap table updates in a unified ledger</span></li>
+        <li><span><strong>Plug-and-Play Components:</strong> KYC/AML, investor onboarding, token issuance, and distribution modules ready to deploy</span></li>
+        <li><span><strong>API-First Architecture:</strong> Integrate seamlessly with existing enterprise systems, CRMs, and financial platforms</span></li>
       </ul>
     </div>
 
     <div class="feat-card">
       <div class="feat-icon">🛡️</div>
-      <div class="re-cardhead">3. Compliance by Design</div>
-      <p class="re-card-desc">RWA tokens embed regulatory compliance directly into the token itself, "baking in" compliance rules.</p>
+      <div class="re-cardhead">3. Custom Compliance Policies</div>
+      <p class="re-card-desc">Configure rules and policies specific to your jurisdiction, asset class, and business requirements.</p>
       <ul class="re-bullets">
-        <li><span><strong>Programmable Rules:</strong> Enforce Reg D/S rules on chain. Tokens reject transfers if the wallet hasn’t passed KYC/AML checks</span></li>
-        <li><span><strong>Global Reach:</strong> Blockchain enables token issuers to market across borders while respecting local laws</span></li>
+        <li><span><strong>Programmable Rules:</strong> Enforce transfer restrictions, accreditation checks, and holding periods automatically via smart contracts</span></li>
+        <li><span><strong>Multi-Jurisdiction Support:</strong> Adapt compliance frameworks for SEC, MiCA, MAS, FCA, and other regulatory bodies</span></li>
       </ul>
     </div>
 
     <div class="feat-card">
-      <div class="feat-icon">🔍</div>
-      <div class="re-cardhead">4. Transparency and Trust</div>
-      <p class="re-card-desc">Tokenization provides a timestamped record, meaning once a transaction is recorded, it provides an immutable record.</p>
+      <div class="feat-icon">🔀</div>
+      <div class="re-cardhead">4. Multi-Vertical Flexibility</div>
+      <p class="re-card-desc">One platform, unlimited verticals. Configure W3SaaS for real estate, private equity, commodities, IP licensing, or entirely new asset classes.</p>
       <ul class="re-bullets">
-        <li><span><strong>Real-Time Auditing:</strong> Investors and auditors can verify ownership instantly on the blockchain</span></li>
-        <li><span><strong>Corporate Governance:</strong> Shareholder voting is visible, transparent, and tamper-proof with token gating</span></li>
+        <li><span><strong>Industry Templates:</strong> Pre-configured templates for common verticals accelerate time to market</span></li>
+        <li><span><strong>Extensible Architecture:</strong> Add new asset types, workflows, and integrations as your business scales</span></li>
       </ul>
     </div>
   </div>
 </div>
 
-<!-- LIFECYCLE -->
-<section class="re-lifecycle" data-screen-label="Tok101 Lifecycle">
+<!-- BUILT FOR ANY VERTICAL -->
+<div class="section">
+  <div class="re-centerhead">
+    <div class="section-label">Asset Coverage</div>
+    <div class="section-title">Built for Any Industry Vertical</div>
+    <p class="section-sub">One configurable platform, deployed across the full spectrum of real-world assets</p>
+  </div>
+  <div class="re-why-grid">
+
+    <div class="feat-card">
+      <div class="feat-icon">🏢</div>
+      <div class="re-cardhead">Real Estate &amp; Property</div>
+      <p class="re-card-desc">Fractionalize commercial and residential assets for broader investor access and liquidity.</p>
+      <ul class="re-bullets">
+        <li><span>Automated rental distributions</span></li>
+        <li><span>Fractional ownership management</span></li>
+      </ul>
+    </div>
+
+    <div class="feat-card">
+      <div class="feat-icon">🏦</div>
+      <div class="re-cardhead">Financial Services</div>
+      <p class="re-card-desc">Equity, debt, and fund tokenization for banks, asset managers, and fintech firms.</p>
+      <ul class="re-bullets">
+        <li><span>Cap table &amp; governance automation</span></li>
+        <li><span>Multi-jurisdiction compliance</span></li>
+      </ul>
+    </div>
+
+    <div class="feat-card">
+      <div class="feat-icon">💎</div>
+      <div class="re-cardhead">Commodities &amp; IP</div>
+      <p class="re-card-desc">Tokenize carbon credits, precious metals, patents, royalties, and more.</p>
+      <ul class="re-bullets">
+        <li><span>Custom asset class logic</span></li>
+        <li><span>Royalty &amp; yield distribution</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- DEPLOYMENT LIFECYCLE -->
+<section class="re-lifecycle" data-screen-label="Deployment Lifecycle">
   <div class="re-lifecycle-box">
     <div class="re-centerhead">
       <div class="section-label">Lifecycle</div>
-      <div class="section-title">The Tokenization Lifecycle</div>
-      <p class="section-sub">The process of tokenizing an asset involves several key steps, each designed to ensure compliance, security, and efficient management of the digital asset</p>
+      <div class="section-title">Your Platform Deployment Lifecycle</div>
+      <p class="section-sub">From discovery to launch — a guided path to your own branded tokenization platform</p>
     </div>
     <div class="re-phase-grid four">
 
       <div class="re-phase">
         <div class="re-phase-label">Phase 1</div>
-        <h3>Structuring</h3>
-        <p>Define the legal structure (SPV) and token rights — equity, debt, or revenue share.</p>
+        <h3>Discovery &amp; Configuration</h3>
+        <p>Define your asset class, compliance requirements, and branding. W3SaaS configures the platform modules to match your business model.</p>
       </div>
 
       <div class="re-phase">
         <div class="re-phase-label">Phase 2</div>
-        <h3>Issuance</h3>
-        <p>The asset is minted as tokens on a blockchain network with KYC/AML compliance baked in.</p>
+        <h3>Branding &amp; Integration</h3>
+        <p>Apply your brand identity, connect existing systems via APIs, and customize investor-facing portals and dashboards.</p>
       </div>
 
       <div class="re-phase">
         <div class="re-phase-label">Phase 3</div>
-        <h3>Distribution</h3>
-        <p>Investors subscribe via your white-label portal, complete KYC/AML, and fund via fiat or stablecoin.</p>
+        <h3>Policy &amp; Compliance Setup</h3>
+        <p>Configure smart contract rules, KYC/AML workflows, transfer restrictions, and jurisdiction-specific compliance policies.</p>
       </div>
 
       <div class="re-phase">
         <div class="re-phase-label">Phase 4</div>
-        <h3>Management</h3>
-        <p>Platform handles dividends, communications, governance votes, and secondary trading.</p>
+        <h3>Launch &amp; Scale</h3>
+        <p>Go live with your branded platform. Onboard investors, issue tokens, and scale to new asset classes and markets as your business grows.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- WHAT CAN BE TOKENIZED -->
-<div class="section" id="what-can">
-  <div class="re-centerhead">
-    <div class="section-label">Asset Coverage</div>
-    <div class="section-title">What Can Be Tokenized</div>
-    <p class="section-sub">Virtually any asset with clear ownership and cash flow can be tokenized. Our platform supports:</p>
-  </div>
-  <div class="re-rows">
-
-    <div class="re-row simple">
-      <div class="re-row-top">
-        <div class="feat-icon">🏢</div>
-        <div>
-          <div class="re-row-title">Real Estate</div>
-          <p class="re-row-desc">Developers raise capital for properties or portfolios. Investors gain access to fractional ownership of assets.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="re-row simple">
-      <div class="re-row-top">
-        <div class="feat-icon">💼</div>
-        <div>
-          <div class="re-row-title">Private Equity &amp; VC Funds</div>
-          <p class="re-row-desc">Funds tokenize to streamline operations and offer LPs "navigable" liquidity via secondary markets.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="re-row simple">
-      <div class="re-row-top">
-        <div class="feat-icon">💳</div>
-        <div>
-          <div class="re-row-title">Private Credit &amp; Lending</div>
-          <p class="re-row-desc">Automate interest payments to bond holders via stablecoins, reducing costs and administrative friction.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="re-row simple">
-      <div class="re-row-top">
-        <div class="feat-icon">📦</div>
-        <div>
-          <div class="re-row-title">Supply Chain &amp; Invoices</div>
-          <p class="re-row-desc">Sell tokenized invoices to investors to improve cash flow. An immutable ledger prevents fraud and double-financing.</p>
-        </div>
-      </div>
-    </div>
-
-    <div class="re-row simple">
-      <div class="re-row-top">
-        <div class="feat-icon">🌱</div>
-        <div>
-          <div class="re-row-title">ESG &amp; Carbon Credits</div>
-          <p class="re-row-desc">Track carbon credits on an immutable ledger to prevent "double counting" and ensure verifiable environmental records.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- FUTURE + CTA -->
 <div class="re-future">
-  <div class="section-title">The Future of Business and Industry will be Tokenized</div>
-  <p class="re-future-lines">The transition to Asset Tokenization is not merely a technological upgrade.<br/>It is a fundamental restructuring of how value is created, moved, and analyzed.<br/>The winners will be those who treat Tokenization as the new operating system of the global economy.</p>
+  <div class="section-title">Build Your Tokenization Platform</div>
+  <p class="re-future-lines">Whether you're a fintech startup, asset manager, or enterprise looking to enter the tokenization space, W3SaaS provides the white-label infrastructure to launch faster, comply globally, and scale without limits.</p>
   <div class="re-cta-box">
-    <h2>Ready to Modernize Your Assets?</h2>
+    <h2>Ready to Build Your Platform?</h2>
     <a href="index.html#apply" class="btn-inv" style="text-decoration:none;display:inline-block;">Schedule a Demo →</a>
   </div>
 </div>
