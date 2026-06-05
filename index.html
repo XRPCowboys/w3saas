@@ -286,6 +286,16 @@ nav{
   width:100%;
   display:block;
 }
+
+/* DESKTOP HERO — invisible clickable hotspots over the baked-in labels */
+.hero-hotspots a{position:absolute;display:block;pointer-events:auto;border-radius:10px;
+  -webkit-tap-highlight-color:rgba(26,95,170,0.15);transition:background .2s;}
+.hero-hotspots a:hover{background:rgba(26,95,170,0.10);}
+.hs-accelerated{left:8.5%;  top:34%; width:22%; height:14%;}
+.hs-intelligence{left:8.5%; top:61%; width:21%; height:14%;}
+.hs-fraud{right:13%;        top:31%; width:16%; height:14%;}
+.hs-security{right:13%;     top:48%; width:16%; height:13%;}
+.hs-compliance{right:12.5%; top:63%; width:17%; height:14%;}
 .hero-placeholder{
   width:100%;
   aspect-ratio:1100/620;
@@ -924,26 +934,11 @@ footer{
   <div class="hero-graphic hero-desktop">
     <img src="hero-chip-v3.png" alt="W3SaaS Enterprise AI &amp; Tokenization Platform diagram"/>
     <div class="hero-hotspots">
-      <a href="#feat-accelerated"  class="chip-label accelerated"  aria-label="Accelerated Innovation">
-        <span class="bar"></span>
-        <div><div class="title">Accelerated<br/>Innovation</div><span class="pill">LAUNCH IN 90 DAYS</span></div>
-      </a>
-      <a href="#feat-intelligence" class="chip-label intelligence" aria-label="Smart Intelligence">
-        <span class="bar"></span>
-        <div><div class="title">Smart<br/>Intelligence</div><span class="pill">AI-POWERED</span></div>
-      </a>
-      <a href="#feat-fraud" class="chip-label fraud right-aligned" aria-label="Fraud Detection">
-        <span class="bar"></span>
-        <div><div class="title">Fraud<br/>Detection</div><span class="pill">REAL-TIME AI</span></div>
-      </a>
-      <a href="#feat-architecture" class="chip-label security right-aligned" aria-label="Automating Security">
-        <span class="bar"></span>
-        <div><div class="title">Automating<br/>Security</div><span class="pill">ENTERPRISE</span></div>
-      </a>
-      <a href="#core" class="chip-label compliance right-aligned" aria-label="Integrated Compliance">
-        <span class="bar"></span>
-        <div><div class="title">Integrated<br/>Compliance</div><span class="pill">BUILT-IN</span></div>
-      </a>
+      <a href="#feat-accelerated"  class="hs-accelerated"  aria-label="Accelerated Innovation"></a>
+      <a href="#feat-intelligence" class="hs-intelligence" aria-label="Smart Intelligence"></a>
+      <a href="#feat-fraud"        class="hs-fraud"        aria-label="Fraud Detection"></a>
+      <a href="#feat-architecture" class="hs-security"     aria-label="Automating Security"></a>
+      <a href="#core"              class="hs-compliance"   aria-label="Integrated Compliance"></a>
     </div>
   </div>
   <div class="hero-ctas">
@@ -995,21 +990,6 @@ footer{
       <div class="feat-card-title">Accelerated Innovation (90 Days &amp; Beyond)</div>
       <p class="feat-card-desc">We deploy a production-ready, white-label architecture allowing you to launch an operational, compliant platform in as little as 90 days.</p>
     </div>
-    <div class="feat-card" id="feat-intelligence">
-      <div class="feat-icon">🔐</div>
-      <div class="feat-card-title">Smart Intelligence &amp; Fraud Detection</div>
-      <p class="feat-card-desc">Custom-trained Agentic AI Agents for automated auditing of complex documents, like bills of lading, bank statements, inspection reports. Agents verify data and ensure critical information and legal conditions are met to help eliminate manual errors.</p>
-    </div>
-    <div class="feat-card" id="feat-fraud">
-      <div class="feat-icon">🛡️</div>
-      <div class="feat-card-title">Automating Security &amp; Integrated Compliance</div>
-      <p class="feat-card-desc">Built-in identity layers powered by robust enterprise grade security for all registered users. Integrated wallets for easier onboarding of application users with custom policy controls to ensure system integrity, and compliant operations.</p>
-    </div>
-    <div class="feat-card">
-      <div class="feat-icon">⛓️</div>
-      <div class="feat-card-title">Accelerated Innovation (and Beyond!)</div>
-      <p class="feat-card-desc">Beyond day one, we act as an extension of your team to automate your business logic and manage your tokenized assets. This partnership reduces the massive overhead of legacy workflows, accelerating your ability to scale efficiently without the burden of building custom technology.</p>
-    </div>
     <div class="feat-card" id="feat-architecture">
       <div class="feat-icon">🏗️</div>
       <div class="feat-card-title">Business App Architecture</div>
@@ -1019,6 +999,21 @@ footer{
       <div class="feat-icon">🌐</div>
       <div class="feat-card-title">White-Label Marketplace</div>
       <p class="feat-card-desc">Full white-label control over your digital asset environment. Your brand, your rules, your market — powered by W3SaaS.</p>
+    </div>
+    <div class="feat-card">
+      <div class="feat-icon">⛓️</div>
+      <div class="feat-card-title">Accelerated Innovation (and Beyond!)</div>
+      <p class="feat-card-desc">Beyond day one, we act as an extension of your team to automate your business logic and manage your tokenized assets. This partnership reduces the massive overhead of legacy workflows, accelerating your ability to scale efficiently without the burden of building custom technology.</p>
+    </div>
+    <div class="feat-card" id="feat-intelligence">
+      <div class="feat-icon">🔐</div>
+      <div class="feat-card-title">Smart Intelligence &amp; Fraud Detection</div>
+      <p class="feat-card-desc">Custom-trained Agentic AI Agents for automated auditing of complex documents, like bills of lading, bank statements, inspection reports. Agents verify data and ensure critical information and legal conditions are met to help eliminate manual errors.</p>
+    </div>
+    <div class="feat-card" id="feat-fraud">
+      <div class="feat-icon">🛡️</div>
+      <div class="feat-card-title">Automating Security &amp; Integrated Compliance</div>
+      <p class="feat-card-desc">Built-in identity layers powered by robust enterprise grade security for all registered users. Integrated wallets for easier onboarding of application users with custom policy controls to ensure system integrity, and compliant operations.</p>
     </div>
   </div>
 </div>
@@ -1066,7 +1061,6 @@ footer{
     <button type="button" class="ind-chip" data-ind="commodities">Commodities</button>
     <button type="button" class="ind-chip" data-ind="real-estate">Real Estate</button>
     <button type="button" class="ind-chip" data-ind="supply-chain">Supply Chain</button>
-    <button type="button" class="ind-chip" data-ind="asset-mgmt">Asset Management</button>
     <button type="button" class="ind-chip" data-ind="media">Media</button>
   </div>
 
@@ -1118,8 +1112,7 @@ footer{
           <div class="team-role">Chief Executive Officer</div>
         </div>
       </div>
-      <p class="team-bio">16+ years in tech entrepreneurship. As CEO and Chairman of the Board, he has driven DLT, blockchain, and AI architecture for more than half a decade. He serves as the crucial bridge for bringing traditional, asset-heavy businesses into the digital economy. By guiding high-volume commercial lenders to replace legacy bottlenecks with Smart Intelligence and instant ledger settlement, he proves how established operations can thrive in an AI-driven world. He leads strategic alignment and executive alliances, partnering directly with clients to ensure W3SaaS operates as a true strategic partner driving long-term adoption of our Enterprise AI & Tokenization Platform.
-</p>
+      <p class="team-bio">16+ years in tech entrepreneurship. As CEO and Chairman of the Board, he has driven DLT, blockchain, and AI architecture for more than half a decade. He serves as the crucial bridge for bringing traditional, asset-heavy businesses into the digital economy. By guiding high-volume commercial lenders to replace legacy bottlenecks with Smart Intelligence and instant ledger settlement, he proves how established operations can thrive in an AI-driven world. He leads strategic alignment and executive alliances, partnering directly with clients to ensure W3SaaS operates as a true strategic partner driving long-term adoption of our Enterprise AI &amp; Tokenization Platform.</p>
     </div>
     <div class="team-card">
       <div class="team-card-top">
@@ -1129,7 +1122,7 @@ footer{
           <div class="team-role">Chief Technology Officer</div>
         </div>
       </div>
-      <p class="team-bio">18+ years of experience in Data Science, AI, and Algorithm Design executing for Fortune 500s and SMBs. As CTO and Director, he directs our engineering team and Business Application Architecture. By leading the integration of advanced parallel AI systems and robust role-based access controls, he ensures our platform serves as a seamless extension of our clients' operations for secure, scalable DLT deployments.</p>
+      <p class="team-bio">18+ years of experience in Data Science, AI, and Algorithm Design executing for Fortune 500s and SMBs. As CTO and Director, he directs our engineering team and Business Application Architecture. By leading the integration of advanced parallel AI systems and robust role-based access controls, he ensures our platform serves as a seamless extension of our clients&#39; operations for secure, scalable DLT deployments.</p>
     </div>
     <div class="team-card">
       <div class="team-card-top">
@@ -1139,7 +1132,7 @@ footer{
           <div class="team-role">Chief Strategy Officer</div>
         </div>
       </div>
-      <p class="team-bio">An IBM veteran holding patents for conceptualizing and launching early enterprise cloud, bringing 30+ years of experience scaling global tech. As a collaborative member of the senior leadership team, he helps drive the company's strategic direction. Working alongside leadership executing our enterprise expansion playbook, driving our Go-To-Market strategy and scaling global operational alliances, positioning W3SaaS as a collaborative partner dedicated to accelerating growth and client success.</p>
+      <p class="team-bio">An IBM veteran holding patents for conceptualizing and launching early enterprise cloud, bringing 30+ years of experience scaling global tech. As a collaborative member of the senior leadership team, he helps drive the company&#39;s strategic direction. Working alongside leadership executing our enterprise expansion playbook, driving our Go-To-Market strategy and scaling global operational alliances, positioning W3SaaS as a collaborative partner dedicated to accelerating growth and client success.</p>
     </div>
   </div>
 </section>
