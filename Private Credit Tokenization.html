@@ -393,10 +393,10 @@ nav{
   width:100%;max-width:1100px;margin:4rem auto;padding:0 3.5rem;
 }
 
-.section-label{font-size:11px;letter-spacing:2.5px;color:var(--blue);text-transform:uppercase;font-weight:600;margin-bottom:.6rem;}
+.section-label{font-size:15px;letter-spacing:2.5px;color:var(--blue);text-transform:uppercase;font-weight:600;margin-bottom:.6rem;}
 .section-title{font-family:'Syne',sans-serif;font-size:38px;font-weight:800;color:var(--navy);letter-spacing:-1px;line-height:1.1;margin-bottom:.75rem;}
 .section-title span{color:var(--blue);}
-.section-sub{font-size:15px;color:rgba(13,31,60,0.55);line-height:1.7;max-width:560px;margin-bottom:3rem;}
+.section-sub{font-size:19px;color:rgba(13,31,60,0.62);line-height:1.7;max-width:640px;margin-bottom:3rem;}
 
 /* GLASS CARDS */
 .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;}
@@ -807,10 +807,12 @@ footer{
   box-shadow:0 24px 70px rgba(8,20,40,0.30);}
 .re-badge{display:inline-flex;align-items:center;gap:.55rem;background:rgba(255,255,255,0.12);
   border:1px solid rgba(255,255,255,0.28);color:#fff;padding:8px 20px;border-radius:999px;
-  font-size:13px;font-weight:600;letter-spacing:.3px;backdrop-filter:blur(6px);margin-bottom:1.7rem;}
+  font-size:13px;font-weight:600;letter-spacing:.3px;backdrop-filter:blur(6px);margin-bottom:1.7rem;white-space:nowrap;}
 .re-hero h1{font-family:'Syne',sans-serif;font-size:52px;font-weight:800;color:#fff;letter-spacing:-1.5px;
   line-height:1.08;max-width:1000px;margin:0 auto 1.4rem;text-wrap:balance;}
-.re-hero .re-sub{font-size:19px;color:rgba(255,255,255,0.82);line-height:1.6;max-width:680px;margin:0 auto;}
+.re-hero h1 .re-hero-tagline{display:block;font-size:27px;font-weight:600;letter-spacing:-0.5px;
+  color:rgba(255,255,255,0.9);margin-top:.65rem;text-wrap:balance;}
+.re-hero .re-sub{font-size:22px;color:rgba(255,255,255,0.82);line-height:1.6;max-width:680px;margin:0 auto;}
 
 .re-intro{max-width:840px;margin:4.5rem auto;padding:0 3.5rem;}
 .re-intro p{font-size:19px;line-height:1.78;color:var(--blue);font-weight:400;text-wrap:pretty;}
@@ -857,7 +859,7 @@ footer{
 .re-phase{border:1px solid rgba(120,165,220,0.22);border-radius:14px;padding:1.9rem;
   background:linear-gradient(180deg, rgba(20,48,84,0.92) 0%, rgba(26,58,98,0.9) 100%);
   box-shadow:0 10px 30px rgba(8,20,40,0.25);}
-.re-phase-label{font-family:'Syne',sans-serif;font-size:13px;font-weight:700;letter-spacing:1px;
+.re-phase-label{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;letter-spacing:1px;
   text-transform:uppercase;color:var(--blue-light);margin-bottom:.75rem;}
 .re-phase h3{font-family:'Syne',sans-serif;font-size:21px;font-weight:700;color:#fff;margin-bottom:.85rem;}
 .re-phase>p{font-size:13.5px;line-height:1.6;color:rgba(255,255,255,0.72);margin-bottom:1.1rem;}
@@ -1027,8 +1029,8 @@ footer{
 <!-- HERO -->
 <section class="re-hero" data-screen-label="PC Hero">
   <div class="re-hero-box">
-    <span class="re-badge">📜 Fixed Income Solutions</span>
-    <h1>Private Credit Tokenization: The Future of Fixed Income Offerings</h1>
+    <span class="re-badge">Fixed Income Solutions</span>
+    <h1>Private Credit Tokenization<span class="re-hero-tagline">The Future of Fixed Income Offerings</span></h1>
     <p class="re-sub">Streamline fundraising, automate coupon payments, and unlock global liquidity for private credit markets</p>
   </div>
 </section>
