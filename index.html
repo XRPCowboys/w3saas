@@ -69,6 +69,23 @@ body{
 .mv-card p{font-size:13.5px;line-height:1.62;color:rgba(13,31,60,0.6);}
 .team-block{text-align:center;}
 .team-block img{width:100%;height:auto;display:block;}
+
+/* LEADERSHIP — blue cards */
+.team-head{text-align:center;margin:4rem 0 2.25rem;}
+.team-head h3{font-family:'Syne',sans-serif;font-size:34px;font-weight:800;color:var(--navy);letter-spacing:-.6px;margin-bottom:.6rem;}
+.team-head p{font-size:14px;letter-spacing:2px;text-transform:uppercase;color:var(--blue);font-weight:600;}
+.team-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;max-width:1100px;margin:0 auto;}
+.team-card{background:linear-gradient(180deg, rgba(20,48,84,0.95) 0%, rgba(26,58,98,0.92) 100%);
+  border:1px solid rgba(120,165,220,0.25);border-radius:18px;padding:2rem 1.9rem;
+  box-shadow:0 14px 40px rgba(8,20,40,0.28);}
+.team-card-top{display:flex;align-items:center;gap:1.1rem;margin-bottom:1.3rem;}
+.team-photo{width:88px;height:88px;border-radius:14px;object-fit:cover;flex-shrink:0;
+  border:3px solid #fff;box-shadow:0 6px 18px rgba(8,20,40,0.45);background:#dfe7f2;}
+.team-name{font-family:'Syne',sans-serif;font-size:19px;font-weight:700;color:#fff;letter-spacing:-.3px;line-height:1.18;margin-bottom:.35rem;text-wrap:balance;}
+.team-role{font-size:12px;font-weight:600;letter-spacing:1.4px;text-transform:uppercase;color:var(--blue-light);line-height:1.2;}
+.team-bio{font-size:14px;line-height:1.66;color:rgba(255,255,255,0.78);text-wrap:pretty;}
+@media (max-width:920px){.team-grid{grid-template-columns:1fr;max-width:520px;}}
+@media (max-width:680px){.team-head h3{font-size:27px;}.team-card{padding:1.7rem 1.5rem;}}
 @media (max-width:820px){ .mission-grid{grid-template-columns:1fr;gap:1.75rem;} }
 @media (max-width:680px){ .about-wrap{padding:0 1.5rem;} .about-header .section-title{font-size:27px;} }
 
@@ -1056,8 +1073,41 @@ footer{
     </div>
   </div>
 
-  <div class="team-block">
-    <img src="team-clean-v3.png" alt="Leadership and Founding Team — W3SaaS has over 100 years of combined experience in technology"/>
+  <div class="team-head">
+    <h3>Leadership &amp; Founding Team</h3>
+    <p>Over 100 years of combined experience in technology</p>
+  </div>
+  <div class="team-grid">
+    <div class="team-card">
+      <div class="team-card-top">
+        <img class="team-photo" src="boone.png" alt="Boone Bergsma"/>
+        <div>
+          <div class="team-name">Boone Bergsma</div>
+          <div class="team-role">Chief Executive Officer</div>
+        </div>
+      </div>
+      <p class="team-bio">16+ years in tech entrepreneurship. Leads strategic alignment and executive alliances, partnering directly with clients to ensure W3SaaS operates as a true strategic partner driving long-term adoption of our Enterprise AI &amp; Tokenization Platform.</p>
+    </div>
+    <div class="team-card">
+      <div class="team-card-top">
+        <img class="team-photo" src="faisal.png" alt="Syed Faisal ur Rhaman"/>
+        <div>
+          <div class="team-name">Syed Faisal ur Rhaman</div>
+          <div class="team-role">Chief Technology Officer</div>
+        </div>
+      </div>
+      <p class="team-bio">18+ years executing Data Science and AI for Fortune 500s. Directs our engineering team and Business Application Architecture, ensuring our platform serves as a seamless extension of our clients&#39; operations for secure, scalable DLT deployments.</p>
+    </div>
+    <div class="team-card">
+      <div class="team-card-top">
+        <img class="team-photo" src="dave.png" alt="Dave Goodman"/>
+        <div>
+          <div class="team-name">Dave Goodman</div>
+          <div class="team-role">Chief Strategy Officer</div>
+        </div>
+      </div>
+      <p class="team-bio">30+ years scaling global tech and an IBM veteran. As the lead strategist guiding the company&#39;s overall direction, he orchestrates Tier-1 infrastructure partnerships and builds scalable Go-To-Market teams, positioning W3SaaS as a collaborative partner dedicated to guaranteeing client success.</p>
+    </div>
   </div>
 </section>
 
