@@ -385,7 +385,7 @@ nav{
 
 /* MOBILE-ONLY HERO GRAPHIC (new image with tappable hotspots) */
 .hero-mobile{display:none;}
-.hero-mobile-graphic{position:relative;width:100%;max-width:520px;margin:0 auto;}
+.hero-mobile-graphic{position:relative;width:100%;max-width:640px;margin:0 auto;}
 .hero-mobile-graphic img{width:100%;height:auto;display:block;}
 .hero-mobile-graphic a{position:absolute;display:block;border-radius:8px;
   -webkit-tap-highlight-color:rgba(26,95,170,0.15);}
@@ -399,7 +399,8 @@ nav{
 @media (max-width:640px){
   .hero-desktop{display:none;}
   .hero .hero-ctas{display:none;}
-  .hero-mobile{display:block;}
+  .hero-mobile{display:block;width:100%;}
+  .hero-mobile{margin-top:-0.5rem;}
 }
 
 .hero-ctas{
@@ -802,7 +803,7 @@ footer{
   .dropdown-menu a{padding:13px 12px;font-size:14.5px;}
 
   /* --- hero --- */
-  .hero{padding:1rem 1.25rem 2rem;}
+  .hero{padding:0.5rem 0.5rem 2rem;}
   .hero-ctas{flex-direction:column;width:100%;}
   .hero-ctas .btn-primary,
   .hero-ctas .btn-ghost{width:100%;text-align:center;}
