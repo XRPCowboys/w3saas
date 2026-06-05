@@ -383,6 +383,25 @@ nav{
   .chip-label{display:none;}
 }
 
+/* MOBILE-ONLY HERO GRAPHIC (new image with tappable hotspots) */
+.hero-mobile{display:none;}
+.hero-mobile-graphic{position:relative;width:100%;max-width:520px;margin:0 auto;}
+.hero-mobile-graphic img{width:100%;height:auto;display:block;}
+.hero-mobile-graphic a{position:absolute;display:block;border-radius:8px;
+  -webkit-tap-highlight-color:rgba(26,95,170,0.15);}
+.hero-mobile-graphic a:active{background:rgba(26,95,170,0.12);}
+.hm-accelerated{left:8%;  top:31%; width:28%; height:18%;}
+.hm-intelligence{left:8%; top:59%; width:28%; height:17%;}
+.hm-fraud{right:6%;      top:31%; width:25%; height:16%;}
+.hm-security{right:6%;   top:50%; width:27%; height:16%;}
+.hm-compliance{right:6%; top:69%; width:27%; height:16%;}
+.hm-launch{left:37%;     top:84%; width:27%; height:9%;}
+@media (max-width:640px){
+  .hero-desktop{display:none;}
+  .hero .hero-ctas{display:none;}
+  .hero-mobile{display:block;}
+}
+
 .hero-ctas{
   display:flex;gap:1rem;justify-content:center;
   margin-top:1.25rem;
@@ -902,7 +921,7 @@ footer{
 
 <!-- HERO — your design graphic on the wave bg -->
 <div class="hero">
-  <div class="hero-graphic">
+  <div class="hero-graphic hero-desktop">
     <img src="hero-chip-v3.png" alt="W3SaaS Enterprise AI &amp; Tokenization Platform diagram"/>
     <div class="hero-hotspots">
       <a href="#feat-accelerated"  class="chip-label accelerated"  aria-label="Accelerated Innovation">
@@ -929,6 +948,19 @@ footer{
   </div>
   <div class="hero-ctas">
     <a href="#apply" class="btn-primary" style="text-decoration:none;display:inline-block;">Launch Your Platform →</a>
+  </div>
+
+  <!-- MOBILE-ONLY hero graphic with tappable hotspots -->
+  <div class="hero-mobile">
+    <div class="hero-mobile-graphic">
+      <img src="hero-mobile.png" alt="W3SaaS Enterprise AI &amp; Tokenization Platform diagram"/>
+      <a href="#feat-accelerated"  class="hm-accelerated"  aria-label="Accelerated Innovation"></a>
+      <a href="#feat-intelligence" class="hm-intelligence" aria-label="Smart Intelligence"></a>
+      <a href="#feat-fraud"        class="hm-fraud"        aria-label="Fraud Detection"></a>
+      <a href="#feat-architecture" class="hm-security"     aria-label="Automating Security"></a>
+      <a href="#core"              class="hm-compliance"   aria-label="Integrated Compliance"></a>
+      <a href="#apply"             class="hm-launch"       aria-label="Launch Your Platform"></a>
+    </div>
   </div>
 
   <!-- STATS float below hero graphic -->
