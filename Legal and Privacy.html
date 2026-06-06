@@ -798,7 +798,7 @@ footer{
 }
 
 /* ===== REAL ESTATE TOKENIZATION PAGE ===== */
-.re-hero{position:relative;width:100%;padding:3rem 3.5rem 2rem;display:flex;justify-content:center;}
+.re-hero{position:relative;width:100%;padding:2rem 1.5rem 2rem;display:flex;justify-content:center;}
 .re-hero-box{position:relative;width:100%;max-width:1120px;text-align:center;overflow:hidden;
   padding:4.5rem 3.5rem;border-radius:24px;
   background:linear-gradient(180deg, rgba(18,46,80,0.62) 0%, rgba(24,58,96,0.55) 100%);
@@ -962,81 +962,89 @@ footer{
       </ul>
     </li>
     <li><a href="index.html#about">About</a></li>
-    <li><a href="index.html#apply" class="nav-cta">Schedule Consulation</a></li>
+    <li><a href="index.html#apply" class="nav-cta">Schedule Consultation</a></li>
   </ul>
 </nav>
 
-<!-- HERO -->
+<!-- HERO + LEGAL CONTENT (all in one box) -->
 <section class="re-hero" data-screen-label="Legal Hero">
   <div class="re-hero-box">
     <span class="re-badge">Trust &amp; Compliance</span>
     <h1>Legal &amp; Privacy</h1>
     <p class="re-sub">Transparency and security are at the core of our infrastructure.</p>
+    <div class="legal-inner">
+      <h2 class="legal-h">Terms of Service</h2>
+      <p class="legal-p">By accessing or using our website and services, you agree to these Terms. W3SaaS provides technology infrastructure for asset tokenization and management — we do not provide financial, legal, or investment advice.</p>
+      <h2 class="legal-h">Disclaimer</h2>
+      <p class="legal-p">All content is for informational purposes only. Tokenization of assets involves risks, including loss of value. Users should conduct their own due diligence and consult professional advisors before engaging in any tokenization activities.</p>
+      <h2 class="legal-h">Privacy Policy</h2>
+      <p class="legal-p">We take your privacy seriously and apply industry-standard security to protect your data from unauthorized access.</p>
+      <ul class="legal-list">
+        <li><strong>Collection:</strong> Information you provide directly — e.g., when you <a class="legal-a" href="index.html#apply">request a demo</a> or subscribe.</li>
+        <li><strong>Usage:</strong> To provide, maintain, and improve our services and to communicate with you.</li>
+        <li><strong>Protection:</strong> Industry-standard security guards your data against unauthorized access.</li>
+      </ul>
+      <h2 class="legal-h">Contact Us</h2>
+      <p class="legal-p">Questions about these Terms or our Privacy Policy? <a class="legal-a" href="index.html#apply">Contact us</a>.</p>
+    </div>
   </div>
 </section>
 
 <!-- LEGAL CONTENT -->
 <style>
-.legal-wrap{max-width:880px;margin:3.5rem auto 5rem;padding:0 3.5rem;}
+.legal-wrap{max-width:1000px;margin:3rem auto 4rem;padding:0 3.5rem;}
 .legal-card{background:rgba(255,255,255,0.76);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);
   border:1px solid rgba(255,255,255,0.9);border-radius:18px;padding:2.6rem 2.8rem;
   box-shadow:0 8px 32px rgba(10,22,40,0.07);margin-bottom:1.5rem;}
 .legal-card:last-of-type{margin-bottom:0;}
 .legal-eyebrow{font-size:13px;letter-spacing:2.2px;color:var(--blue);text-transform:uppercase;font-weight:600;margin-bottom:.7rem;}
-.legal-h{font-family:'Syne',sans-serif;font-size:27px;font-weight:800;color:var(--navy);letter-spacing:-.6px;margin-bottom:1rem;}
-.legal-p{font-size:17px;line-height:1.8;color:rgba(13,31,60,0.74);text-wrap:pretty;margin-bottom:1rem;}
+.legal-h{font-family:'Syne',sans-serif;font-size:26px;font-weight:800;color:var(--navy);letter-spacing:-.6px;margin-bottom:.8rem;}
+.legal-grid{display:block;}
+.legal-col{display:block;}
+.legal-col .legal-h:not(:first-child){margin-top:1.9rem;}
+.legal-col:last-child .legal-h:first-child{margin-top:1.9rem;}
+.legal-p{font-size:17px;line-height:1.75;color:rgba(13,31,60,0.74);text-wrap:pretty;margin-bottom:0;}
 .legal-p:last-child{margin-bottom:0;}
-.legal-list{list-style:none;display:flex;flex-direction:column;gap:1.05rem;margin-top:1.25rem;}
-.legal-list li{font-size:16px;line-height:1.7;color:rgba(13,31,60,0.74);padding-left:1.4rem;position:relative;text-wrap:pretty;}
+.legal-list{list-style:none;display:flex;flex-direction:column;gap:.8rem;margin-top:1.1rem;}
+.legal-list li{font-size:16.5px;line-height:1.65;color:rgba(13,31,60,0.74);padding-left:1.4rem;position:relative;text-wrap:pretty;}
 .legal-list li::before{content:"";position:absolute;left:0;top:.6em;width:7px;height:7px;border-radius:50%;
   background:var(--blue);box-shadow:0 0 0 3px rgba(26,95,170,0.12);}
 .legal-list strong{color:var(--navy);font-weight:700;}
 .legal-a{color:var(--blue);font-weight:600;text-decoration:none;border-bottom:1.5px solid rgba(26,95,170,0.32);
   transition:color .18s,border-color .18s;}
 .legal-a:hover{color:var(--blue-light);border-color:var(--blue-light);}
+
+/* Legal content placed inside the blue hero box */
+.re-hero-box{max-width:1700px;}
+.legal-inner{text-align:left;max-width:1560px;margin:2.4rem auto 0;padding-top:2.2rem;
+  border-top:1px solid rgba(255,255,255,0.18);}
+.legal-inner .legal-h{color:#fff;font-size:24px;margin-bottom:.7rem;}
+.legal-inner .legal-h:not(:first-child){margin-top:1.8rem;}
+.legal-inner .legal-p{color:rgba(255,255,255,0.84);font-size:16.5px;line-height:1.7;margin-bottom:0;}
+.legal-inner .legal-list{margin-top:1rem;gap:.7rem;}
+.legal-inner .legal-list li{color:rgba(255,255,255,0.84);font-size:16px;}
+.legal-inner .legal-list strong{color:#fff;}
+.legal-inner .legal-list li::before{background:var(--blue-light);box-shadow:0 0 0 3px rgba(59,158,255,0.18);}
+.legal-inner .legal-a{color:#bcdcff;border-color:rgba(188,220,255,0.5);}
+.legal-inner .legal-a:hover{color:#fff;border-color:#fff;}
+@media (max-width:680px){
+  .legal-inner{padding-top:1.8rem;margin-top:1.8rem;}
+  .legal-inner .legal-h{font-size:21px;}
+  .legal-inner .legal-p,.legal-inner .legal-list li{font-size:15.5px;}
+}
 .legal-meta{max-width:880px;margin:0 auto;padding:1.75rem 3.5rem 0;font-size:13.5px;color:rgba(13,31,60,0.5);
   text-align:center;}
 @media (max-width:680px){
   .legal-wrap{padding:0 1.25rem;margin:2.5rem auto 3.5rem;}
   .legal-card{padding:1.9rem 1.6rem;}
-  .legal-h{font-size:23px;}
-  .legal-p,.legal-list li{font-size:15.5px;}
+  .legal-grid{grid-template-columns:1fr;gap:0;}
+  .legal-col .legal-h:not(:first-child){margin-top:1.6rem;}
+  .legal-col:last-child .legal-h:first-child{margin-top:1.6rem;}
+  .legal-h{font-size:22px;}
+  .legal-p,.legal-list li{font-size:15px;}
   .legal-meta{padding:1.5rem 1.25rem 0;}
 }
 </style>
-
-<div class="legal-wrap">
-
-  <div class="legal-card">
-    <div class="legal-eyebrow">Section 01</div>
-    <h2 class="legal-h">Terms of Service</h2>
-    <p class="legal-p">Welcome to W3SaaS. By accessing or using our website and services, you agree to be bound by these Terms of Service. W3SaaS provides technology infrastructure for asset tokenization and management. We do not provide financial, legal, or investment advice.</p>
-  </div>
-
-  <div class="legal-card">
-    <div class="legal-eyebrow">Section 02</div>
-    <h2 class="legal-h">Privacy Policy</h2>
-    <p class="legal-p">At W3SaaS, we take your privacy seriously. This Privacy Policy outlines how we collect, use, and protect your personal information.</p>
-    <ul class="legal-list">
-      <li><strong>Data Collection:</strong> We collect information you provide directly to us, such as when you <a class="legal-a" href="index.html#apply">request a demo</a> or subscribe to our newsletter.</li>
-      <li><strong>Data Usage:</strong> We use your information to provide, maintain, and improve our services, and to communicate with you.</li>
-      <li><strong>Data Protection:</strong> We implement industry standard security measures to protect your data from unauthorized access.</li>
-    </ul>
-  </div>
-
-  <div class="legal-card">
-    <div class="legal-eyebrow">Section 03</div>
-    <h2 class="legal-h">Disclaimer</h2>
-    <p class="legal-p">The content provided on this website is for informational purposes only. Tokenization of assets involves risks, including loss of value. Users should conduct their due diligence and consult with professional advisors before engaging in any tokenization activities.</p>
-  </div>
-
-  <div class="legal-card">
-    <div class="legal-eyebrow">Section 04</div>
-    <h2 class="legal-h">Contact Us</h2>
-    <p class="legal-p">If you have any questions about these Terms or our Privacy Policy, please <a class="legal-a" href="index.html#apply">contact us</a>.</p>
-  </div>
-
-</div>
 
 <div class="legal-meta">Last updated: June 2026 &nbsp;·&nbsp; © 2026 W3 SaaS LLC &amp; W3 SaaS Technologies LTD.</div>
 
