@@ -449,8 +449,9 @@ nav{
   border-right:1px solid rgba(255,255,255,0.07);
 }
 .stat:last-child{border-right:none;}
-.stat-n{font-family:'Alfa Slab One',serif;font-size:34px;font-weight:800;color:#fff;letter-spacing:-1px;}
-.stat-l{font-size:12px;color:#fff;margin-top:5px;letter-spacing:0.4px;font-weight:500;}
+.stat-n{font-family:'Syne',sans-serif;font-size:38px;font-weight:800;color:#fff;letter-spacing:-1px;line-height:1.05;white-space:nowrap;}
+.stat-n .unit{font-size:0.62em;letter-spacing:-.5px;}
+.stat-l{font-size:12px;color:#fff;margin-top:7px;letter-spacing:0.4px;font-weight:500;}
 
 /* CONTENT SECTIONS — scroll over the fixed bg */
 .section{
@@ -487,7 +488,7 @@ nav{
   border:1px solid rgba(26,95,170,0.15);
 }
 .feat-card-title{font-family:'Alfa Slab One',serif;font-size:17px;font-weight:700;color:var(--navy);margin-bottom:.5rem;}
-.feat-card-desc{font-size:13.5px;line-height:1.7;color:rgba(13,31,60,0.6);}
+.feat-card-desc{font-size:13.5px;line-height:1.7;color:var(--text);}
 
 /* INDUSTRIES — redesigned with expandable detail panel */
 .ind-wrap{
@@ -822,7 +823,7 @@ footer{
   .stat{padding:1.4rem 0.75rem;}
   .stat:nth-child(2n){border-right:none;}
   .stat:nth-child(1),.stat:nth-child(2){border-bottom:1px solid rgba(255,255,255,0.08);}
-  .stat-n{font-size:27px;}
+  .stat-n{font-size:30px;}
 
   /* --- content sections --- */
   .section{margin:2.75rem auto;padding:0 1.25rem;}
@@ -857,7 +858,7 @@ footer{
   .section-title{font-size:23px;}
   .ind-header .section-title{font-size:24px !important;}
   .cta-title{font-size:25px;}
-  .stat-n{font-size:23px;}
+  .stat-n{font-size:26px;}
   .apply-head .section-title{font-size:26px;}
 }
 </style>
@@ -961,15 +962,15 @@ footer{
   <!-- STATS float below hero graphic -->
   <div class="stats-bar">
     <div class="stat">
-      <div class="stat-n">90%+</div>
-      <div class="stat-l">Cost Reduction</div>
+      <div class="stat-n">24/7</div>
+      <div class="stat-l">Auto Business Logic</div>
     </div>
     <div class="stat">
-      <div class="stat-n">3–5s</div>
-      <div class="stat-l">Settlement Finality</div>
+      <div class="stat-n">365 <span class="unit">Days</span></div>
+      <div class="stat-l">Strategic Partner</div>
     </div>
     <div class="stat">
-      <div class="stat-n">90d</div>
+      <div class="stat-n">90 <span class="unit">Days</span></div>
       <div class="stat-l">Launch Timeline</div>
     </div>
     <div class="stat">
@@ -1008,12 +1009,12 @@ footer{
     <div class="feat-card" id="feat-intelligence">
       <div class="feat-icon">🔐</div>
       <div class="feat-card-title">Smart Intelligence &amp; Fraud Detection</div>
-      <p class="feat-card-desc">Smart Intelligence & Fraud Detection: Custom-trained Agentic AI Agents for automated auditing complex documents, like bills of lading, bank statements, inspection reports. Agents verify data and ensure critical information and legal conditions are met to help eliminate manual errors.</p>
+      <p class="feat-card-desc">Smart Intelligence &amp; Fraud Detection: Custom-trained Agentic AI Agents for automated auditing complex documents, like bills of lading, bank statements, inspection reports. Agents verify data and ensure critical information and legal conditions are met to help eliminate manual errors.</p>
     </div>
     <div class="feat-card" id="feat-fraud">
       <div class="feat-icon">🛡️</div>
       <div class="feat-card-title">Automating Security &amp; Integrated Compliance</div>
-       Automating Security & Integrated Compliance: Built-in identity layers powered by robust enterprise grade security for all registered users. Integrated wallets for easier onboarding of application users with custom policy controls to ensure system integrity, and compliant operations.</p>
+      <p class="feat-card-desc">Automating Security &amp; Integrated Compliance: Built-in identity layers powered by robust enterprise grade security for all registered users. Integrated wallets for easier onboarding of application users with custom policy controls to ensure system integrity, and compliant operations.</p>
     </div>
   </div>
 </div>
