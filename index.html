@@ -13,6 +13,8 @@
   --blue:#1a5faa;
   --blue-mid:#2272c3;
   --blue-light:#3b9eff;
+  --accent:#F2603C;
+  --accent-bright:#FF7A57;
   --text:#0d1f3c;
 }
 
@@ -204,11 +206,10 @@ nav{
 .nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--navy);opacity:0.65;transition:opacity .2s;}
 .nav-links a:hover{opacity:1;}
 .nav-cta{
-  background:var(--blue) !important;color:#fff !important;opacity:1 !important;
-  padding:9px 22px;border-radius:6px;font-weight:600 !important;
-  transition:background .2s !important;
+  background:var(--accent) !important;color:#fff !important;opacity:1 !important;
+  padding:9px 22px;border-radius:6px;font-weight:600 !important;  transition:background .2s !important;
 }
-.nav-cta:hover{background:#1a6fd4 !important;opacity:1 !important;}
+.nav-cta:hover{background:var(--accent-bright) !important;opacity:1 !important;}
 
 /* NAV DROPDOWNS */
 .has-dropdown{position:relative;}
@@ -354,12 +355,12 @@ nav{
 .hero-finality strong{color:var(--navy);font-weight:700;}
 .hero-grow{
   font-family:'Inter',sans-serif;font-weight:800;
-  font-size:21px;color:#121417;text-align:center;
+  font-size:28px;color:#121417;text-align:center;
   margin:0.7rem auto .35rem;letter-spacing:-.7px;text-wrap:balance;
 }
 .hero-grow-sub{
-  text-align:center;font-size:14px;line-height:1.55;
-  color:rgba(13,31,60,0.6);max-width:920px;margin:0 auto;text-wrap:pretty;
+  text-align:center;font-size:14px;line-height:1.55;font-weight:700;
+  color:var(--accent);max-width:920px;margin:0 auto;text-wrap:pretty;
 }
 
 /* MOBILE: stack labels under the chip */
@@ -487,7 +488,7 @@ nav{
 }
 .ind-intro li strong{color:var(--navy);font-weight:700;}
 .ind-tagline{
-  text-align:center;font-size:14px;color:rgba(13,31,60,0.55);margin:0 0 1.25rem;font-weight:700;
+  text-align:center;font-size:14px;color:var(--accent);margin:0 0 1.25rem;font-weight:700;
 }
 .ind-chips{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;}
 .ind-chip{
@@ -916,7 +917,7 @@ footer{
       </a>
     </div>
 
-    <img class="hero-chip" src="hero-chip-clean.png" alt="W3SaaS core chip — Enterprise AI &amp; Tokenization platform"/>
+    <img class="hero-chip" src="hero-chip-clean.png" alt="W3SaaS Platform"/>
 
     <div class="hero-col right">
       <a class="chip-feature" href="#feat-architecture">
@@ -940,7 +941,6 @@ footer{
     </div>
   </div>
 
-  <p class="hero-finality">Eradicating traditional bottlenecks to enable up to <strong>90%+ cost savings</strong> and secure, <strong>3&ndash;5 second finality</strong>.</p>
   <h2 class="hero-grow">Engineered to Help You &ldquo;Grow Your Business&rdquo;</h2>
   <p class="hero-grow-sub">We don&rsquo;t just hand you software; we act as your strategic partner to design and automate the business logic unique to your industry.</p>
 
@@ -1206,7 +1206,7 @@ footer{
 
 <footer>
   <a href="#" class="f-logo-link" aria-label="W3SaaS home"><img src="logo-w3saas-navy.png" alt="W3SaaS" class="f-logo-img"/></a>
-  <div class="f-copy">© 2026 | W3 SaaS LLC. Sheridan, WY, USA | W3 SaaS Technologies LTD. Dubai International Financial Centre, DIFC AI Campus, UAE | All rights reserved.</div>
+  <div class="f-copy">© 2026 All rights reserved.</div>
 </footer>
 
 <script>
