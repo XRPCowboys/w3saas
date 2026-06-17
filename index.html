@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>W3SaaS – Enterprise AI &amp; Tokenization Platform</title>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Alfa+Slab+One&amp;family=Kameron:wght@400;500;600;700&amp;family=Rokkitt:wght@700;800;900&amp;family=Syne:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Alfa+Slab+One&family=Kameron:wght@400;500;600;700&family=Rokkitt:wght@700;800;900&family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 
@@ -432,19 +432,22 @@ nav{
 /* GLASS CARDS */
 .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;}
 .feat-card{
+  position:relative;
+  z-index:1;
   background:rgba(255,255,255,0.72);
   backdrop-filter:blur(20px);
   -webkit-backdrop-filter:blur(20px);
   border:1px solid rgba(255,255,255,0.9);
   border-radius:16px;padding:2rem;
-  transition:all .25s;
+  transition:transform .28s ease, box-shadow .28s ease, background .28s ease, border-color .28s ease;
   box-shadow:0 4px 24px rgba(10,22,40,0.07);
 }
 .feat-card:hover{
-  background:rgba(255,255,255,0.9);
-  transform:translateY(-4px);
-  box-shadow:0 12px 40px rgba(26,95,170,0.12);
-  border-color:rgba(26,95,170,0.2);
+  z-index:10;
+  background:rgba(255,255,255,0.99);
+  transform:scale(1.22);
+  box-shadow:0 30px 80px rgba(26,95,170,0.30);
+  border-color:rgba(26,95,170,0.3);
 }
 .feat-icon{
   width:44px;height:44px;border-radius:12px;
@@ -974,7 +977,7 @@ footer{
 <!-- FEATURES — glass cards scrolling over wave bg -->
 <div class="section">
  <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">Capabilities</span>
-  <div class="section-title">Built for Enterprise<br/><span style="color:#000;">Ready in Weeks</span></div>
+  <div class="section-title">Built for Enterprise<br/><span>Ready in Weeks</span></div>
   <p class="section-sub">Pre-engineered Business Application Architecture that eliminates years of complex engineering work and deploys a compliant platform fast.</p>
   <div class="feat-grid">
     <div class="feat-card" id="feat-accelerated">
@@ -1017,7 +1020,7 @@ footer{
   </div>
   <div class="spotlight-content">
    <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">W3SaaS Platform</span>
-    <div class="section-title" style="font-size:32px;">The Engine Behind<br/><span style="color:#000;">Every Transaction</span></div>
+    <div class="section-title" style="font-size:32px;">The Engine Behind<br/><span>Every Transaction</span></div>
     <p class="section-sub">A single, pre-engineered platform powering compliance, settlement, and intelligence — purpose-built for asset-heavy industries.</p>
     <ul class="check-list">
       <li><span class="check-icon">✓</span>Institutional MPC wallet protocols with enterprise-grade security</li>
@@ -1061,11 +1064,11 @@ footer{
   </div>
 </div>
 
-<!-- ABOUT — Mission + Leadership & Founding Team (one section) -->
+<!-- ABOUT — Mission + Leadership &amp; Founding Team (one section) -->
 <section class="about-wrap" id="about">
   <div class="about-header">
     <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">About W3SaaS</span>
-    <div class="section-title">Building the Bridge to the Future of <span style="color:#000;">Finance &amp; Industry</span></div>
+    <div class="section-title">Building the Bridge to the Future of <span>Finance &amp; Industry</span></div>
     <p class="about-sub">We believe that eventually, all assets will be tokenized. Our mission is to build the secure, compliant, and scalable infrastructure to make that future a reality for Medium to Large Enterprises.</p>
   </div>
 
@@ -1262,7 +1265,7 @@ footer{
       },
       'real-estate': {
         title: 'Real Estate &amp; Property Management',
-        sub: 'Fractional ownership & automation',
+        sub: 'Fractional ownership &amp; automation',
         items: [
           ['Fractional Ownership &amp; Investment:', 'Provides the Business Application Architecture required to safely tokenize commercial and residential real estate, opening up secondary market liquidity.'],
           ['Property Operations &amp; Management:', 'Reduces back-office costs by utilizing Smart Intelligence agents to automate tenant onboarding, rent distributions, and complex document verification.'],
@@ -1271,7 +1274,7 @@ footer{
       },
       'supply-chain': {
         title: 'Supply Chain, Logistics &amp; Global Trade',
-        sub: 'Tamper-proof tracking & finance',
+        sub: 'Tamper-proof tracking &amp; finance',
         items: [
           ['Traceability &amp; Data Integrity:', 'Provides a tamper-proof, transparent ledger to track physical goods, shipping records, and proof-of-origin across global corridors.'],
           ['Intelligent Trade Finance:', 'Reduces the reliance on slow, expensive legacy systems (like paper Letters of Credit) by automating trustless, multi-party payouts when physical milestones are met.'],
@@ -1279,16 +1282,16 @@ footer{
         ]
       },
       'healthcare': {
-        title: 'Healthcare & Life Sciences',
-        sub: 'Secure data & tokenized IP',
+        title: 'Healthcare &amp; Life Sciences',
+        sub: 'Secure data &amp; tokenized IP',
         items: [
           ['Patient Data Management:', 'Providing decentralized, secure storage solutions that respect patient privacy while allowing secure, authorized data sharing.'],
-          ['Intellectual Property (IP) & Research:', 'Tokenizing medical research data or drug patents to manage ownership, fractionalize funding, and automate royalty compliance.']
+          ['Intellectual Property (IP) &amp; Research:', 'Tokenizing medical research data or drug patents to manage ownership, fractionalize funding, and automate royalty compliance.']
         ]
       },
       'media': {
         title: 'Media, Entertainment &amp; Gaming',
-        sub: 'Royalty automation & digital ownership',
+        sub: 'Royalty automation &amp; digital ownership',
         items: [
           ['Digital IP &amp; Royalty Management:', 'Provides a unified framework to automate complex royalty distribution loops for creators, studios, and artists without costly intermediaries.'],
           ['Gaming &amp; Digital Ownership:', 'Accelerates player onboarding by seamlessly integrating secure MPC wallets, enabling true ownership and secure trading of in-game assets.'],
