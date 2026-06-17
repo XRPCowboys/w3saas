@@ -13,6 +13,8 @@
   --blue:#1a5faa;
   --blue-mid:#2272c3;
   --blue-light:#3b9eff;
+  --accent:#F2603C;
+  --accent-bright:#FF7A57;
   --text:#0d1f3c;
 }
 
@@ -169,11 +171,11 @@ nav{
 .nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--navy);opacity:0.65;transition:opacity .2s;}
 .nav-links a:hover{opacity:1;}
 .nav-cta{
-  background:var(--blue) !important;color:#fff !important;opacity:1 !important;
+  background:var(--accent) !important;color:#fff !important;opacity:1 !important;
   padding:9px 22px;border-radius:6px;font-weight:600 !important;
   transition:background .2s !important;
 }
-.nav-cta:hover{background:#1a6fd4 !important;opacity:1 !important;}
+.nav-cta:hover{background:var(--accent-bright) !important;opacity:1 !important;}
 
 /* NAV DROPDOWNS */
 .has-dropdown{position:relative;}
@@ -577,12 +579,12 @@ nav{
 .cta-sub{font-size:15px;color:rgba(255,255,255,0.85);margin-bottom:2.5rem;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7;}
 .cta-btns{display:flex;gap:1rem;justify-content:center;}
 .btn-inv{
-  background:var(--blue-light);color:#fff;border:none;
+  background:var(--accent);color:#fff;border:none;
   padding:15px 36px;border-radius:8px;
   font-family:'Inter',sans-serif;font-size:15px;font-weight:600;
   cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(59,158,255,0.3);
 }
-.btn-inv:hover{background:#5aafff;transform:translateY(-2px);}
+.btn-inv:hover{background:var(--accent-bright);transform:translateY(-2px);}
 .btn-inv-ghost{
   background:transparent;color:rgba(200,225,255,0.8);
   border:1.5px solid rgba(100,160,255,0.3);
@@ -983,14 +985,14 @@ footer{
 <!-- WHY TOKENIZE -->
 <div class="section">
   <div class="re-centerhead">
-    <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">Why Tokenize</span>
+    <div class="section-label">Why Tokenize</div>
     <div class="section-title">Why Tokenize Real Estate</div>
     <p class="section-sub">Solving the trinity of legacy problems: Illiquidity, Exclusivity, and Inefficiency</p>
   </div>
   <div class="re-why-grid">
     <div class="feat-card">
       <div class="feat-icon">🔄</div>
-      <div class="re-cardhead">Liquidity &amp; Trading</div>
+      <div class="re-cardhead">1. Liquidity &amp; Trading</div>
       <p class="re-card-desc">Tokenization unlocks a new system for secondary trading compared to traditional investments that lockup capital</p>
       <ul class="re-bullets">
         <li><span><strong>24/7 Markets:</strong> Instant peer-to-peer trades or decentralized exchange (DEX)</span></li>
@@ -999,7 +1001,7 @@ footer{
     </div>
     <div class="feat-card">
       <div class="feat-icon">🌐</div>
-      <div class="re-cardhead">Democratization</div>
+      <div class="re-cardhead">2. Democratization</div>
       <p class="re-card-desc">Fractionalization splits assets into more affordable units, lowering barriers for more investor participation</p>
       <ul class="re-bullets">
         <li><span><strong>Lower Barriers:</strong> Split high-value deals into any size minimum</span></li>
@@ -1008,7 +1010,7 @@ footer{
     </div>
     <div class="feat-card">
       <div class="feat-icon">🧮</div>
-      <div class="re-cardhead">Operational Efficiency</div>
+      <div class="re-cardhead">3. Operational Efficiency</div>
       <p class="re-card-desc">A Tokenized Cap Table automates the back office, removing spreadsheet errors, and reducing administrative costs</p>
       <ul class="re-bullets">
         <li><span><strong>Automated Distributions:</strong> Instant yield payouts via smart contracts</span></li>
@@ -1021,7 +1023,7 @@ footer{
 <!-- WHAT CAN BE TOKENIZED -->
 <div class="section" id="what-can">
   <div class="re-centerhead">
-    <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">Asset Coverage</span>
+    <div class="section-label">Asset Coverage</div>
     <div class="section-title">What Can Be Tokenized</div>
     <p class="section-sub">From single-family homes to multi-billion dollar portfolios, any real estate asset can be tokenized</p>
   </div>
@@ -1072,18 +1074,18 @@ footer{
 <section class="re-lifecycle" data-screen-label="Lifecycle">
   <div class="re-lifecycle-box">
     <div class="re-centerhead">
-      <span class="re-badge">Lifecycle</span>
+      <div class="section-label">Lifecycle</div>
       <div class="section-title">The Tokenization Lifecycle</div>
       <p class="section-sub">A seamless journey from legal structuring to global liquidity</p>
     </div>
     <div class="re-phase-grid">
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">Phase 1</div>
         <h3>Legal Structuring</h3>
         <p>The equity of the legal structure of the asset is Tokenized. Tokens represent shares in this entity, depending on the equity structure of the entity there may be multiple classes of tokens.</p>
       </div>
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">Phase 2</div>
         <h3>Technical Issuance</h3>
         <p>Compliance is "baked" into the code</p>
         <ul>
@@ -1092,7 +1094,7 @@ footer{
         </ul>
       </div>
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">Phase 3</div>
         <h3>Lifecycle Management</h3>
         <p>Post-issuance platform operations</p>
         <ul>
@@ -1110,7 +1112,7 @@ footer{
   <p class="re-future-p">Real estate tokenization is more than a technological upgrade; it is a structural revolution. It transforms static buildings into liquid, accessible, and programmable financial instruments.</p>
   <div class="re-cta-box">
     <h2>Ready to Tokenize Your Real Estate?</h2>
-    <a href="index.html#apply" class="btn-inv" style="text-decoration:none;display:inline-block;">Schedule Consultation→</a>
+    <a href="index.html#apply" class="btn-inv" style="text-decoration:none;display:inline-block;">Schedule a Demo →</a>
   </div>
 </div>
 
