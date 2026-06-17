@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>W3SaaS – Enterprise AI &amp; Tokenization Platform</title>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Alfa+Slab+One&amp;family=Rokkitt:wght@700;800;900&amp;family=Syne:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Alfa+Slab+One&amp;family=Kameron:wght@400;500;600;700&amp;family=Rokkitt:wght@700;800;900&amp;family=Syne:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 
@@ -188,7 +188,7 @@ nav{
   overflow:visible;
 }
 
-.lo-block{
+.logo-block{
   position:absolute;
   left:2rem;
   top:8px;
@@ -197,7 +197,7 @@ nav{
   z-index:201;
   text-decoration:none;
 }
-.lo-block img{
+.logo-block img{
   height:118px;
   width:auto;
   display:block;
@@ -608,12 +608,12 @@ nav{
 .cta-sub{font-size:15px;color:rgba(255,255,255,0.85);margin-bottom:2.5rem;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7;}
 .cta-btns{display:flex;gap:1rem;justify-content:center;}
 .btn-inv{
-  background:var(--blue-light);color:#fff;border:none;
+  background:var(--accent);color:#fff;border:none;
   padding:15px 36px;border-radius:8px;
   font-family:'Inter',sans-serif;font-size:15px;font-weight:600;
-  cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(59,158,255,0.3);
+  cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(242,96,60,0.3);
 }
-.btn-inv:hover{background:#5aafff;transform:translateY(-2px);}
+.btn-inv:hover{background:var(--accent-bright);transform:translateY(-2px);}
 .btn-inv-ghost{
   background:transparent;color:rgba(200,225,255,0.8);
   border:1.5px solid rgba(100,160,255,0.3);
@@ -627,16 +627,16 @@ footer{
   background:#0f2d6e;padding:1.75rem 3.5rem;
   display:flex;justify-content:space-between;align-items:center;gap:3rem;
 }
-.f-lo{font-family:'Alfa Slab One',serif;font-weight:700;font-size:16px;color:#fff;}
-.f-lo span{color:var(--blue-light);}
+.f-logo{font-family:'Alfa Slab One',serif;font-weight:700;font-size:16px;color:#fff;}
+.f-logo span{color:var(--blue-light);}
 .f-copy{font-size:12px;color:rgba(255,255,255,0.75);text-align:right;}
 .f-links{display:flex;gap:1.5rem;}
 .f-links a{font-size:12px;color:rgba(255,255,255,0.85);text-decoration:none;transition:color .2s;}
 .f-links a:hover{color:#fff;}
 
-/* footer lo image (white, to read on the dark navy footer) */
-.f-lo-link{display:inline-flex;align-items:center;text-decoration:none;flex-shrink:0;}
-.f-lo-img{height:92px;width:auto;display:block;filter:brightness(0) invert(1);}
+/* footer logo image (white, to read on the dark navy footer) */
+.f-logo-link{display:inline-flex;align-items:center;text-decoration:none;flex-shrink:0;}
+.f-logo-img{height:92px;width:auto;display:block;filter:brightness(0) invert(1);}
 
 /* CTA band — footer-style sitemap filling the blue space (placeholder hrefs for now) */
 .cta-btns{margin-bottom:0;}
@@ -726,9 +726,9 @@ footer{
   /* --- nav becomes a slide-down menu --- */
   nav{padding:0.6rem 1.25rem;}
   .nav-toggle{display:flex;}
-  /* lo back in flow + smaller so it doesn't collide with the hamburger */
-  .lo-block{position:static;top:auto;left:auto;}
-  .lo-block img{height:58px;}
+  /* logo back in flow + smaller so it doesn't collide with the hamburger */
+  .logo-block{position:static;top:auto;left:auto;}
+  .logo-block img{height:58px;}
   .nav-links{
     position:absolute;
     top:80px;left:0;right:0;
@@ -863,8 +863,8 @@ footer{
 </template>
 
 <nav>
-  <a href="#" class="lo-block" aria-label="W3SaaS home">
-    <img src="lo-w3saas-navy.png" alt="W3SaaS"/>
+  <a href="#" class="logo-block" aria-label="W3SaaS home">
+    <img src="logo-w3saas-navy.png" alt="W3SaaS"/>
   </a>
   <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -974,7 +974,7 @@ footer{
 <!-- FEATURES — glass cards scrolling over wave bg -->
 <div class="section">
  <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">Capabilities</span>
-  <div class="section-title">Built for enterprise.<br/><span>Ready in weeks.</span></div>
+  <div class="section-title">Built for Enterprise.<br/><span>Ready in Weeks.</span></div>
   <p class="section-sub">Pre-engineered Business Application Architecture that eliminates years of complex engineering work and deploys a compliant platform fast.</p>
   <div class="feat-grid">
     <div class="feat-card" id="feat-accelerated">
@@ -1017,7 +1017,7 @@ footer{
   </div>
   <div class="spotlight-content">
    <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">W3SaaS Platform</span>
-    <div class="section-title" style="font-size:32px;">The engine behind<br/><span>every transaction</span></div>
+    <div class="section-title" style="font-size:32px;">The Engine behind<br/><span>every Transaction</span></div>
     <p class="section-sub">A single, pre-engineered platform powering compliance, settlement, and intelligence — purpose-built for asset-heavy industries.</p>
     <ul class="check-list">
       <li><span class="check-icon">✓</span>Institutional MPC wallet protocols with enterprise-grade security</li>
@@ -1033,7 +1033,7 @@ footer{
 <div class="ind-wrap" id="industries">
   <div class="ind-header">
     <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">Industries</span>
-    <div class="section-title" style="font-size:30px;margin-bottom:.4rem">Proven across sectors</div>
+    <div class="section-title" style="font-size:30px;margin-bottom:.4rem">Proven Across Sectors</div>
   </div>
 
   <div class="ind-intro">
@@ -1114,17 +1114,17 @@ footer{
           <div class="team-role">Chief Technology Officer</div>
         </div>
       </div>
-      <p class="team-bio">18+ years of experience in Data Science, AI, and Alrithm Design executing for Fortune 500s and SMBs. As CTO and Director, he directs our engineering team and Business Application Architecture. By leading the integration of advanced parallel AI systems and robust role-based access controls, he ensures our platform serves as a seamless extension of our clients&#39; operations for secure, scalable DLT deployments.</p>
+      <p class="team-bio">18+ years of experience in Data Science, AI, and Algorithm Design executing for Fortune 500s and SMBs. As CTO and Director, he directs our engineering team and Business Application Architecture. By leading the integration of advanced parallel AI systems and robust role-based access controls, he ensures our platform serves as a seamless extension of our clients&#39; operations for secure, scalable DLT deployments.</p>
     </div>
     <div class="team-card">
       <div class="team-card-top">
-        <img class="team-photo" src="dave.png" alt="Dave odman"/>
+        <img class="team-photo" src="dave.png" alt="Dave Goodman"/>
         <div>
-          <div class="team-name">Dave odman</div>
+          <div class="team-name">Dave Goodman</div>
           <div class="team-role">Chief Strategy Officer</div>
         </div>
       </div>
-      <p class="team-bio">An IBM veteran holding patents for conceptualizing and launching early enterprise cloud, bringing 30+ years of experience scaling global tech. As a collaborative member of the senior leadership team, he helps drive the company&#39;s strategic direction. Working alongside leadership executing our enterprise expansion playbook, driving our -To-Market strategy and scaling global operational alliances, positioning W3SaaS as a collaborative partner dedicated to accelerating growth and client success.</p>
+      <p class="team-bio">An IBM veteran holding patents for conceptualizing and launching early enterprise cloud, bringing 30+ years of experience scaling global tech. As a collaborative member of the senior leadership team, he helps drive the company&#39;s strategic direction. Working alongside leadership executing our enterprise expansion playbook, driving our Go-To-Market strategy and scaling global operational alliances, positioning W3SaaS as a collaborative partner dedicated to accelerating growth and client success.</p>
     </div>
   </div>
 </section>
@@ -1136,7 +1136,7 @@ footer{
   <div class="apply-card">
     <div class="apply-head">
       <span class="re-badge">Get Started</span>
-      <div class="section-title">Tell us about your <span>project</span></div>
+      <div class="section-title">Tell us about your <span>Project</span></div>
       <p>A few quick details and our team will be in touch within one business day to schedule a review.</p>
     </div>
 
@@ -1173,7 +1173,7 @@ footer{
 
 <!-- CTA -->
 <div class="cta-band">
-  <div class="cta-title">Go live in <span>90 days!</span></div>
+  <div class="cta-title">Go live in <span>90 days.</span></div>
   <div class="cta-btns" style="margin-top:1.85rem;">
     <a href="#apply" class="btn-inv" style="text-decoration:none;display:inline-block;">Schedule Consultation →</a>
   </div>
@@ -1466,6 +1466,19 @@ footer{
     .team-name              { font-size:21px !important; }
     .ind-panel h4           { font-size:25px !important; }
     .ind-intro h3           { font-size:21px !important; }
+  }
+</style>
+
+<!-- ============================================================
+     SECTION HEADINGS — swap Alfa Slab One for Kameron on the
+     main section titles (keeps existing colors &amp; sizes).
+     ============================================================ -->
+<style id="kameron-headings">
+  .section-title,
+  .team-head h3,
+  .mission-copy h3 {
+    font-family:'Kameron', Georgia, serif !important;
+    font-weight:700 !important;
   }
 </style>
 
