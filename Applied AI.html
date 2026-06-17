@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Applied AI: The 2026 Executive Guide to Applied Autonomy | W3SaaS</title>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Syne:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Syne:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 
@@ -816,7 +816,7 @@ footer{
   color:rgba(255,255,255,0.9);margin-top:.65rem;text-wrap:balance;}
 .re-hero .re-sub{font-size:22px;color:rgba(255,255,255,0.82);line-height:1.6;max-width:680px;margin:0 auto;}
 
-.re-intro{max-width:840px;margin:4.5rem auto;padding:0 3.5rem;}
+.re-intro{max-width:1120px;margin:4.5rem auto;padding:0 3.5rem;}
 .re-intro p{font-size:19px;line-height:1.78;color:var(--blue);font-weight:400;text-wrap:pretty;}
 
 .re-centerhead{text-align:center;}
@@ -939,7 +939,7 @@ footer{
 .re-status-pill.route{background:rgba(59,158,255,0.16);color:#6bbaff;border:1px solid rgba(59,158,255,0.4);}
 .re-status-row p{font-size:12.5px;line-height:1.5;color:rgba(255,255,255,0.6);}
 .re-status-row p strong{color:rgba(255,255,255,0.92);font-weight:700;}
-.re-storage-note{font-size:13px;line-height:1.6;color:rgba(13,31,60,0.5);font-style:italic;max-width:900px;margin:2.5rem auto 0;text-align:center;}
+.re-storage-note{font-size:16.5px;line-height:1.65;color:rgba(13,31,60,0.66);font-style:italic;max-width:1000px;margin:2.5rem auto 0;text-align:center;}
 /* Best-for tag */
 .re-tag{display:inline-block;background:rgba(247,181,0,0.14);color:#b07f06;
   border:1px solid rgba(247,181,0,0.32);font-size:11.5px;font-weight:700;letter-spacing:.2px;
@@ -1401,6 +1401,24 @@ footer{
     document.addEventListener('click', function(){ closeAll(null); });
   })();
 </script>
+
+<!-- ============================================================
+     INTER EXTRABOLD — crisp headings. Swaps Syne for Inter on
+     the hero title, section titles, CTA heading, card titles,
+     convergence phase titles, and roadmap step titles.
+     ============================================================ -->
+<style id="inter-crisp-headings">
+  .re-hero h1,
+  .section-title,
+  .re-cta-box h2,
+  .re-cardhead,
+  .re-phase h3,
+  .re-step h3 {
+    font-family:'Inter', sans-serif !important;
+    font-weight:800 !important;
+    letter-spacing:-.5px !important;
+  }
+</style>
 
 </body>
 </html>
