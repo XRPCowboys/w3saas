@@ -13,6 +13,8 @@
   --blue:#1a5faa;
   --blue-mid:#2272c3;
   --blue-light:#3b9eff;
+  --accent:#F2603C;
+  --accent-bright:#FF7A57;
   --text:#0d1f3c;
 }
 
@@ -169,11 +171,11 @@ nav{
 .nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--navy);opacity:0.65;transition:opacity .2s;}
 .nav-links a:hover{opacity:1;}
 .nav-cta{
-  background:var(--blue) !important;color:#fff !important;opacity:1 !important;
+  background:var(--accent) !important;color:#fff !important;opacity:1 !important;
   padding:9px 22px;border-radius:6px;font-weight:600 !important;
   transition:background .2s !important;
 }
-.nav-cta:hover{background:#1a6fd4 !important;opacity:1 !important;}
+.nav-cta:hover{background:var(--accent-bright) !important;opacity:1 !important;}
 
 /* NAV DROPDOWNS */
 .has-dropdown{position:relative;}
@@ -577,12 +579,12 @@ nav{
 .cta-sub{font-size:15px;color:rgba(255,255,255,0.85);margin-bottom:2.5rem;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7;}
 .cta-btns{display:flex;gap:1rem;justify-content:center;}
 .btn-inv{
-  background:var(--blue-light);color:#fff;border:none;
+  background:var(--accent);color:#fff;border:none;
   padding:15px 36px;border-radius:8px;
   font-family:'Inter',sans-serif;font-size:15px;font-weight:600;
   cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(59,158,255,0.3);
 }
-.btn-inv:hover{background:#5aafff;transform:translateY(-2px);}
+.btn-inv:hover{background:var(--accent-bright);transform:translateY(-2px);}
 .btn-inv-ghost{
   background:transparent;color:rgba(200,225,255,0.8);
   border:1.5px solid rgba(100,160,255,0.3);
@@ -1044,7 +1046,7 @@ footer{
 <!-- WHY TOKENIZE A FUND -->
 <div class="section">
   <div class="re-centerhead">
-    <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">The Advantage</span>
+    <div class="section-label">The Advantage</div>
     <div class="section-title">Why Tokenize a Fund</div>
     <p class="section-sub">Tokenization is a programmable upgrade providing a strategic advantage to the traditional equity structure</p>
   </div>
@@ -1052,7 +1054,7 @@ footer{
 
     <div class="feat-card">
       <div class="feat-icon">💧</div>
-      <div class="re-cardhead">Liquidity for LPs</div>
+      <div class="re-cardhead">1. Liquidity for LPs</div>
       <p class="re-card-desc">Tokenization enables secondary market liquidity and more exit strategies, compared to the traditional "1 to 10 year lock-up."</p>
       <ul class="re-bullets">
         <li><span><strong>Navigable Exits:</strong> Shareholders can sell tokens to other qualified investors with less friction and same-day settlement</span></li>
@@ -1062,7 +1064,7 @@ footer{
 
     <div class="feat-card">
       <div class="feat-icon">🌐</div>
-      <div class="re-cardhead">Democratization &amp; Access</div>
+      <div class="re-cardhead">2. Democratization &amp; Access</div>
       <p class="re-card-desc">"Fractionalization" allows fewer minimum investment thresholds without increasing administrative overhead.</p>
       <ul class="re-bullets">
         <li><span><strong>Greater Investor Base:</strong> Aggregate capital from a larger pool of investors through streamlined KYC and compliance</span></li>
@@ -1072,7 +1074,7 @@ footer{
 
     <div class="feat-card">
       <div class="feat-icon">⚡</div>
-      <div class="re-cardhead">Operational Efficiency</div>
+      <div class="re-cardhead">3. Operational Efficiency</div>
       <p class="re-card-desc">Managing hundreds of investors is cost-prohibitive with legacy systems; blockchain and smart contracts automate these complexities.</p>
       <ul class="re-bullets">
         <li><span><strong>Automated Distributions:</strong> Smart contracts distribute profits to any number of wallets instantly</span></li>
@@ -1082,7 +1084,7 @@ footer{
 
     <div class="feat-card">
       <div class="feat-icon">🔍</div>
-      <div class="re-cardhead">Transparency &amp; Governance</div>
+      <div class="re-cardhead">4. Transparency &amp; Governance</div>
       <p class="re-card-desc">DLT/Blockchain provides an immutable ledger that serves as a single source of truth for all stakeholders.</p>
       <ul class="re-bullets">
         <li><span><strong>Real Time Reporting:</strong> Investors track ownership and performance in real time</span></li>
@@ -1095,7 +1097,7 @@ footer{
 <!-- REVOLUTIONIZING PRIVATE CAPITAL -->
 <div class="section">
   <div class="re-centerhead">
-   <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">Asset Coverage</span>
+    <div class="section-label">Asset Coverage</div>
     <div class="section-title">Revolutionizing Private Capital</div>
     <p class="section-sub">Tokenized infrastructure unlocks new models across the private capital spectrum</p>
   </div>
@@ -1137,32 +1139,32 @@ footer{
 <section class="re-lifecycle" data-screen-label="Equity Lifecycle">
   <div class="re-lifecycle-box">
     <div class="re-centerhead">
-      <span class="re-badge">Equity Lifecycle</span>
+      <div class="section-label">Lifecycle</div>
       <div class="section-title">The Tokenized Equity Lifecycle</div>
       <p class="section-sub">From primary issuance to secondary trading — a compliant, automated journey</p>
     </div>
     <div class="re-phase-grid four">
 
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">Phase 1</div>
         <h3>Primary Issuance</h3>
         <p>Equity tokens are minted and held in the fund's wallet, and investors register via the portal with integrated KYC/AML.</p>
       </div>
 
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">Phase 2</div>
         <h3>On-Chain Compliance</h3>
         <p>Rules are embedded so only eligible holders can use the token. Programmatically, the token knows who can own it (e.g., accredited only) and enforces lock-ups.</p>
       </div>
 
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">Phase 3</div>
         <h3>CapTable Management</h3>
         <p>Admin events like board resolutions, capital raises, or equity updates are digitized and pushed to dashboards.</p>
       </div>
 
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">Phase 4</div>
         <h3>Secondary Trading</h3>
         <p>Investors can exit by listing tokens on the platform's permissioned DEX. Compliance policies ensure buyers are eligible before trade execution.</p>
       </div>
@@ -1176,7 +1178,7 @@ footer{
   <p class="re-future-lines">Equity tokenization is not a futuristic concept; it is a present-day competitive advantage. By adopting tokenized infrastructure, company owners and fund managers will reduce costs, attract new capital, and offer their investors the liquidity they deserve.</p>
   <div class="re-cta-box">
     <h2>Ready to Tokenize Your Equity?</h2>
-    <a href="index.html#apply" class="btn-inv" style="text-decoration:none;display:inline-block;">Schedule Consultation→</a>
+    <a href="index.html#apply" class="btn-inv" style="text-decoration:none;display:inline-block;">Schedule Consultation →</a>
   </div>
 </div>
 
