@@ -13,6 +13,8 @@
   --blue:#1a5faa;
   --blue-mid:#2272c3;
   --blue-light:#3b9eff;
+  --accent:#F2603C;
+  --accent-bright:#FF7A57;
   --text:#0d1f3c;
 }
 
@@ -169,11 +171,11 @@ nav{
 .nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--navy);opacity:0.65;transition:opacity .2s;}
 .nav-links a:hover{opacity:1;}
 .nav-cta{
-  background:var(--blue) !important;color:#fff !important;opacity:1 !important;
+  background:var(--accent) !important;color:#fff !important;opacity:1 !important;
   padding:9px 22px;border-radius:6px;font-weight:600 !important;
   transition:background .2s !important;
 }
-.nav-cta:hover{background:#1a6fd4 !important;opacity:1 !important;}
+.nav-cta:hover{background:var(--accent-bright) !important;opacity:1 !important;}
 
 /* NAV DROPDOWNS */
 .has-dropdown{position:relative;}
@@ -577,12 +579,12 @@ nav{
 .cta-sub{font-size:15px;color:rgba(255,255,255,0.85);margin-bottom:2.5rem;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7;}
 .cta-btns{display:flex;gap:1rem;justify-content:center;}
 .btn-inv{
-  background:var(--blue-light);color:#fff;border:none;
+  background:var(--accent);color:#fff;border:none;
   padding:15px 36px;border-radius:8px;
   font-family:'Inter',sans-serif;font-size:15px;font-weight:600;
   cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(59,158,255,0.3);
 }
-.btn-inv:hover{background:#5aafff;transform:translateY(-2px);}
+.btn-inv:hover{background:var(--accent-bright);transform:translateY(-2px);}
 .btn-inv-ghost{
   background:transparent;color:rgba(200,225,255,0.8);
   border:1.5px solid rgba(100,160,255,0.3);
@@ -1044,8 +1046,7 @@ footer{
 <!-- WHY WHITE-LABEL -->
 <div class="section">
   <div class="re-centerhead">
-    <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">The Advantage</span>
-
+    <div class="section-label">The Advantage</div>
     <div class="section-title">Why White-Label with W3SaaS</div>
     <p class="section-sub">A modular platform designed to be customized, branded, and deployed for any asset class or industry vertical</p>
   </div>
@@ -1053,7 +1054,7 @@ footer{
 
     <div class="feat-card">
       <div class="feat-icon">🎨</div>
-      <div class="re-cardhead">Full White-Label Branding</div>
+      <div class="re-cardhead">1. Full White-Label Branding</div>
       <p class="re-card-desc">Deploy a tokenization platform under your own brand with complete control over the look, feel, and user experience.</p>
       <ul class="re-bullets">
         <li><span><strong>Custom Domains &amp; Branding:</strong> Your logo, colors, and domain name across every interface and investor portal</span></li>
@@ -1063,7 +1064,7 @@ footer{
 
     <div class="feat-card">
       <div class="feat-icon">🧩</div>
-      <div class="re-cardhead">Reusable Modules</div>
+      <div class="re-cardhead">2. Reusable Modules</div>
       <p class="re-card-desc">Pre-built, production-ready modules that can be composed together to accelerate deployment across any asset class.</p>
       <ul class="re-bullets">
         <li><span><strong>Plug-and-Play Components:</strong> KYC/AML, investor onboarding, token issuance, and distribution modules ready to deploy</span></li>
@@ -1073,7 +1074,7 @@ footer{
 
     <div class="feat-card">
       <div class="feat-icon">🛡️</div>
-      <div class="re-cardhead">Custom Compliance Policies</div>
+      <div class="re-cardhead">3. Custom Compliance Policies</div>
       <p class="re-card-desc">Configure rules and policies specific to your jurisdiction, asset class, and business requirements.</p>
       <ul class="re-bullets">
         <li><span><strong>Programmable Rules:</strong> Enforce transfer restrictions, accreditation checks, and holding periods automatically via smart contracts</span></li>
@@ -1083,7 +1084,7 @@ footer{
 
     <div class="feat-card">
       <div class="feat-icon">🔀</div>
-      <div class="re-cardhead">Multi-Vertical Flexibility</div>
+      <div class="re-cardhead">4. Multi-Vertical Flexibility</div>
       <p class="re-card-desc">One platform, unlimited verticals. Configure W3SaaS for real estate, private equity, commodities, IP licensing, or entirely new asset classes.</p>
       <ul class="re-bullets">
         <li><span><strong>Industry Templates:</strong> Pre-configured templates for common verticals accelerate time to market</span></li>
@@ -1096,8 +1097,7 @@ footer{
 <!-- BUILT FOR ANY VERTICAL -->
 <div class="section">
   <div class="re-centerhead">
-    <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">Asset Coverage</span>
-
+    <div class="section-label">Asset Coverage</div>
     <div class="section-title">Built for Any Industry Vertical</div>
     <p class="section-sub">One configurable platform, deployed across the full spectrum of real-world assets</p>
   </div>
@@ -1139,32 +1139,32 @@ footer{
 <section class="re-lifecycle" data-screen-label="Deployment Lifecycle">
   <div class="re-lifecycle-box">
     <div class="re-centerhead">
-      <span class="re-badge">Lifecycle</span>
+      <div class="section-label">Lifecycle</div>
       <div class="section-title">Your Platform Deployment Lifecycle</div>
       <p class="section-sub">From discovery to launch — a guided path to your own branded tokenization platform</p>
     </div>
     <div class="re-phase-grid four">
 
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">Phase 1</div>
         <h3>Discovery &amp; Configuration</h3>
         <p>Define your asset class, compliance requirements, and branding. W3SaaS configures the platform modules to match your business model.</p>
       </div>
 
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">Phase 2</div>
         <h3>Branding &amp; Integration</h3>
         <p>Apply your brand identity, connect existing systems via APIs, and customize investor-facing portals and dashboards.</p>
       </div>
 
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">Phase 3</div>
         <h3>Policy &amp; Compliance Setup</h3>
         <p>Configure smart contract rules, KYC/AML workflows, transfer restrictions, and jurisdiction-specific compliance policies.</p>
       </div>
 
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">Phase 4</div>
         <h3>Launch &amp; Scale</h3>
         <p>Go live with your branded platform. Onboard investors, issue tokens, and scale to new asset classes and markets as your business grows.</p>
       </div>
@@ -1178,13 +1178,13 @@ footer{
   <p class="re-future-lines">Whether you're a fintech startup, asset manager, or enterprise looking to enter the tokenization space, W3SaaS provides the white-label infrastructure to launch faster, comply globally, and scale without limits.</p>
   <div class="re-cta-box">
     <h2>Ready to Build Your Platform?</h2>
-    <a href="index.html#apply" class="btn-inv" style="text-decoration:none;display:inline-block;">Schedule Consultation→</a>
+    <a href="index.html#apply" class="btn-inv" style="text-decoration:none;display:inline-block;">Schedule Consultation →</a>
   </div>
 </div>
 
 <footer>
   <a href="index.html" class="f-logo-link" aria-label="W3SaaS home"><img src="logo-w3saas-navy.png" alt="W3SaaS" class="f-logo-img"/></a>
-  <div class="f-copy">© 2026 | W3 SaaS LLC. Sheridan, WY, USA | W3 SaaS Technologies LTD. Dubai International Financial Centre, DIFC AI Campus, UAE | All rights reserved.</div>
+  <div class="f-copy">© 2026 | W3 SaaS LLC. Sheridan, WY, USA | All rights reserved.</div>
 </footer>
 
 <script>
