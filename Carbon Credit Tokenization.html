@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewort" content="width=device-width, initial-scale=1.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Carbon Credit Tokenization | W3SaaS</title>
 <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Syne:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 <style>
@@ -13,6 +13,8 @@
   --blue:#1a5faa;
   --blue-mid:#2272c3;
   --blue-light:#3b9eff;
+  --accent:#F2603C;
+  --accent-bright:#FF7A57;
   --text:#0d1f3c;
 }
 
@@ -169,11 +171,11 @@ nav{
 .nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--navy);opacity:0.65;transition:opacity .2s;}
 .nav-links a:hover{opacity:1;}
 .nav-cta{
-  background:var(--blue) !important;color:#fff !important;opacity:1 !important;
+  background:var(--accent) !important;color:#fff !important;opacity:1 !important;
   padding:9px 22px;border-radius:6px;font-weight:600 !important;
   transition:background .2s !important;
 }
-.nav-cta:hover{background:#1a6fd4 !important;opacity:1 !important;}
+.nav-cta:hover{background:var(--accent-bright) !important;opacity:1 !important;}
 
 /* NAV DROPDOWNS */
 .has-dropdown{position:relative;}
@@ -577,12 +579,12 @@ nav{
 .cta-sub{font-size:15px;color:rgba(255,255,255,0.85);margin-bottom:2.5rem;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7;}
 .cta-btns{display:flex;gap:1rem;justify-content:center;}
 .btn-inv{
-  background:var(--blue-light);color:#fff;border:none;
+  background:var(--accent);color:#fff;border:none;
   padding:15px 36px;border-radius:8px;
   font-family:'Inter',sans-serif;font-size:15px;font-weight:600;
   cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(59,158,255,0.3);
 }
-.btn-inv:hover{background:#5aafff;transform:translateY(-2px);}
+.btn-inv:hover{background:var(--accent-bright);transform:translateY(-2px);}
 .btn-inv-ghost{
   background:transparent;color:rgba(200,225,255,0.8);
   border:1.5px solid rgba(100,160,255,0.3);
@@ -1063,8 +1065,7 @@ footer{
 <!-- REASONS -->
 <div class="section">
   <div class="re-centerhead">
-    <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">The Advantage</span>
-
+    <div class="section-label">The Advantage</div>
     <div class="section-title">The Reasons for Tokenizing Green Assets</div>
     <p class="section-sub">Moving ESG assets on-chain converts abstract promises into verifiable digital proofs</p>
   </div>
@@ -1072,7 +1073,7 @@ footer{
 
     <div class="feat-card">
       <div class="feat-icon">🛡️</div>
-      <div class="re-cardhead">Integrity &amp; Provenance</div>
+      <div class="re-cardhead">1. Integrity &amp; Provenance</div>
       <p class="re-card-desc">The solution to "double-counting" and fraud in carbon markets.</p>
       <ul class="re-bullets">
         <li><span><strong>Immutable Tracking:</strong> Once a credit is retired on chain, it is permanently burned</span></li>
@@ -1082,7 +1083,7 @@ footer{
 
     <div class="feat-card">
       <div class="feat-icon">🌐</div>
-      <div class="re-cardhead">Democratization</div>
+      <div class="re-cardhead">2. Democratization</div>
       <p class="re-card-desc">Historically reserved for giants, green infrastructure is now accessible to all.</p>
       <ul class="re-bullets">
         <li><span><strong>Global Access:</strong> Retail investors can buy fractions of green projects</span></li>
@@ -1092,7 +1093,7 @@ footer{
 
     <div class="feat-card">
       <div class="feat-icon">⚡</div>
-      <div class="re-cardhead">Accelerated Financing</div>
+      <div class="re-cardhead">3. Accelerated Financing</div>
       <p class="re-card-desc">Create efficient capital pipelines for project developers.</p>
       <ul class="re-bullets">
         <li><span><strong>Instant Tokenization:</strong> Get liquidity for future renewables</span></li>
@@ -1105,8 +1106,7 @@ footer{
 <!-- BUILDING A FAIRER MARKET -->
 <div class="section">
   <div class="re-centerhead">
-   <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">Impact</span>
-
+    <div class="section-label">Impact</div>
     <div class="section-title">Building a Fairer Market</div>
     <p class="section-sub">Tokenization aligns with Environmental, Social, and Governance goals by fostering financial inclusion</p>
   </div>
@@ -1126,9 +1126,7 @@ footer{
 <div class="section">
   <div class="re-twocol">
     <div class="col-head">
-      <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">The "G" in ESG</span>
-
-
+      <span class="re-tag" style="background:rgba(26,95,170,0.10);color:var(--blue);border-color:rgba(26,95,170,0.28);">The "G" in ESG</span>
       <div class="section-title" style="font-size:32px;">Governance and Transparency</div>
       <p class="col-lead">Corporate responsibility requires transparency and blockchain provides the ultimate audit trail. Tokenization revolutionizes governance by making actions visible and rules automated.</p>
       <ul class="re-bullets">
@@ -1158,23 +1156,23 @@ footer{
 <section class="re-lifecycle" data-screen-label="ESG Use Cases">
   <div class="re-lifecycle-box">
     <div class="re-centerhead">
-      <span class="re-badge">Asset Coverage</span>
+      <div class="section-label">Asset Coverage</div>
       <div class="section-title">ESG Tokenization Use Cases</div>
       <p class="section-sub">Directing capital to compliant, verifiable, impact-driven assets</p>
     </div>
     <div class="re-phase-grid">
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">🌳</div>
         <h3>Carbon Credits &amp; Offsets</h3>
         <p>Forestry projects issue tokens representing 1 ton of removed CO2. Retired tokens are publicly recorded to prove corporate compliance.</p>
       </div>
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">☀️</div>
         <h3>Renewable Energy Financing</h3>
         <p>Developers tokenize equity in new solar parks. Global investors fund construction by purchasing tokens representing energy revenue.</p>
       </div>
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">📦</div>
         <h3>Supply Chain Sustainability</h3>
         <p>Tokenize invoices to verify supplier ESG credentials, ensuring financing is directed only to compliant partners.</p>
       </div>
@@ -1194,7 +1192,7 @@ footer{
 
 <footer>
   <a href="index.html" class="f-logo-link" aria-label="W3SaaS home"><img src="logo-w3saas-navy.png" alt="W3SaaS" class="f-logo-img"/></a>
-  <div class="f-copy">© 2026 | W3 SaaS LLC. Sheridan, WY, USA | W3 SaaS Technologies LTD. Dubai International Financial Centre, DIFC AI Campus, UAE | All rights reserved.</div>
+  <div class="f-copy">© 2026 | W3 SaaS LLC. Sheridan, WY, USA | All rights reserved.</div>
 </footer>
 
 <script>
