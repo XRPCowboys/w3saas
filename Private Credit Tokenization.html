@@ -13,6 +13,8 @@
   --blue:#1a5faa;
   --blue-mid:#2272c3;
   --blue-light:#3b9eff;
+  --accent:#F2603C;
+  --accent-bright:#FF7A57;
   --text:#0d1f3c;
 }
 
@@ -169,11 +171,11 @@ nav{
 .nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--navy);opacity:0.65;transition:opacity .2s;}
 .nav-links a:hover{opacity:1;}
 .nav-cta{
-  background:var(--blue) !important;color:#fff !important;opacity:1 !important;
+  background:var(--accent) !important;color:#fff !important;opacity:1 !important;
   padding:9px 22px;border-radius:6px;font-weight:600 !important;
   transition:background .2s !important;
 }
-.nav-cta:hover{background:#1a6fd4 !important;opacity:1 !important;}
+.nav-cta:hover{background:var(--accent-bright) !important;opacity:1 !important;}
 
 /* NAV DROPDOWNS */
 .has-dropdown{position:relative;}
@@ -577,12 +579,12 @@ nav{
 .cta-sub{font-size:15px;color:rgba(255,255,255,0.85);margin-bottom:2.5rem;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7;}
 .cta-btns{display:flex;gap:1rem;justify-content:center;}
 .btn-inv{
-  background:var(--blue-light);color:#fff;border:none;
+  background:var(--accent);color:#fff;border:none;
   padding:15px 36px;border-radius:8px;
   font-family:'Inter',sans-serif;font-size:15px;font-weight:600;
   cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(59,158,255,0.3);
 }
-.btn-inv:hover{background:#5aafff;transform:translateY(-2px);}
+.btn-inv:hover{background:var(--accent-bright);transform:translateY(-2px);}
 .btn-inv-ghost{
   background:transparent;color:rgba(200,225,255,0.8);
   border:1.5px solid rgba(100,160,255,0.3);
@@ -1044,7 +1046,7 @@ footer{
 <!-- WHY TOKENIZE DEBT -->
 <div class="section">
   <div class="re-centerhead">
-    <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">The Advantage</span>
+    <div class="section-label">The Advantage</div>
     <div class="section-title">Why Tokenize Debt</div>
     <p class="section-sub">Tokenization is about programmable finance — three distinct advantages for issuers and lenders</p>
   </div>
@@ -1052,7 +1054,7 @@ footer{
 
     <div class="feat-card">
       <div class="feat-icon">🔄</div>
-      <div class="re-cardhead">Automated Servicing</div>
+      <div class="re-cardhead">1. Automated Servicing</div>
       <p class="re-card-desc">Smart contracts automate the asset lifecycle, removing manual reconciliation for coupon payments.</p>
       <ul class="re-bullets">
         <li><span><strong>Smart Contract Automation:</strong> Instant distribution of yields to thousands of wallets</span></li>
@@ -1062,7 +1064,7 @@ footer{
 
     <div class="feat-card">
       <div class="feat-icon">👥</div>
-      <div class="re-cardhead">Enhanced Access</div>
+      <div class="re-cardhead">2. Enhanced Access</div>
       <p class="re-card-desc">Democratize access to private credit, historically the domain of institutional investors.</p>
       <ul class="re-bullets">
         <li><span><strong>Flexible Sizes:</strong> Fractional access allows smaller investments and more investors to participate</span></li>
@@ -1072,7 +1074,7 @@ footer{
 
     <div class="feat-card">
       <div class="feat-icon">💧</div>
-      <div class="re-cardhead">Liquidity &amp; Risk</div>
+      <div class="re-cardhead">3. Liquidity &amp; Risk</div>
       <p class="re-card-desc">Change the dynamic of "hold to maturity" with secondary market potential.</p>
       <ul class="re-bullets">
         <li><span><strong>Secondary Market:</strong> Trade debt tokens on permissioned DEX for early liquidity</span></li>
@@ -1085,7 +1087,7 @@ footer{
 <!-- RESHAPING THE CREDIT SPECTRUM -->
 <div class="section">
   <div class="re-centerhead">
-   <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">Asset Coverage</span>
+    <div class="section-label">Asset Coverage</div>
     <div class="section-title">Reshaping the Credit Spectrum</div>
     <p class="section-sub">Transforming stagnant credit into liquid, tradable tokenized assets</p>
   </div>
@@ -1133,32 +1135,32 @@ footer{
 <section class="re-lifecycle" data-screen-label="Debt Lifecycle">
   <div class="re-lifecycle-box">
     <div class="re-centerhead">
-      <span class="re-badge">Debt Lifecycle</span>
+      <div class="section-label">Lifecycle</div>
       <div class="section-title">The Tokenized Debt Lifecycle</div>
       <p class="section-sub">From structuring to maturity — a compliant, automated debt journey</p>
     </div>
     <div class="re-phase-grid four">
 
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">Phase 1</div>
         <h3>Structuring &amp; Issuance</h3>
         <p>Define terms (interest, maturity). Mint tokens. Embed compliance rules (KYC/AML).</p>
       </div>
 
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">Phase 2</div>
         <h3>Distribution &amp; Funding</h3>
         <p>Investors subscribe via portal and fund via stablecoin. On-chain transactions record contributions.</p>
       </div>
 
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">Phase 3</div>
         <h3>Automated Servicing</h3>
         <p>Smart contracts handle accruals and automatically route interest payments to investor wallets.</p>
       </div>
 
       <div class="re-phase">
-        <div class="re-phase-label"></div>
+        <div class="re-phase-label">Phase 4</div>
         <h3>Maturity or Trade</h3>
         <p>Principal returned at maturity. Or investors trade tokens on secondary markets for early liquidity.</p>
       </div>
@@ -1172,13 +1174,13 @@ footer{
   <p class="re-future-lines">The tokenization of debt is about more than technology; it is about efficiency and access.<br/>Whether you are a private credit fund or a corporation, the future of debt is on-chain.</p>
   <div class="re-cta-box">
     <h2>Ready to Tokenize Your Debt?</h2>
-    <a href="index.html#apply" class="btn-inv" style="text-decoration:none;display:inline-block;">Schedule Consultation→</a>
+    <a href="index.html#apply" class="btn-inv" style="text-decoration:none;display:inline-block;">Schedule Consultation →</a>
   </div>
 </div>
 
 <footer>
   <a href="index.html" class="f-logo-link" aria-label="W3SaaS home"><img src="logo-w3saas-navy.png" alt="W3SaaS" class="f-logo-img"/></a>
-  <div class="f-copy">© 2026 | W3 SaaS LLC. Sheridan, WY, USA | W3 SaaS Technologies LTD. Dubai International Financial Centre, DIFC AI Campus, UAE | All rights reserved.</div>
+  <div class="f-copy">© 2026 | W3 SaaS LLC. Sheridan, WY, USA | All rights reserved.</div>
 </footer>
 
 <script>
