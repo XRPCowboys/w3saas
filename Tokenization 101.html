@@ -4,7 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Tokenization 101: The Executive’s Guide | W3SaaS</title>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Syne:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&amp;family=Syne:wght@400;600;700;800&amp;family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 
@@ -906,7 +906,7 @@ footer{
 @media (max-width:920px){ .re-uc-grid{grid-template-columns:1fr;} }
 
 .re-whatis{text-align:center;}
-.re-whatis p{font-size:17px;line-height:1.72;color:var(--blue);max-width:760px;margin-left:auto;margin-right:auto;}
+.re-whatis p{font-size:17px;line-height:1.72;color:var(--blue);max-width:1120px;margin-left:auto;margin-right:auto;}
 .re-callout{margin-top:1.8rem;max-width:760px;margin-left:auto;margin-right:auto;text-align:left;background:rgba(26,95,170,0.06);
   border:1px solid rgba(26,95,170,0.14);border-left:3px solid var(--blue);border-radius:10px;padding:1.4rem 1.6rem;}
 .re-callout h4{font-family:'Syne',sans-serif;font-size:15px;font-weight:700;color:var(--navy);margin-bottom:.5rem;}
@@ -1347,6 +1347,27 @@ footer{
     document.addEventListener('click', function(){ closeAll(null); });
   })();
 </script>
+
+<!-- ============================================================
+     INTER EXTRABOLD — crisp headings. Swaps Syne for Inter on
+     the hero title + tagline, section titles, CTA heading,
+     lifecycle phase titles, asset-row titles, and numbered
+     card titles.
+     ============================================================ -->
+<style id="inter-crisp-headings">
+  .re-hero h1,
+  .re-hero h1 .re-hero-tagline,
+  .section-title,
+  .re-cta-box h2,
+  .re-phase h3,
+  .re-row-title,
+  .re-cardhead {
+    font-family:'Inter', sans-serif !important;
+    font-weight:800 !important;
+    letter-spacing:-.5px !important;
+  }
+  .re-hero h1 .re-hero-tagline { font-weight:600 !important; }
+</style>
 
 </body>
 </html>
