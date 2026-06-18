@@ -1555,5 +1555,12 @@ footer{
   }
 </style>
 
+
+<style id="force-inter-everywhere">
+  /* Force Inter on every element. *:not(#zzz) raises specificity to beat
+     all existing class-level !important font-family rules. Weights kept as-is. */
+  *:not(#zzz){ font-family:'Inter','Helvetica Neue',Helvetica,Arial,sans-serif !important; }
+</style>
+
 </body>
 </html>
