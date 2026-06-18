@@ -1285,10 +1285,16 @@ footer{
 </style>
 
 
+
+
 <style id="force-inter-everywhere">
-  /* Force Inter on every element. *:not(#zzz) raises specificity to beat
-     all existing class-level !important font-family rules. Weights kept as-is. */
+  /* Force Inter on all text. *:not(#zzz) beats class-level !important rules. */
   *:not(#zzz){ font-family:'Inter','Helvetica Neue',Helvetica,Arial,sans-serif !important; }
+  /* Keep the logo wordmark in its original display face. */
+  *:not(#zzz).f-logo, *:not(#zzz).f-logo *,
+  *:not(#zzz).logo-block, *:not(#zzz).logo-block *{
+    font-family:'Alfa Slab One',serif !important;
+  }
 </style>
 
 </body>
