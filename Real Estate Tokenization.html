@@ -1344,5 +1344,42 @@ footer{
   }
 </style>
 
+
+<!-- ============================================================
+     BRACKET LABELS + AMPERSAND FIX  (matches home page)
+     - Wraps every section eyebrow label in orange [ ... ] brackets
+     - Maps ONLY the ampersand (U+0026) to a clean sans face on the
+       Syne display headings, so every "&" reads as the plain
+       ampersand used in the body copy.
+     ============================================================ -->
+<style id="brand-polish">
+  /* Bracketed section eyebrows */
+  .section-label::before{content:"[";margin-right:.55rem;color:var(--accent);font-weight:700;}
+  .section-label::after{content:"]";margin-left:.55rem;color:var(--accent);font-weight:700;}
+  /* On dark bands the eyebrow is a filled pill — drop the pill so the
+     bracket treatment reads cleanly in white on the dark background */
+  .re-lifecycle .re-centerhead .section-label{
+    background:none !important;box-shadow:none !important;padding:0 !important;color:#fff !important;
+  }
+
+  /* Ampersand fix */
+  @font-face{
+    font-family:'AmpFix';
+    src:local('Inter'),local('Inter Regular'),local('Helvetica Neue'),local('Helvetica'),local('Arial'),local('Liberation Sans');
+    unicode-range:U+0026;
+  }
+  .re-row-title,
+  .ind-panel h4,
+  .ind-intro h3,
+  .re-callout h4,
+  .re-status-row .name,
+  .feat-card-title,
+  .cta-title,
+  .cta-col h4,
+  .f-logo{
+    font-family:'AmpFix','Syne', sans-serif !important;
+  }
+</style>
+
 </body>
 </html>
