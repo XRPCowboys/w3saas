@@ -427,6 +427,7 @@ nav{
 .section-label{font-size:15px;letter-spacing:2.5px;color:var(--blue);text-transform:uppercase;font-weight:600;margin-bottom:.6rem;}
 .section-title{font-family:'Alfa Slab One',serif;font-size:38px;font-weight:800;color:var(--navy);letter-spacing:-1px;line-height:1.1;margin-bottom:.75rem;}
 .section-title span{color:var(--navy);}
+.section-title .amp{font-family:'Inter',sans-serif;font-weight:800;}
 .section-sub{font-size:19px;color:rgba(13,31,60,0.62);line-height:1.7;max-width:640px;margin-bottom:3rem;}
 
 /* GLASS CARDS */
@@ -973,7 +974,7 @@ footer{
 
 <!-- FEATURES — glass cards scrolling over wave bg -->
 <div class="section">
- <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">Capabilities</span>
+ <span class="re-badge bracket-badge">Capabilities</span>
   <div class="section-title">Built for Enterprise<br/><span>Ready in Weeks</span></div>
   <p class="section-sub">Pre-engineered Business Application Architecture that eliminates years of complex engineering work and deploys a compliant platform fast.</p>
   <div class="feat-grid">
@@ -1016,7 +1017,7 @@ footer{
     <img src="core-chip-clean.png" alt="W3SaaS CORE — isometric chip illustration with connected product islands"/>
   </div>
   <div class="spotlight-content">
-   <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">W3SaaS Platform</span>
+   <span class="re-badge bracket-badge">W3SaaS Platform</span>
     <div class="section-title" style="font-size:32px;">The Engine Behind<br/><span>Every Transaction</span></div>
     <p class="section-sub">A single, pre-engineered platform powering compliance, settlement, and intelligence — purpose-built for asset-heavy industries.</p>
     <ul class="check-list">
@@ -1032,7 +1033,7 @@ footer{
 <!-- INDUSTRIES (moved up to where Solutions was) -->
 <div class="ind-wrap" id="industries">
   <div class="ind-header">
-    <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">Industries</span>
+    <span class="re-badge bracket-badge">Industries</span>
     <div class="section-title" style="font-size:30px;margin-bottom:.4rem">Proven Across Sectors</div>
   </div>
 
@@ -1064,8 +1065,8 @@ footer{
 <!-- ABOUT — Mission + Leadership &amp; Founding Team (one section) -->
 <section class="about-wrap" id="about">
   <div class="about-header">
-    <span class="re-badge" style="background:#1a5faa;border-color:#1a5faa;color:#fff;">About W3SaaS</span>
-    <div class="section-title">Building the Bridge to the Future of <span>Finance &amp; Industry</span></div>
+    <span class="re-badge bracket-badge">About W3SaaS</span>
+    <div class="section-title">Building the Bridge to the Future of <span>Finance <span class="amp">&amp;</span> Industry</span></div>
     <p class="about-sub">We believe that eventually, all assets will be tokenized. Our mission is to build the secure, compliant, and scalable infrastructure to make that future a reality for Medium to Large Enterprises.</p>
   </div>
 
@@ -1504,6 +1505,18 @@ footer{
   }
 </style>
 
+<!-- Bracketed label style for the four blue section badges -->
+<style id="bracket-badges">
+  .re-badge.bracket-badge{
+    background:none !important;border:none !important;padding:0 !important;
+    border-radius:0 !important;box-shadow:none !important;
+    color:var(--blue) !important;text-transform:uppercase;
+    letter-spacing:2.5px;font-size:13px;font-weight:700;gap:0;
+  }
+  .re-badge.bracket-badge::before{content:"[";margin-right:.6rem;color:var(--accent);}
+  .re-badge.bracket-badge::after{content:"]";margin-left:.6rem;color:var(--accent);}
+</style>
+
 <!-- CTA headline — Inter Black, larger -->
 <style id="cta-inter-black">
   .cta-title{
@@ -1513,6 +1526,33 @@ footer{
   }
   @media (min-width:760px){
     .cta-title{ font-size:66px !important; }
+  }
+</style>
+
+<!-- ============================================================
+     AMPERSAND FIX — the serif heading fonts (Kameron / Alfa Slab
+     One) draw a fancy "&". Map ONLY the ampersand (U+0026) to a
+     clean sans face so every heading shows the plain "&" that the
+     hero uses, while keeping the serif font for all other letters.
+     ============================================================ -->
+<style id="amp-fix">
+  @font-face{
+    font-family:'AmpFix';
+    src:local('Inter'),local('Inter Regular'),local('Helvetica Neue'),local('Helvetica'),local('Arial'),local('Liberation Sans');
+    unicode-range:U+0026;
+  }
+  /* Kameron serif headings */
+  .section-title,
+  .team-head h3,
+  .mission-copy h3,
+  .ind-panel h4{
+    font-family:'AmpFix','Kameron', Georgia, serif !important;
+  }
+  /* Alfa Slab One headings */
+  .team-name,
+  .f-logo,
+  .chip-feature .ttl{
+    font-family:'AmpFix','Alfa Slab One', serif !important;
   }
 </style>
 
