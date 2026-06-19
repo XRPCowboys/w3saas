@@ -15,7 +15,7 @@
   --blue-light:#3b9eff;
   --accent:#E03850;
   --accent-bright:#F0556B;
-  --accent-grad:#E03850;
+  --accent-grad:linear-gradient(90deg,#E03850 0%,#E03850 60%,#FDC500 100%);
   --text:#0d1f3c;
 }
 
@@ -208,10 +208,10 @@ nav{
 .nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--navy);opacity:0.65;transition:opacity .2s;}
 .nav-links a:hover{opacity:1;}
 .nav-cta{
-  background:var(--accent) !important;color:#fff !important;opacity:1 !important;
-  padding:9px 22px;border-radius:6px;font-weight:600 !important;  transition:background .2s !important;
+  background:var(--accent-grad) !important;color:#fff !important;opacity:1 !important;
+  padding:9px 22px;border-radius:6px;font-weight:600 !important;  transition:filter .2s !important;
 }
-.nav-cta:hover{background:var(--accent-bright) !important;opacity:1 !important;}
+.nav-cta:hover{filter:brightness(1.06) !important;opacity:1 !important;}
 
 /* NAV DROPDOWNS */
 .has-dropdown{position:relative;}
@@ -364,7 +364,7 @@ nav{
 }
 .hero-grow-sub{
   text-align:center;font-size:17px;line-height:1.5;font-weight:700;white-space:normal;
-  color:var(--accent);max-width:none;margin:0 auto;text-wrap:pretty;
+  background:var(--accent-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;max-width:none;margin:0 auto;text-wrap:pretty;
 }
 
 /* MOBILE: stack labels under the chip */
