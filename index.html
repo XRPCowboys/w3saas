@@ -13,9 +13,9 @@
   --blue:#1a5faa;
   --blue-mid:#2272c3;
   --blue-light:#3b9eff;
-  --accent:#E03850;
-  --accent-bright:#F0556B;
-  --accent-grad:linear-gradient(90deg,#E03850 0%,#E03850 60%,#E0A000 100%);
+  --accent:#F2603C;
+  --accent-bright:#F47A5B;
+  --accent-grad:#F2603C;
   --text:#0d1f3c;
 }
 
@@ -311,9 +311,60 @@ nav{
   align-items:center;
   gap:1.25rem;
 }
+.hero-chip-wrap{position:relative;width:100%;display:block;isolation:isolate;}
 .hero-chip{
   width:100%;height:auto;display:block;
   filter:drop-shadow(0 12px 28px rgba(26,95,170,0.20));
+}
+/* continuous light orbiting the chip */
+.chip-orbit{
+  position:absolute;left:50%;top:50%;
+  width:80%;aspect-ratio:1;
+  transform:translate(-50%,-50%);
+  pointer-events:none;z-index:2;
+  animation:chipOrbit 4.6s linear infinite;
+  will-change:transform;
+}
+@keyframes chipOrbit{
+  from{transform:translate(-50%,-50%) rotate(0deg);}
+  to{transform:translate(-50%,-50%) rotate(360deg);}
+}
+/* second light: same direction, tilted orbital plane */
+.orbit-tilt{
+  position:absolute;left:50%;top:50%;
+  width:94%;aspect-ratio:1;
+  transform:translate(-50%,-50%) rotate(-30deg) scaleY(0.5);
+  pointer-events:none;z-index:2;
+}
+.orbit-spin{
+  position:absolute;inset:0;
+  animation:orbitSpin 5.6s linear infinite;
+  will-change:transform;
+}
+@keyframes orbitSpin{
+  from{transform:rotate(0deg);}
+  to{transform:rotate(360deg);}
+}
+.chip-streak{
+  position:absolute;inset:0;border-radius:50%;
+  background:conic-gradient(from 0deg,
+    rgba(242,96,60,0) 0deg,
+    rgba(242,96,60,0) 210deg,
+    rgba(242,96,60,0.35) 312deg,
+    rgba(255,150,105,0.85) 350deg,
+    #ffd9c6 360deg);
+  -webkit-mask:radial-gradient(closest-side, transparent calc(100% - 5px), #000 calc(100% - 5px));
+          mask:radial-gradient(closest-side, transparent calc(100% - 5px), #000 calc(100% - 5px));
+  filter:drop-shadow(0 0 5px rgba(242,96,60,0.65));
+}
+.chip-head{
+  position:absolute;top:0;left:50%;width:18px;height:18px;
+  transform:translate(-50%,-50%);border-radius:50%;
+  background:radial-gradient(circle, #ffffff 0%, rgba(255,170,130,0.95) 30%, rgba(242,96,60,0.55) 55%, rgba(242,96,60,0) 75%);
+  filter:drop-shadow(0 0 9px rgba(242,96,60,0.85));
+}
+@media (prefers-reduced-motion: reduce){
+  .chip-orbit,.orbit-tilt{animation:none;display:none;}
 }
 .hero-col{display:flex;flex-direction:column;justify-content:center;gap:0.7rem;}
 .hero-col.left{align-items:flex-start;}
@@ -371,7 +422,7 @@ nav{
 @media (max-width:980px){
   .hero-title{font-size:32px;}
   .hero-stage{grid-template-columns:1fr;gap:1.25rem;max-width:520px;}
-  .hero-chip{order:-1;max-width:360px;margin:0 auto;}
+  .hero-chip-wrap{order:-1;max-width:360px;margin:0 auto;}
   .hero-col{flex-direction:column;gap:1rem;}
   .hero-col.left,.hero-col.right{align-items:stretch;}
   .hero-col.left .cf-text,.hero-col.right .cf-text{align-items:flex-start;text-align:left;}
@@ -926,7 +977,13 @@ footer{
       </a>
     </div>
 
-    <img class="hero-chip" src="hero-chip-clean.png" alt="W3SaaS Platform"/>
+    <div class="hero-chip-wrap">
+      <img class="hero-chip" src="hero-chip-clean.png" alt="W3SaaS Platform"/>
+      <div class="chip-orbit" aria-hidden="true">
+        <div class="chip-streak"></div>
+        <div class="chip-head"></div>
+      </div>
+    </div>
 
     <div class="hero-col right">
       <a class="chip-feature" href="#feat-architecture">
