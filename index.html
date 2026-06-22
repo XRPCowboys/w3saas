@@ -13,9 +13,9 @@
   --blue:#1a5faa;
   --blue-mid:#2272c3;
   --blue-light:#3b9eff;
-  --accent:#F2603C;
-  --accent-bright:#F47A5B;
-  --accent-grad:#F2603C;
+  --accent:#009BA0;
+  --accent-bright:#1EB7BC;
+  --accent-grad:#009BA0;
   --text:#0d1f3c;
 }
 
@@ -155,8 +155,8 @@ body{
   cursor:pointer;transition:all .2s;
   box-shadow:0 6px 22px rgba(26,95,170,0.28);
 }
-.apply-submit button:hover{filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 10px 30px rgba(242,96,60,0.38);}
-.apply-head .re-badge{background:var(--accent-grad);border-color:#960200;}
+.apply-submit button:hover{filter:brightness(1.08);transform:translateY(-2px);box-shadow:0 10px 30px rgba(0,155,160,0.38);}
+.apply-head .re-badge{background:var(--accent-grad);border-color:#006066;}
 .apply-success{
   display:none;
   text-align:center;padding:2.5rem 1rem;
@@ -209,7 +209,8 @@ nav{
 .nav-links a:hover{opacity:1;}
 .nav-cta{
   background:var(--accent-grad) !important;color:#fff !important;opacity:1 !important;
-  padding:9px 22px;border-radius:6px;font-weight:600 !important;  transition:filter .2s !important;
+  padding:9px 22px;border-radius:6px;font-weight:600 !important;  transition:filter .2s, box-shadow .2s !important;
+  box-shadow:0 0 4px 1px rgba(0,0,0,0.5) !important;
 }
 .nav-cta:hover{filter:brightness(1.06) !important;opacity:1 !important;}
 
@@ -315,56 +316,6 @@ nav{
 .hero-chip{
   width:100%;height:auto;display:block;
   filter:drop-shadow(0 12px 28px rgba(26,95,170,0.20));
-}
-/* continuous light orbiting the chip */
-.chip-orbit{
-  position:absolute;left:50%;top:50%;
-  width:80%;aspect-ratio:1;
-  transform:translate(-50%,-50%);
-  pointer-events:none;z-index:2;
-  animation:chipOrbit 4.6s linear infinite;
-  will-change:transform;
-}
-@keyframes chipOrbit{
-  from{transform:translate(-50%,-50%) rotate(0deg);}
-  to{transform:translate(-50%,-50%) rotate(360deg);}
-}
-/* second light: same direction, tilted orbital plane */
-.orbit-tilt{
-  position:absolute;left:50%;top:50%;
-  width:94%;aspect-ratio:1;
-  transform:translate(-50%,-50%) rotate(-30deg) scaleY(0.5);
-  pointer-events:none;z-index:2;
-}
-.orbit-spin{
-  position:absolute;inset:0;
-  animation:orbitSpin 5.6s linear infinite;
-  will-change:transform;
-}
-@keyframes orbitSpin{
-  from{transform:rotate(0deg);}
-  to{transform:rotate(360deg);}
-}
-.chip-streak{
-  position:absolute;inset:0;border-radius:50%;
-  background:conic-gradient(from 0deg,
-    rgba(242,96,60,0) 0deg,
-    rgba(242,96,60,0) 210deg,
-    rgba(242,96,60,0.35) 312deg,
-    rgba(255,150,105,0.85) 350deg,
-    #ffd9c6 360deg);
-  -webkit-mask:radial-gradient(closest-side, transparent calc(100% - 5px), #000 calc(100% - 5px));
-          mask:radial-gradient(closest-side, transparent calc(100% - 5px), #000 calc(100% - 5px));
-  filter:drop-shadow(0 0 5px rgba(242,96,60,0.65));
-}
-.chip-head{
-  position:absolute;top:0;left:50%;width:18px;height:18px;
-  transform:translate(-50%,-50%);border-radius:50%;
-  background:radial-gradient(circle, #ffffff 0%, rgba(255,170,130,0.95) 30%, rgba(242,96,60,0.55) 55%, rgba(242,96,60,0) 75%);
-  filter:drop-shadow(0 0 9px rgba(242,96,60,0.85));
-}
-@media (prefers-reduced-motion: reduce){
-  .chip-orbit,.orbit-tilt{animation:none;display:none;}
 }
 .hero-col{display:flex;flex-direction:column;justify-content:center;gap:0.7rem;}
 .hero-col.left{align-items:flex-start;}
@@ -671,7 +622,7 @@ nav{
   background:var(--accent-grad);color:#fff;border:none;
   padding:15px 36px;border-radius:8px;
   font-family:'Inter',sans-serif;font-size:15px;font-weight:600;
-  cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(242,96,60,0.3);
+  cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(0,155,160,0.3);
 }
 .btn-inv:hover{filter:brightness(1.08);transform:translateY(-2px);}
 .btn-inv-ghost{
@@ -979,10 +930,6 @@ footer{
 
     <div class="hero-chip-wrap">
       <img class="hero-chip" src="hero-chip-clean.png" alt="W3SaaS Platform"/>
-      <div class="chip-orbit" aria-hidden="true">
-        <div class="chip-streak"></div>
-        <div class="chip-head"></div>
-      </div>
     </div>
 
     <div class="hero-col right">
@@ -1541,8 +1488,8 @@ footer{
     color:var(--blue) !important;text-transform:uppercase;
     letter-spacing:2.5px;font-size:13px;font-weight:700;gap:0;
   }
-  .re-badge.bracket-badge::before{content:"[";margin-right:.6rem;color:#ffd500;}
-  .re-badge.bracket-badge::after{content:"]";margin-left:.6rem;color:#ffd500;}
+  .re-badge.bracket-badge::before{content:"[";margin-right:.6rem;color:#009BA0;}
+  .re-badge.bracket-badge::after{content:"]";margin-left:.6rem;color:#009BA0;}
 </style>
 
 <!-- CTA headline — Inter Black, larger -->
