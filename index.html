@@ -190,27 +190,27 @@ nav{
 }
 
 .logo-block{
-  position:absolute;
-  left:2rem;
-  top:8px;
+  position:relative;
   display:flex;
   align-items:center;
   z-index:201;
   text-decoration:none;
+  flex-shrink:0;
 }
 .logo-block img{
-  height:59px;
+  height:38px;
   width:auto;
   display:block;
 }
 
-.nav-links{display:flex;gap:2.5rem;list-style:none;align-items:center;margin-left:auto;}
+.nav-links{display:flex;gap:1.8rem;list-style:none;align-items:center;margin-left:auto;}
 .nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--navy);opacity:0.65;transition:opacity .2s;}
 .nav-links a:hover{opacity:1;}
 .nav-cta{
   background:var(--accent-grad) !important;color:#fff !important;opacity:1 !important;
   padding:9px 22px;border-radius:6px;font-weight:600 !important;  transition:filter .2s, box-shadow .2s !important;
   box-shadow:0 0 4px 1px rgba(0,0,0,0.5) !important;
+  white-space:nowrap;
 }
 .nav-cta:hover{filter:brightness(1.06) !important;opacity:1 !important;}
 
@@ -647,7 +647,7 @@ footer{
 
 /* footer logo image (white, to read on the dark navy footer) */
 .f-logo-link{display:inline-flex;align-items:center;text-decoration:none;flex-shrink:0;}
-.f-logo-img{height:92px;width:auto;display:block;filter:brightness(0) invert(1);}
+.f-logo-img{height:56px;width:auto;display:block;}
 
 /* CTA band — footer-style sitemap filling the blue space (placeholder hrefs for now) */
 .cta-btns{margin-bottom:0;}
@@ -875,7 +875,7 @@ footer{
 
 <nav>
   <a href="#" class="logo-block" aria-label="W3SaaS home">
-    <img src="logo-w3saas-navy.png" alt="W3SaaS"/>
+    <img src="logo-cropped-teal3.png" alt="W3SaaS"/>
   </a>
   <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -1163,7 +1163,7 @@ footer{
 </div>
 
 <footer>
-  <a href="#" class="f-logo-link" aria-label="W3SaaS home"><img src="logo-w3saas-navy.png" alt="W3SaaS" class="f-logo-img"/></a>
+  <a href="#" class="f-logo-link" aria-label="W3SaaS home"><img src="logo-cropped-teal3-white.png" alt="W3SaaS" class="f-logo-img"/></a>
   <div class="f-copy">© 2026|W3 SaaS LLC. Sheridan, WY, USA |All rights reserved.</div>
 </footer>
 
