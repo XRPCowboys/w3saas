@@ -1547,6 +1547,41 @@ footer{
   }
 </style>
 
+<!-- ============================================================
+     ON-BACKGROUND TEXT -> #EDEDED
+     Recolors every line of text that sits directly on the wave
+     background. Leaves untouched: the nav (header), the footer,
+     and anything inside a white/glass box (feature cards, the
+     industries intro/panel/chips, the apply form, the CTA
+     sitemap). The yellow "[ ]" badge brackets stay as accents.
+     ============================================================ -->
+<style id="blue-to-ededed">
+  .hero-title, .hero-title span,
+  .hero-intro, .hero-intro strong,
+  .chip-feature .ttl,
+  .hero-grow, .hero-grow-sub,
+  .hero-finality, .hero-finality strong,
+  .section > .section-label,
+  .section > .section-title, .section > .section-title span,
+  .section > .section-sub,
+  .section > .re-badge.bracket-badge,
+  .spotlight-content .section-label,
+  .spotlight-content .section-title, .spotlight-content .section-title span,
+  .spotlight-content .section-sub,
+  .spotlight-content .check-list li,
+  .spotlight-content .re-badge.bracket-badge,
+  .ind-header .section-title,
+  .ind-header .re-badge.bracket-badge,
+  .ind-tagline,
+  .cta-title, .cta-title span, .cta-sub {
+    color:#EDEDED !important;
+    -webkit-text-fill-color:#EDEDED !important;
+    background:none !important;
+    -webkit-background-clip:border-box !important;
+    background-clip:border-box !important;
+  }
+</style>
+
 
 </body>
 </html>
