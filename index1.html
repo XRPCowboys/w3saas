@@ -16,7 +16,7 @@
   --accent:#FFD100;
   --accent-bright:#FFDA33;
   --accent-grad:#FFD100;
-  --text:#0d1f3c;
+  --text:#383838;
 }
 
 html{scroll-behavior:smooth;}
@@ -149,7 +149,7 @@ body{
   display:flex;justify-content:center;margin-top:.5rem;
 }
 .apply-submit button{
-  background:var(--accent-grad);color:#fff;border:none;
+  background:var(--accent-grad);color:#000;border:none;
   padding:14px 38px;border-radius:9px;
   font-family:'Inter',sans-serif;font-size:15px;font-weight:600;
   cursor:pointer;transition:all .2s;
@@ -181,10 +181,10 @@ nav{
   align-items:center;
   justify-content:space-between;
   padding:0.75rem 3.5rem 0.75rem 2rem;
-  background:rgba(255,255,255,0.55);
+  background:#0f2d6e;
   backdrop-filter:blur(18px);
   -webkit-backdrop-filter:blur(18px);
-  border-bottom:1px solid rgba(26,95,170,0.12);
+  border-bottom:1px solid rgba(255,255,255,0.12);
   height:110px;
   overflow:visible;
 }
@@ -201,13 +201,14 @@ nav{
   height:95px;
   width:auto;
   display:block;
+  filter:brightness(0) invert(1);
 }
 
 .nav-links{display:flex;gap:1.8rem;list-style:none;align-items:center;margin-left:auto;}
-.nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--navy);opacity:0.65;transition:opacity .2s;}
+.nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:#fff;opacity:0.85;transition:opacity .2s;}
 .nav-links a:hover{opacity:1;}
 .nav-cta{
-  background:var(--accent-grad) !important;color:#fff !important;opacity:1 !important;
+  background:var(--accent-grad) !important;color:#000 !important;opacity:1 !important;
   padding:9px 22px;border-radius:6px;font-weight:600 !important;  transition:filter .2s, box-shadow .2s !important;
   box-shadow:0 0 4px 1px rgba(0,0,0,0.5) !important;
   white-space:nowrap;
@@ -218,7 +219,7 @@ nav{
 .has-dropdown{position:relative;}
 .dropdown-toggle{
   display:inline-flex;align-items:center;gap:.4rem;
-  font-size:14px;font-weight:500;color:var(--navy);opacity:0.65;
+  font-size:14px;font-weight:500;color:#fff;opacity:0.85;
   cursor:pointer;background:none;border:none;
   font-family:'Inter',sans-serif;
   transition:opacity .2s;
@@ -365,7 +366,7 @@ nav{
   margin:1.5rem auto .35rem;letter-spacing:-.7px;text-wrap:balance;
 }
 .hero-grow-sub{
-  text-align:center;font-size:19px;line-height:1.5;font-weight:700;white-space:nowrap;
+  text-align:center;font-size:23px;line-height:1.5;font-weight:700;white-space:normal;
   color:var(--accent);max-width:none;margin:0 auto;
 }
 
@@ -388,7 +389,7 @@ nav{
   margin-top:0.9rem;
 }
 .btn-primary{
-  background:var(--blue);color:#fff;border:none;
+  background:var(--accent-grad);color:#000;border:none;
   padding:14px 34px;border-radius:8px;
   font-family:'Inter',sans-serif;font-size:15px;font-weight:600;
   cursor:pointer;transition:all .2s;
@@ -619,7 +620,7 @@ nav{
 .cta-sub{font-size:15px;color:rgba(255,255,255,0.85);margin-bottom:2.5rem;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7;}
 .cta-btns{display:flex;gap:1rem;justify-content:center;}
 .btn-inv{
-  background:var(--accent-grad);color:#fff;border:none;
+  background:var(--accent-grad);color:#000;border:none;
   padding:15px 36px;border-radius:8px;
   font-family:'Inter',sans-serif;font-size:15px;font-weight:600;
   cursor:pointer;transition:all .2s;box-shadow:0 4px 20px rgba(255,209,0,0.3);
@@ -761,6 +762,7 @@ footer{
   .nav-links a{
     display:block;padding:15px 6px;font-size:16px;opacity:0.85;
     border-bottom:1px solid rgba(26,95,170,0.08);
+    color:var(--navy);
   }
   .nav-links .nav-cta{
     text-align:center;margin-top:0.85rem;padding:15px 22px;border:none;
@@ -772,6 +774,7 @@ footer{
     width:100%;justify-content:space-between;
     padding:15px 6px;font-size:16px;opacity:0.85;
     border-bottom:1px solid rgba(26,95,170,0.08);
+    color:var(--navy);
   }
   .dropdown-menu{
     position:static;transform:none;min-width:0;width:100%;
@@ -955,7 +958,7 @@ footer{
   </div>
 
   <h2 class="hero-grow">Engineered to Help You &ldquo;Grow Your Business&rdquo;</h2>
-  <p class="hero-grow-sub">We don&rsquo;t just hand you software; We act as your strategic partner to design and automate business logic unique to your industry.</p>
+  <p class="hero-grow-sub">We don&rsquo;t just hand you software;<br/>We act as your strategic partner to design and automate business logic unique to your industry.</p>
 
   <!-- STATS float above the intro paragraph -->
   <div class="stats-bar">
@@ -1487,7 +1490,7 @@ footer{
     background:none !important;border:none !important;padding:0 !important;
     border-radius:0 !important;box-shadow:none !important;
     color:var(--blue) !important;text-transform:uppercase;
-    letter-spacing:2.5px;font-size:13px;font-weight:700;gap:0;
+    letter-spacing:2.5px;font-size:21px;font-weight:700;gap:0;
   }
   .re-badge.bracket-badge::before{content:"[";margin-right:.6rem;color:#FFD100;}
   .re-badge.bracket-badge::after{content:"]";margin-left:.6rem;color:#FFD100;}
