@@ -1411,9 +1411,10 @@ footer{
        ampersand used in the body copy.
      ============================================================ -->
 <style id="brand-polish">
-  /* Bracketed section eyebrows */
-  .section-label::before{content:"[";margin-right:.55rem;color:var(--accent);font-weight:700;}
-  .section-label::after{content:"]";margin-left:.55rem;color:var(--accent);font-weight:700;}
+  /* Bracketed section eyebrows — larger, to match the index file */
+  .section-label{font-size:21px !important;letter-spacing:2.5px !important;font-weight:700 !important;}
+  .section-label::before{content:"[";margin-right:.6rem;color:var(--accent);font-weight:700;font-size:1.12em;}
+  .section-label::after{content:"]";margin-left:.6rem;color:var(--accent);font-weight:700;font-size:1.12em;}
   /* On dark bands the eyebrow is a filled pill — drop the pill so the
      bracket treatment reads cleanly in white on the dark background */
   .re-lifecycle .re-centerhead .section-label{
