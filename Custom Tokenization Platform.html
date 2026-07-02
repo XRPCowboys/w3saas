@@ -167,7 +167,7 @@ nav{
   display:block;
 }
 
-.nav-links{display:flex;gap:2.5rem;list-style:none;align-items:center;margin-left:auto;}
+.nav-links{display:flex;gap:1.05rem;list-style:none;align-items:center;margin-left:auto;}
 .nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--navy);opacity:0.65;transition:opacity .2s;}
 .nav-links a:hover{opacity:1;}
 .nav-cta{
@@ -1006,8 +1006,7 @@ footer{
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links" id="navLinks">
-    <li><a href="index.html">Platform</a></li>
-    <li><a href="index.html#industries">Industries</a></li>
+    <li><a href="index.html#capabilities">Capabilities</a></li>
     <li class="has-dropdown">
       <button type="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Solutions <span class="caret"></span></button>
       <ul class="dropdown-menu">
@@ -1015,20 +1014,30 @@ footer{
         <li><a href="Private%20Equity%20Tokenization.html">Private Equity</a></li>
         <li><a href="Private%20Credit%20Tokenization.html">Private Credit</a></li>
         <li><a href="Carbon%20Credit%20Tokenization.html">Environmental Assets</a></li>
-        <li><a href="Custom%20Tokenization%20Platform.html" class="active">Digitizing Your Enterprise</a></li>
+        <li><a href="Custom%20Tokenization%20Platform.html">Digitizing Your Enterprise</a></li>
       </ul>
     </li>
+    <li class="has-dropdown">
+      <a class="dropdown-toggle" href="About.html">About <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="About.html">About W3SaaS</a></li>
+        <li><a href="Careers.html">Careers</a></li>
+      </ul>
+    </li>
+    <li><a href="index.html#industries">Industries</a></li>
+    <li><a href="index.html#ecosystem">Ecosystem</a></li>
     <li class="has-dropdown">
       <button type="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></button>
       <ul class="dropdown-menu">
         <li><a href="Strategic%20Use%20Cases%20for%20RWAs.html">Strategic Use Cases for RWAs</a></li>
         <li><a href="Tokenization%20101.html">Digitizing Assets 101</a></li>
         <li><a href="Applied%20AI.html">Applied AI</a></li>
-        <li><a href="About.html">About</a></li>
       </ul>
     </li>
-    <li><a href="index.html#apply" class="nav-cta">Schedule Consultation</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="Contact.html" class="nav-cta">Schedule Consultation</a></li>
   </ul>
+
 </nav>
 
 <!-- HERO -->
@@ -1455,5 +1464,24 @@ footer{
 
 
 
+<style id="nav-collapse-wide">
+@media (max-width:1100px){
+  nav{padding:0.6rem 1.25rem;}
+  .nav-toggle{display:flex;}
+  .logo-block{position:static;top:auto;left:auto;}
+  .logo-block img{height:60px;}
+  .nav-links{position:absolute;top:80px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;margin-left:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(26,95,170,0.15);box-shadow:0 14px 34px rgba(10,22,40,0.14);padding:0.4rem 1.25rem 1.1rem;max-height:0;overflow:hidden;opacity:0;pointer-events:none;transition:max-height .32s ease, opacity .25s ease;}
+  .nav-links.open{max-height:560px;opacity:1;pointer-events:auto;}
+  .nav-links li{width:100%;}
+  .nav-links a{display:block;padding:15px 6px;font-size:16px;opacity:0.85;border-bottom:1px solid rgba(26,95,170,0.08);}
+  .nav-links .nav-cta{text-align:center;margin-top:0.85rem;padding:15px 22px;border:none;}
+  .has-dropdown{width:100%;}
+  .dropdown-toggle{width:100%;justify-content:space-between;padding:15px 6px;font-size:16px;opacity:0.85;border-bottom:1px solid rgba(26,95,170,0.08);}
+  .dropdown-menu{position:static;transform:none;min-width:0;width:100%;background:rgba(26,95,170,0.05);border:none;border-radius:10px;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;margin:0;padding:0;opacity:1;visibility:visible;pointer-events:auto;max-height:0;overflow:hidden;transition:max-height .3s ease, padding .3s ease, margin .3s ease;}
+  .dropdown-menu::before{display:none;}
+  .has-dropdown.open .dropdown-menu{transform:none;max-height:420px;padding:.35rem;margin:.4rem 0 .6rem;}
+  .dropdown-menu a{padding:13px 12px;font-size:14.5px;}
+}
+</style>
 </body>
 </html>

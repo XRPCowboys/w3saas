@@ -34,7 +34,7 @@ body{
   min-height:100vh;
 }
 /* sections targeted by hero hotspots get a little breathing room under the sticky nav */
-#feat-accelerated, #feat-intelligence, #feat-fraud, #feat-architecture, #core, #apply, #partners, #about, #solutions {
+#feat-accelerated, #feat-intelligence, #feat-fraud, #feat-architecture, #core, #apply, #partners, #about, #solutions, #capabilities, #industries, #ecosystem {
   scroll-margin-top:120px;
 }
 
@@ -204,7 +204,7 @@ nav{
   display:block;
 }
 
-.nav-links{display:flex;gap:1.8rem;list-style:none;align-items:center;margin-left:auto;}
+.nav-links{display:flex;gap:1.05rem;list-style:none;align-items:center;margin-left:auto;}
 .nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--navy);opacity:0.65;transition:opacity .2s;}
 .nav-links a:hover{opacity:1;}
 .nav-cta{
@@ -887,8 +887,7 @@ footer{
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links" id="navLinks">
-    <li><a href="#">Platform</a></li>
-    <li><a href="#industries">Industries</a></li>
+    <li><a href="#capabilities">Capabilities</a></li>
     <li class="has-dropdown">
       <button type="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Solutions <span class="caret"></span></button>
       <ul class="dropdown-menu">
@@ -900,15 +899,24 @@ footer{
       </ul>
     </li>
     <li class="has-dropdown">
+      <a class="dropdown-toggle" href="About.html">About <span class="caret"></span></a>
+      <ul class="dropdown-menu">
+        <li><a href="About.html">About W3SaaS</a></li>
+        <li><a href="Careers.html">Careers</a></li>
+      </ul>
+    </li>
+    <li><a href="#industries">Industries</a></li>
+    <li><a href="#ecosystem">Ecosystem</a></li>
+    <li class="has-dropdown">
       <button type="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></button>
       <ul class="dropdown-menu">
         <li><a href="Strategic%20Use%20Cases%20for%20RWAs.html">Strategic Use Cases for RWAs</a></li>
         <li><a href="Tokenization%20101.html">Digitizing Assets 101</a></li>
         <li><a href="Applied%20AI.html">Applied AI</a></li>
-        <li><a href="About.html">About</a></li>
       </ul>
     </li>
-    <li><a href="#apply" class="nav-cta">Schedule Consultation</a></li>
+    <li><a href="Contact.html">Contact</a></li>
+    <li><a href="Contact.html" class="nav-cta">Schedule Consultation</a></li>
   </ul>
 </nav>
 
@@ -935,7 +943,7 @@ footer{
     </div>
 
     <div class="hero-chip-wrap">
-      <img class="hero-chip" src="hero-chip-clean.png" alt="W3SaaS Platform"/>
+      <img class="hero-chip" src="chip.png" alt="W3SaaS Platform"/>
     </div>
 
     <div class="hero-col right">
@@ -988,7 +996,7 @@ footer{
 </div>
 
 <!-- FEATURES — glass cards scrolling over wave bg -->
-<div class="section">
+<div class="section" id="capabilities">
  <span class="re-badge bracket-badge">Capabilities</span>
   <div class="section-title">Built for Enterprise<br/><span>Ready in Weeks</span></div>
   <p class="section-sub">Pre-engineered Business Application Architecture that eliminates years of complex engineering work and deploys a compliant platform fast.</p>
@@ -1042,7 +1050,16 @@ footer{
 <!-- CHIP SPOTLIGHT -->
 <div class="spotlight" id="core">
   <div class="spotlight-img">
-    <img src="core-chip-clean.png" alt="W3SaaS CORE — isometric chip illustration with connected product islands"/>
+    <div class="app-shot-stack">
+      <div class="app-shot">
+        <div class="app-shot-bar"><span></span><span></span><span></span></div>
+        <div class="app-shot-body">W3SaaS PLATFORM DASHBOARD<br/>[ drop application screenshot ]</div>
+      </div>
+      <div class="app-shot app-shot-2">
+        <div class="app-shot-bar"><span></span><span></span><span></span></div>
+        <div class="app-shot-body">ASSET LIFECYCLE VIEW<br/>[ drop application screenshot ]</div>
+      </div>
+    </div>
   </div>
   <div class="spotlight-content">
    <span class="re-badge bracket-badge">W3SaaS Platform</span>
@@ -1091,64 +1108,74 @@ footer{
   </div>
 </div>
 
-<!-- ABOUT section moved to About.html -->
+<!-- New-section styles (app screenshots + ecosystem) -->
+<style id="new-section-styles">
+  /* App-screenshot placeholders in the Engine section */
+  .app-shot-stack{display:flex;flex-direction:column;gap:1.1rem;width:100%;max-width:900px;}
+  .app-shot{width:100%;border-radius:14px;overflow:hidden;background:#fff;
+    border:1px solid rgba(26,95,170,0.18);box-shadow:0 16px 48px rgba(26,95,170,0.22);}
+  .app-shot-2{width:82%;margin-left:auto;box-shadow:0 12px 36px rgba(26,95,170,0.16);}
+  .app-shot-bar{display:flex;align-items:center;gap:8px;padding:11px 16px;
+    background:rgba(15,45,110,0.06);border-bottom:1px solid rgba(26,95,170,0.12);}
+  .app-shot-bar span{width:11px;height:11px;border-radius:50%;background:rgba(26,95,170,0.28);}
+  .app-shot-body{aspect-ratio:16/9;display:flex;flex-direction:column;gap:.4rem;
+    align-items:center;justify-content:center;text-align:center;padding:1.25rem;
+    font-family:ui-monospace,'JetBrains Mono',monospace;font-size:12.5px;line-height:1.7;
+    letter-spacing:1.5px;color:rgba(26,95,170,0.6);
+    background:repeating-linear-gradient(45deg,rgba(26,95,170,0.05) 0 12px,transparent 12px 24px),
+      linear-gradient(135deg,rgba(255,255,255,0.92),rgba(235,242,252,0.72));}
 
+  /* Ecosystem — Building with Giants */
+  .eco-wrap{width:100%;max-width:1100px;margin:0 auto 4rem;padding:0 3.5rem;}
+  .eco-header{text-align:center;margin-bottom:2.25rem;}
+  .eco-sub{font-size:17px;color:rgba(13,31,60,0.62);line-height:1.7;max-width:740px;margin:0 auto;text-wrap:pretty;}
+  .eco-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;max-width:1000px;margin:0 auto;}
+  .eco-tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;
+    background:rgba(255,255,255,0.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+    border:1px solid rgba(255,255,255,0.9);border-radius:16px;padding:2.1rem 1.5rem;min-height:128px;
+    box-shadow:0 4px 24px rgba(10,22,40,0.07);
+    transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;}
+  .eco-tile:hover{transform:translateY(-4px);box-shadow:0 18px 44px rgba(26,95,170,0.18);border-color:rgba(26,95,170,0.25);}
+  .eco-name{font-size:24px;font-weight:800;color:var(--navy);letter-spacing:-.4px;}
+  .eco-role{font-size:12px;font-weight:600;letter-spacing:1.2px;text-transform:uppercase;color:var(--blue);text-align:center;}
+  @media(max-width:820px){.eco-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:680px){.eco-wrap{padding:0 1.5rem;}.eco-grid{grid-template-columns:1fr;}
+    .app-shot-2{width:100%;margin-left:0;}}
+</style>
 
-<!-- PARTNERS section removed -->
-
-<!-- APPLICATION FORM -->
-<div class="apply-wrap" id="apply">
-  <div class="apply-card">
-    <div class="apply-head">
-      <span class="re-badge">Get Started</span>
-      <div class="section-title">Tell us about your <span>Project</span></div>
-      <p>A few quick details and our team will be in touch within one business day to schedule a review.</p>
-    </div>
-
-    <form class="apply-form" id="applyForm" novalidate>
-      <div class="apply-grid">
-        <div class="apply-field">
-          <label for="af-name">Name</label>
-          <input id="af-name" name="name" type="text" placeholder="Your full name" required/>
-        </div>
-        <div class="apply-field">
-          <label for="af-email">Email</label>
-          <input id="af-email" name="email" type="email" placeholder="you@company.com" required/>
-        </div>
-        <div class="apply-field full">
-          <label for="af-phone">Phone</label>
-          <input id="af-phone" name="phone" type="tel" placeholder="(555) 123-4567"/>
-        </div>
-        <div class="apply-field full">
-          <label for="af-project">Briefly describe your project</label>
-          <textarea id="af-project" name="project" placeholder="What industry, scale, and outcome are you targeting?" required></textarea>
-        </div>
-        <div class="apply-submit">
-          <button type="submit">Submit→</button>
-        </div>
-      </div>
-    </form>
-    <div class="apply-success" id="applySuccess">
-      ✓ Thanks — we’ve received your details and will follow up within one business day.
-    </div>
+<!-- ECOSYSTEM — Building with Giants -->
+<section class="eco-wrap" id="ecosystem">
+  <div class="eco-header">
+    <span class="re-badge bracket-badge">Ecosystem</span>
+    <div class="section-title" style="font-size:30px;margin-bottom:.5rem;">Building with Giants</div>
+    <p class="eco-sub">W3SaaS is built on and integrated with Tier-1 infrastructure &mdash; the same networks, settlement rails, and clouds trusted by the world&rsquo;s leading financial institutions and enterprises.</p>
   </div>
-</div>
+  <div class="eco-grid">
+    <div class="eco-tile"><span class="eco-name">Ripple</span><span class="eco-role">Payments &amp; Settlement</span></div>
+    <div class="eco-tile"><span class="eco-name">Circle</span><span class="eco-role">USDC Stablecoin Rails</span></div>
+    <div class="eco-tile"><span class="eco-name">AWS</span><span class="eco-role">Cloud Infrastructure</span></div>
+    <div class="eco-tile"><span class="eco-name">Google Cloud</span><span class="eco-role">AI &amp; Data Platform</span></div>
+    <div class="eco-tile"><span class="eco-name">Flare</span><span class="eco-role">Data &amp; Interoperability</span></div>
+    <div class="eco-tile"><span class="eco-name">Uphold</span><span class="eco-role">Custody &amp; Liquidity</span></div>
+  </div>
+</section>
 
-<!-- INDUSTRIES section moved up above team -->
+
 
 <!-- CTA -->
 <div class="cta-band">
   <div class="cta-title">Go Live in <span style="color:#22C55E;">90 Days!</span></div>
   <div class="cta-btns" style="margin-top:1.85rem;">
-    <a href="#apply" class="btn-inv" style="text-decoration:none;display:inline-block;">Schedule Consultation →</a>
+    <a href="Contact.html" class="btn-inv" style="text-decoration:none;display:inline-block;">Schedule Consultation →</a>
   </div>
   <!-- footer-style sitemap — placeholder hrefs; real destinations TBD -->
   <div class="cta-sitemap">
     <div class="cta-col">
       <h4>W3SaaS</h4>
       <p>A unified platform for digitizing Real-World Assets and Digital Asset Lifecycle Management. Providing pre-engineered Business Application Architecture solutions for the next generation of markets and industry.</p>
-      <a href="#">About Us</a>
-      <a href="#">Contact</a>
+      <a href="About.html">About Us</a>
+      <a href="Careers.html">Careers</a>
+      <a href="Contact.html">Contact &amp; Support</a>
       <a href="#">LinkedIn | X</a>
     </div>
     <div class="cta-col">
@@ -1166,7 +1193,6 @@ footer{
       <a href="Strategic%20Use%20Cases%20for%20RWAs.html">Strategic Use Cases for RWAs</a>
       <a href="Tokenization%20101.html">Digitizing Assets 101</a>
       <a href="Applied%20AI.html">Applied AI</a>
-      <a href="About.html">About</a>
     </div>
   </div>
 </div>
@@ -1552,6 +1578,37 @@ footer{
   }
 </style>
 
+
+<!-- Collapse the 7-item nav to the hamburger below 1100px, where it no longer fits inline -->
+<style id="nav-collapse-wide">
+@media (max-width:1100px){
+  nav{padding:0.6rem 1.25rem;}
+  .nav-toggle{display:flex;}
+  .logo-block{position:static;top:auto;left:auto;}
+  .logo-block img{height:60px;}
+  .nav-links{
+    position:absolute;top:80px;left:0;right:0;
+    flex-direction:column;align-items:stretch;gap:0;margin-left:0;
+    background:rgba(255,255,255,0.97);
+    backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(26,95,170,0.15);
+    box-shadow:0 14px 34px rgba(10,22,40,0.14);
+    padding:0.4rem 1.25rem 1.1rem;
+    max-height:0;overflow:hidden;opacity:0;pointer-events:none;
+    transition:max-height .32s ease, opacity .25s ease;
+  }
+  .nav-links.open{max-height:560px;opacity:1;pointer-events:auto;}
+  .nav-links li{width:100%;}
+  .nav-links a{display:block;padding:15px 6px;font-size:16px;opacity:0.85;border-bottom:1px solid rgba(26,95,170,0.08);}
+  .nav-links .nav-cta{text-align:center;margin-top:0.85rem;padding:15px 22px;border:none;}
+  .has-dropdown{width:100%;}
+  .dropdown-toggle{width:100%;justify-content:space-between;padding:15px 6px;font-size:16px;opacity:0.85;border-bottom:1px solid rgba(26,95,170,0.08);}
+  .dropdown-menu{position:static;transform:none;min-width:0;width:100%;background:rgba(26,95,170,0.05);border:none;border-radius:10px;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none;margin:0;padding:0;opacity:1;visibility:visible;pointer-events:auto;max-height:0;overflow:hidden;transition:max-height .3s ease, padding .3s ease, margin .3s ease;}
+  .dropdown-menu::before{display:none;}
+  .has-dropdown.open .dropdown-menu{transform:none;max-height:420px;padding:.35rem;margin:.4rem 0 .6rem;}
+  .dropdown-menu a{padding:13px 12px;font-size:14.5px;}
+}
+</style>
 
 </body>
 </html>
