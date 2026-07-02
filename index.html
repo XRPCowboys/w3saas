@@ -313,12 +313,11 @@ nav{
 .hero-stage{
   width:100%;max-width:880px;
   margin:0 auto 0;
-  display:flex;
-  justify-content:center;
+  display:grid;
+  grid-template-columns:1fr minmax(280px,330px) 1fr;
   align-items:center;
   gap:1.25rem;
 }
-.hero-chip-wrap{max-width:330px;}
 .hero-chip-wrap{position:relative;width:100%;display:block;isolation:isolate;}
 .hero-chip{
   width:100%;height:auto;display:block;
@@ -923,18 +922,50 @@ footer{
 
 <!-- HERO — real text + transparent chip on the wave bg -->
 <div class="hero">
-  <div class="hero-head">
-    <h1 class="hero-title">The Enterprise AI &amp; Tokenization Platform<br/><span>Transforming Traditional Business</span></h1>
-  </div>
+  <h2 class="hero-grow">Engineered to Help You &ldquo;Grow Your Business&rdquo;</h2>
+  <p class="hero-grow-sub">We don&rsquo;t just hand you Software!<br/>We act as your strategic partner to design and <span style="color:#ff6b5b;">Automate Business Logic</span> unique to your industry.</p>
 
   <div class="hero-stage">
+    <div class="hero-col left">
+      <a class="chip-feature" href="#feat-accelerated">
+        <span class="cf-text">
+          <span class="ttl">Accelerated<br/>Innovation</span>
+          <span class="pill">Launch in 90 Days</span>
+        </span>
+      </a>
+      <a class="chip-feature" href="#feat-intelligence">
+        <span class="cf-text">
+          <span class="ttl">Smart<br/>Intelligence</span>
+          <span class="pill">AI-Powered</span>
+        </span>
+      </a>
+    </div>
+
     <div class="hero-chip-wrap">
       <img class="hero-chip" src="chip.png" alt="W3SaaS Platform"/>
     </div>
-  </div>
 
-  <h2 class="hero-grow">Engineered to Help You &ldquo;Grow Your Business&rdquo;</h2>
-  <p class="hero-grow-sub">We don&rsquo;t just hand you Software!<br/>We act as your strategic partner to design and <span style="color:#ff6b5b;">Automate Business Logic</span> unique to your industry.</p>
+    <div class="hero-col right">
+      <a class="chip-feature" href="#feat-architecture">
+        <span class="cf-text">
+          <span class="ttl">Automating<br/>Security</span>
+          <span class="pill">Real-Time AI</span>
+        </span>
+      </a>
+      <a class="chip-feature" href="#feat-fraud">
+        <span class="cf-text">
+          <span class="ttl">Fraud<br/>Detection</span>
+          <span class="pill">Enterprise</span>
+        </span>
+      </a>
+      <a class="chip-feature" href="#core">
+        <span class="cf-text">
+          <span class="ttl">Integrated<br/>Compliance</span>
+          <span class="pill">Built-In</span>
+        </span>
+      </a>
+    </div>
+  </div>
 
   <!-- STATS float above the intro paragraph -->
   <div class="stats-bar">
