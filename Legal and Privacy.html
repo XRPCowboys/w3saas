@@ -155,7 +155,8 @@ nav{
 .logo-block{
   position:absolute;
   left:2rem;
-  top:8px;
+  top:50%;
+  transform:translateY(-50%);
   display:flex;
   align-items:center;
   z-index:201;
@@ -698,8 +699,8 @@ footer{
   nav{padding:0.6rem 1.25rem;}
   .nav-toggle{display:flex;}
   /* logo back in flow + smaller so it doesn't collide with the hamburger */
-  .logo-block{position:static;top:auto;left:auto;}
-  .logo-block img{height:58px;}
+  .logo-block{position:static;top:auto;left:auto;transform:none;}
+  .logo-block img{width:150px;height:auto;}
   .nav-links{
     position:absolute;
     top:80px;left:0;right:0;
@@ -936,7 +937,7 @@ footer{
 
 <nav>
   <a href="index.html" class="logo-block" aria-label="W3SaaS home">
-    <img src="logo-w3saas-navy.png" alt="W3SaaS"/>
+    <img src="logo-w3saas-orbit.png" alt="W3SaaS"/>
   </a>
   <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -1311,8 +1312,8 @@ footer{
 @media (max-width:1100px){
   nav{padding:0.6rem 1.25rem;}
   .nav-toggle{display:flex;}
-  .logo-block{position:static;top:auto;left:auto;}
-  .logo-block img{height:60px;}
+  .logo-block{position:static;top:auto;left:auto;transform:none;}
+  .logo-block img{width:152px;height:auto;}
   .nav-links{position:absolute;top:80px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;margin-left:0;background:rgba(255,255,255,0.97);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);border-bottom:1px solid rgba(26,95,170,0.15);box-shadow:0 14px 34px rgba(10,22,40,0.14);padding:0.4rem 1.25rem 1.1rem;max-height:0;overflow:hidden;opacity:0;pointer-events:none;transition:max-height .32s ease, opacity .25s ease;}
   .nav-links.open{max-height:560px;opacity:1;pointer-events:auto;}
   .nav-links li{width:100%;}
