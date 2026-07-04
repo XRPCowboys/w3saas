@@ -316,6 +316,19 @@ nav{
   gap:1.25rem;
 }
 .hero-chip-wrap{position:relative;width:100%;display:block;isolation:isolate;}
+.hero-chip-link{display:block;position:relative;cursor:pointer;isolation:isolate;text-decoration:none;}
+.hero-chip-glow{
+  position:absolute;inset:0;pointer-events:none;
+  background:#FF6B5B;
+  clip-path:polygon(67% 27%, 80% 36%, 64% 47%, 49% 37%);
+  opacity:0;transition:opacity .22s ease;
+}
+.hero-chip-glow-color{mix-blend-mode:color;}
+.hero-chip-glow-screen{mix-blend-mode:screen;}
+.hero-chip-link:hover .hero-chip-glow-color,
+.hero-chip-link:focus-visible .hero-chip-glow-color{opacity:1;}
+.hero-chip-link:hover .hero-chip-glow-screen,
+.hero-chip-link:focus-visible .hero-chip-glow-screen{opacity:.4;}
 .hero-chip{
   width:100%;height:auto;display:block;
   filter:drop-shadow(0 12px 28px rgba(26,95,170,0.20));
@@ -945,7 +958,11 @@ footer{
     </div>
 
     <div class="hero-chip-wrap">
-      <img class="hero-chip" src="chip.png" alt="W3SaaS Platform"/>
+      <a class="hero-chip-link" href="#core" aria-label="Explore the W3SaaS Platform">
+        <img class="hero-chip" src="chip.png" alt="W3SaaS Platform"/>
+        <span class="hero-chip-glow hero-chip-glow-color" aria-hidden="true"></span>
+        <span class="hero-chip-glow hero-chip-glow-screen" aria-hidden="true"></span>
+      </a>
     </div>
 
     <div class="hero-col right">
