@@ -199,11 +199,7 @@ nav{
   z-index:201;
   text-decoration:none;
 }
-.logo-block img{
-  width:215px;
-  height:auto;
-  display:block;
-}
+.logo-block img{height:72px;width:auto;display:block;}
 
 .nav-links{display:flex;gap:1.05rem;list-style:none;align-items:center;margin-left:auto;}
 .nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--navy);opacity:0.65;transition:opacity .2s;}
@@ -275,7 +271,7 @@ nav{
 /* HERO SECTION — real text + transparent chip on the wave bg */
 .hero{
   width:100%;
-  padding:0.5rem 3.5rem 1.25rem;
+  padding:0.25rem 3.5rem 0.5rem;
   display:flex;
   flex-direction:column;
   align-items:center;
@@ -312,10 +308,10 @@ nav{
 
 /* STAGE — left labels | chip | right labels */
 .hero-stage{
-  width:100%;max-width:880px;
-  margin:0 auto 0;
+  width:100%;max-width:820px;
+  margin:-.5rem auto -.75rem;
   display:grid;
-  grid-template-columns:1fr minmax(280px,330px) 1fr;
+  grid-template-columns:1fr minmax(240px,280px) 1fr;
   align-items:center;
   gap:1.25rem;
 }
@@ -658,8 +654,8 @@ footer{
 .f-links a:hover{color:#fff;}
 
 /* footer logo image (white, to read on the dark navy footer) */
-.f-logo-link{display:inline-flex;align-items:center;text-decoration:none;flex-shrink:0;}
-.f-logo-img{height:56px;width:auto;display:block;}
+.f-logo-link{display:inline-flex;align-items:center;text-decoration:none;flex-shrink:0;background:#fff;padding:9px 16px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,0.18);}
+.f-logo-img{height:46px;width:auto;display:block;}
 
 /* CTA band — footer-style sitemap filling the blue space (placeholder hrefs for now) */
 .cta-btns{margin-bottom:0;}
@@ -887,7 +883,7 @@ footer{
 
 <nav>
   <a href="#" class="logo-block" aria-label="W3SaaS home">
-    <img src="logo-w3saas-new.png" alt="W3SaaS"/>
+    <img src="logo-w3saas-orbit-new.png" alt="W3SaaS"/>
   </a>
   <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -974,8 +970,8 @@ footer{
     </div>
   </div>
 
-  <h2 class="hero-grow">Engineered to Help You &ldquo;Grow Your Business&rdquo;</h2>
   <p class="hero-grow-sub">We don&rsquo;t just hand you Software!<br/>We act as your strategic partner to design and <span style="color:#ff6b5b;">Automate Business Logic</span> unique to your industry.</p>
+  <h2 class="hero-grow">Engineered to Help You &ldquo;Grow Your Business&rdquo;</h2>
 
   <!-- STATS float above the intro paragraph -->
   <div class="stats-bar">
@@ -1073,6 +1069,51 @@ footer{
   </div>
 </div>
 
+<!-- PROVEN DEPLOYMENTS — 2x2 case-study cards -->
+<style id="pd-styles">
+  .pd-wrap{width:100%;max-width:1100px;margin:0 auto 4rem;padding:0 3.5rem;}
+  .pd-header{text-align:center;margin-bottom:2.25rem;}
+  .pd-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;}
+  .pd-card{background:#ffffff;border:1px solid rgba(15,45,110,0.10);border-radius:16px;
+    padding:2rem 2.1rem;box-shadow:0 10px 30px rgba(10,22,40,0.08);display:flex;flex-direction:column;}
+  .pd-card h3{font-family:'Inter',sans-serif;font-weight:800;font-size:20px;color:var(--navy);
+    margin-bottom:.85rem;letter-spacing:-.3px;line-height:1.22;}
+  .pd-card p{font-size:15px;line-height:1.7;color:#0d1f3c;opacity:.82;margin-bottom:1.4rem;flex:1;}
+  .pd-link{align-self:flex-start;font-size:14px;font-weight:700;color:var(--accent);
+    text-decoration:none;letter-spacing:.2px;transition:opacity .2s;}
+  .pd-link:hover{opacity:.7;}
+  @media(max-width:820px){.pd-grid{grid-template-columns:1fr;}}
+  @media(max-width:680px){.pd-wrap{padding:0 1.5rem;}.pd-card{padding:1.7rem;}}
+</style>
+<section class="pd-wrap" id="deployments">
+  <div class="pd-header">
+    <span class="re-badge bracket-badge">Proven Deployments</span>
+    <div class="section-title" style="font-size:30px;margin-bottom:.4rem;">Live in Production</div>
+  </div>
+  <div class="pd-grid">
+    <div class="pd-card">
+      <h3>Commercial Lending &amp; Private Credit</h3>
+      <p>Transitioning over $300 million in historical SMB lending volume onto high-velocity digital rails. We deploy Business Application Architecture to fully automate the private credit lifecycle. By replacing legacy banking systems with 24/7 instant settlement rails via RLUSD and USDC, we eradicate the manual bottlenecks, wire cutoffs, and weekend delays that restrict capital velocity.</p>
+      <a class="pd-link" href="Private%20Credit%20Tokenization.html">Read Full Case Study &rarr;</a>
+    </div>
+    <div class="pd-card">
+      <h3>International Supply Chain &amp; Logistics</h3>
+      <p>Replacing traditional SWIFT rails and paper Letters of Credit for international bulk commodity trading. Our platform provides a secure digital settlement layer that achieves sub-3-second finality at a fraction of traditional banking costs. We utilize Smart Intelligence agents to audit bills of lading and mathematically lock funds, making document fraud and counterfeit inventory claims completely impossible.</p>
+      <a class="pd-link" href="Deployed%20Platform%20Use%20Cases.html">Read Full Case Study &rarr;</a>
+    </div>
+    <div class="pd-card">
+      <h3>Real Estate Bridge Financing</h3>
+      <p>Accelerating large-scale real estate developments to &ldquo;shovel-ready&rdquo; status through intelligent capitalization. We deploy a comprehensive digital cap table for project equity and loan management. To minimize manual underwriting costs and mitigate risk, our custom Agentic AI automatically reviews complex funding and engineering documents for errors, streamlining the deployment of structured capital.</p>
+      <a class="pd-link" href="Real%20Estate%20Tokenization.html">Read Full Case Study &rarr;</a>
+    </div>
+    <div class="pd-card">
+      <h3>Fractional Physical Asset Ownership</h3>
+      <p>Digitizing high-value physical assets into compliant, active Tenants-in-Common (TIC) co-ownership structures. Bypassing restrictive securities red tape, our platform allows traditional businesses to sell direct fractional property interests to retail audiences. We deploy zero-trust AI validation to verify registry credentials and utilize automated smart contracts to handle monthly variable expense billing and yield distributions.</p>
+      <a class="pd-link" href="Deployed%20Platform%20Use%20Cases.html">Read Full Case Study &rarr;</a>
+    </div>
+  </div>
+</section>
+
 <!-- INDUSTRIES (moved up to where Solutions was) -->
 <div class="ind-wrap" id="industries">
   <div class="ind-header">
@@ -1151,12 +1192,12 @@ footer{
     <p class="eco-sub">W3SaaS is built on and integrated with Tier-1 infrastructure &mdash; the same networks, settlement rails, and clouds trusted by the world&rsquo;s leading financial institutions and enterprises.</p>
   </div>
   <div class="eco-grid">
-    <div class="eco-tile"><img class="eco-logo" src="eco-ripple.png" alt="Ripple"/><span class="eco-role">Global cross-border payments, XRP Ledger, CBDCs</span></div>
-    <div class="eco-tile"><img class="eco-logo" src="eco-flare.png" alt="Flare"/><span class="eco-role">Smart contracts for the XRP Ledger, interoperability</span></div>
-    <div class="eco-tile"><img class="eco-logo" src="eco-circle.png" alt="Circle"/><span class="eco-role">USDC stablecoin issuance, institutional liquidity</span></div>
-    <div class="eco-tile"><img class="eco-logo" src="eco-uphold.png" alt="Uphold"/><span class="eco-role">Digital asset trading, crypto-to-fiat gateway</span></div>
-    <div class="eco-tile"><img class="eco-logo" src="eco-google.png" alt="Google"/><span class="eco-role">Cloud infrastructure, network hosting, big data & analytics</span></div>
     <div class="eco-tile"><img class="eco-logo" src="eco-aws.png" alt="AWS"/><span class="eco-role">Cloud computing, scalability, hosting services</span></div>
+    <div class="eco-tile"><img class="eco-logo" src="eco-circle.png" alt="Circle"/><span class="eco-role">USDC stablecoin issuance, institutional liquidity</span></div>
+    <div class="eco-tile"><img class="eco-logo" src="eco-flare.png" alt="Flare"/><span class="eco-role">Smart contracts for the XRP Ledger, interoperability</span></div>
+    <div class="eco-tile"><img class="eco-logo" src="eco-google.png" alt="Google"/><span class="eco-role">Cloud infrastructure, network hosting, big data & analytics</span></div>
+    <div class="eco-tile"><img class="eco-logo" src="eco-ripple.png" alt="Ripple"/><span class="eco-role">Global cross-border payments, XRP Ledger, CBDCs</span></div>
+    <div class="eco-tile"><img class="eco-logo" src="eco-uphold.png" alt="Uphold"/><span class="eco-role">Digital asset trading, crypto-to-fiat gateway</span></div>
   </div>
 </section>
 
@@ -1199,7 +1240,7 @@ footer{
 </div>
 
 <footer>
-  <a href="#" class="f-logo-link" aria-label="W3SaaS home"><img src="logo-w3saas-white.png" alt="W3SaaS" class="f-logo-img"/></a>
+  <a href="#" class="f-logo-link" aria-label="W3SaaS home"><img src="logo-w3saas-orbit-new.png" alt="W3SaaS" class="f-logo-img"/></a>
   <div class="f-copy">© 2026|W3 SaaS LLC. Sheridan, WY, USA |All rights reserved.</div>
 </footer>
 
@@ -1260,7 +1301,7 @@ footer{
         ]
       },
       'supply-chain': {
-        title: 'Supply Chain, Logistics & Global Trade',
+        title: 'International Supply Chain & Logistics',
         sub: 'Tamper-proof tracking & finance',
         items: [
           ['Traceability & Data Integrity:', 'Provides a tamper-proof, transparent ledger to track physical goods, shipping records, and proof-of-origin across global corridors.'],

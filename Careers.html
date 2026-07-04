@@ -203,11 +203,7 @@ nav{
   z-index:201;
   text-decoration:none;
 }
-.logo-block img{
-  width:215px;
-  height:auto;
-  display:block;
-}
+.logo-block img{height:72px;width:auto;display:block;}
 
 .nav-links{display:flex;gap:1.05rem;list-style:none;align-items:center;margin-left:auto;}
 .nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--navy);opacity:0.65;transition:opacity .2s;}
@@ -645,8 +641,8 @@ footer{
 .f-links a:hover{color:#fff;}
 
 /* footer logo image (white, to read on the dark navy footer) */
-.f-logo-link{display:inline-flex;align-items:center;text-decoration:none;flex-shrink:0;}
-.f-logo-img{height:56px;width:auto;display:block;}
+.f-logo-link{display:inline-flex;align-items:center;text-decoration:none;flex-shrink:0;background:#fff;padding:9px 16px;border-radius:12px;box-shadow:0 4px 14px rgba(0,0,0,0.18);}
+.f-logo-img{height:46px;width:auto;display:block;}
 
 /* CTA band — footer-style sitemap filling the blue space (placeholder hrefs for now) */
 .cta-btns{margin-bottom:0;}
@@ -874,7 +870,7 @@ footer{
 
 <nav>
   <a href="index.html" class="logo-block" aria-label="W3SaaS home">
-    <img src="logo-w3saas-new.png" alt="W3SaaS"/>
+    <img src="logo-w3saas-orbit-new.png" alt="W3SaaS"/>
   </a>
   <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
     <span></span><span></span><span></span>
@@ -966,7 +962,7 @@ footer{
       <div class="cr-role-info">
         <h4>Enterprise Go-To-Market (GTM) / Sales Executive</h4>
         <div class="cr-role-meta"><span class="cr-tagchip">Sales</span><span class="cr-tagchip">Remote (Global)</span><span class="cr-tagchip">Full-time</span></div>
-        <p class="cr-role-desc">As we rapidly scale our operations, we are looking for driven Go-To-Market professionals to expand our enterprise sales footprint. You will be responsible for driving predictable outbound pipelines and engaging with C-suite executives in traditional asset-heavy industries (Real Estate, Private Credit, Global Trade). The ideal candidate understands how to position our Enterprise AI &amp; Tokenization Platform as a strategic solution that reduces massive operational overhead.</p>
+        <p class="cr-role-desc">As we rapidly scale our operations, we are looking for driven Go-To-Market professionals to expand our enterprise sales footprint. You will be responsible for driving predictable outbound pipelines and engaging with C-suite executives in traditional asset-heavy industries (Real Estate, Private Credit, Supply Chain & Logistics). The ideal candidate understands how to position our Enterprise AI &amp; Tokenization Platform as a strategic solution that reduces massive operational overhead.</p>
       </div>
       <button type="button" class="cr-apply" data-role="Enterprise Go-To-Market (GTM) / Sales Executive">Apply</button>
     </div>
@@ -1129,7 +1125,7 @@ footer{
 </div>
 
 <footer>
-  <a href="#" class="f-logo-link" aria-label="W3SaaS home"><img src="logo-w3saas-white.png" alt="W3SaaS" class="f-logo-img"/></a>
+  <a href="#" class="f-logo-link" aria-label="W3SaaS home"><img src="logo-w3saas-orbit-new.png" alt="W3SaaS" class="f-logo-img"/></a>
   <div class="f-copy">© 2026|W3 SaaS LLC. Sheridan, WY, USA |All rights reserved.</div>
 </footer>
 
@@ -1192,7 +1188,7 @@ footer{
         ]
       },
       'supply-chain': {
-        title: 'Supply Chain, Logistics &amp; Global Trade',
+        title: 'International Supply Chain &amp; Logistics',
         sub: 'Tamper-proof tracking &amp; finance',
         items: [
           ['Traceability &amp; Data Integrity:', 'Provides a tamper-proof, transparent ledger to track physical goods, shipping records, and proof-of-origin across global corridors.'],
