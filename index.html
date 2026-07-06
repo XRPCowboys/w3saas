@@ -592,7 +592,7 @@ nav{
   display:flex;align-items:center;justify-content:center;
 }
 .spotlight-img img.engine-diagram{
-  width:80%;max-width:422px;height:auto;display:block;margin:0 auto;
+  width:80%;max-width:422px;height:auto;display:block;margin:0 auto;transform:translateX(48px);
   border-radius:16px;
   filter:drop-shadow(0 18px 50px rgba(26,95,170,0.22));
 }
@@ -912,7 +912,7 @@ footer{
       </ul>
     </li>
     <li class="has-dropdown">
-      <a class="dropdown-toggle" href="About.html">About <span class="caret"></span></a>
+      <button type="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">About <span class="caret"></span></button>
       <ul class="dropdown-menu">
         <li><a href="About.html">About W3SaaS</a></li>
         <li><a href="Careers.html">Careers</a></li>
@@ -1182,7 +1182,7 @@ footer{
   /* Ecosystem — Building with Giants */
   .eco-wrap{width:100%;max-width:1100px;margin:0 auto 4rem;padding:0 3.5rem;}
   .eco-header{text-align:center;margin-bottom:2.25rem;}
-  .eco-sub{font-size:17px;color:rgba(13,31,60,0.62);line-height:1.7;max-width:740px;margin:0 auto;text-wrap:pretty;}
+  .eco-sub{font-size:17px;color:rgba(13,31,60,0.62);line-height:1.7;max-width:880px;margin:0 auto;text-wrap:pretty;}
   .eco-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;max-width:1000px;margin:0 auto;}
   .eco-tile{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;
     position:relative;z-index:1;    background:rgba(255,255,255,0.72);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
