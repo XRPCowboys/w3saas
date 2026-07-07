@@ -1705,18 +1705,21 @@ footer{
     dot.style.webkitOffsetPath = dot.style.offsetPath;
     dot.style.offsetRotate = '0deg';
     host.appendChild(dot);
-    var dur = rand(11000, 18000);
+    var dur = rand(20000, 30000);
     dot.animate([
       { offsetDistance:'0%', opacity:0 },
       { opacity:1, offset:0.06 },
       { opacity:1, offset:0.94 },
       { offsetDistance:'100%', opacity:0 }
-    ], { duration:dur, easing:'linear' }).onfinish = function(){ dot.remove(); };
+    ], { duration:dur, easing:'linear' }).onfinish = function(){
+      dot.remove();
+      /* schedule the NEXT one only after this finishes → max one on screen */
+      setTimeout(spawn, rand(2500, 5000));
+    };
   }
 
   drawRoutes();
   spawn();
-  setInterval(spawn, 8500);
   var rt;
   window.addEventListener('resize', function(){ clearTimeout(rt); rt = setTimeout(drawRoutes, 300); });
 })();
