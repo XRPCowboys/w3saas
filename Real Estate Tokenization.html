@@ -16,6 +16,7 @@
   --blue-light:#3b9eff;
   --accent:#F2603C;
   --accent-bright:#FF7A57;
+  --accent-grad:#F2603C;
   --text:#0d1f3c;
 }
 
@@ -169,11 +170,11 @@ nav{
 .nav-links a{text-decoration:none;font-size:14px;font-weight:500;color:var(--navy);opacity:0.65;transition:opacity .2s;}
 .nav-links a:hover{opacity:1;}
 .nav-cta{
-  background:var(--accent) !important;color:#fff !important;opacity:1 !important;
-  padding:9px 22px;border-radius:6px;font-weight:600 !important;
-  transition:background .2s !important;
+  background:var(--accent-grad) !important;color:#fff !important;opacity:1 !important;
+  padding:9px 22px;border-radius:6px;font-weight:600 !important;  transition:filter .2s, box-shadow .2s !important;
+  white-space:nowrap;
 }
-.nav-cta:hover{background:var(--accent-bright) !important;opacity:1 !important;}
+.nav-cta:hover{filter:brightness(1.06) !important;opacity:1 !important;}
 
 /* NAV DROPDOWNS */
 .has-dropdown{position:relative;}
@@ -945,14 +946,14 @@ footer{
     <span></span><span></span><span></span>
   </button>
   <ul class="nav-links" id="navLinks">
-    <li><a href="index.html#capabilities">Capabilities</a></li>
+    <li><a href="Capabilities.html">Capabilities</a></li>
     <li class="has-dropdown">
       <button type="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Solutions <span class="caret"></span></button>
       <ul class="dropdown-menu">
         <li><a href="Real%20Estate%20Tokenization.html">Real Estate</a></li>
-        <li><a href="Private%20Equity%20Tokenization.html">Private Equity</a></li>
-        <li><a href="Private%20Credit%20Tokenization.html">Private Credit</a></li>
-        <li><a href="Carbon%20Credit%20Tokenization.html">Environmental Assets</a></li>
+        <li><a href="Private%20Equity%20Tokenization.html">Banking &amp; Finance</a></li>
+        <li><a href="Private%20Credit%20Tokenization.html">Trade</a></li>
+        <li><a href="Carbon%20Credit%20Tokenization.html">Energy &amp; Commodities</a></li>
         <li><a href="Custom%20Tokenization%20Platform.html">Tokenizing Your Enterprise</a></li>
       </ul>
     </li>
@@ -963,7 +964,6 @@ footer{
         <li><a href="Careers.html">Careers</a></li>
       </ul>
     </li>
-    <li><a href="index.html#industries">Industries</a></li>
     <li><a href="index.html#ecosystem">Ecosystem</a></li>
     <li class="has-dropdown">
       <button type="button" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">Resources <span class="caret"></span></button>
@@ -992,6 +992,7 @@ footer{
 <div class="re-intro">
   <p>Real estate is the world's largest asset class, yet it remains historically illiquid, administratively heavy, and inaccessible to many market participants. W3SaaS is fundamentally changing this dynamic. We don't just hand you software; we act as your strategic partner to design and automate the business logic unique to your industry. By deploying our pre-engineered Business Application Architecture solutions, developers and asset managers can unlock liquidity, eradicate manual back-office administration, and streamline capital velocity.</p>
 </div>
+
 
 <!-- THE ADVANTAGE -->
 <div class="section">
