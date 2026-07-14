@@ -581,6 +581,12 @@ nav{
 .bfsi-card .check-list li{font-size:16px;line-height:1.65;color:rgba(13,31,60,0.75);}
 .bfsi-card .check-list li strong{color:var(--text);}
 .bfsi-card .check-icon{width:26px;height:26px;font-size:12px;}
+.bfsi-card-head{text-align:center;margin-bottom:1.75rem;}
+.bfsi-card-head .bfsi-eyebrow{font-size:17px;font-weight:700;letter-spacing:1.5px;color:var(--navy);text-transform:uppercase;}
+.bfsi-card .dot-list{list-style:none;display:flex;flex-direction:column;gap:1.4rem;max-width:900px;margin:0 auto;padding:0;}
+.bfsi-card .dot-list li{display:flex;align-items:flex-start;gap:.75rem;font-size:16px;line-height:1.65;color:rgba(13,31,60,0.75);}
+.bfsi-card .dot-list li strong{color:var(--text);}
+.bfsi-card .dot-list li::before{content:'';width:8px;height:8px;border-radius:50%;background:var(--blue);flex-shrink:0;margin-top:8px;}
 @media (max-width:680px){
   .bfsi-wrap{padding:0 1.25rem;}
   .bfsi-title{font-size:24px;}
@@ -1068,13 +1074,15 @@ footer{
 <!-- BFSI VERTICAL CALLOUT -->
 <div class="bfsi-wrap" data-screen-label="BFSI Callout">
   <div class="bfsi-inner">
-    <div class="bfsi-title">Banking, Financial Services &amp; Insurance (BFSI)</div>
+    <div class="bfsi-title">Media, Entertainment &amp; Gaming</div>
     <div class="bfsi-card">
-      <p class="bfsi-sub">Our most dominant vertical</p>
-      <ul class="check-list">
-        <li><span class="check-icon">✓</span><span><strong>Asset Management &amp; Private Markets:</strong> Provides industry-leading tokenization for Real-World Assets (RWAs) like private equity, venture capital, and safe offerings, unlocking fractional investment and borderless liquidity.</span></li>
-        <li><span class="check-icon">✓</span><span><strong>Institutional Finance:</strong> Accelerates time-to-market for compliant financial products with built-in KYC/AML identity layers and secure Multi-Party Computation (MPC) wallets.</span></li>
-        <li><span class="check-icon">✓</span><span><strong>Structured Finance &amp; Lending:</strong> Reduces manual administrative overhead by deploying Smart Intelligence to automate complex financial lifecycles, loan disbursements, and instant settlements.</span></li>
+      <div class="bfsi-card-head">
+        <p class="bfsi-eyebrow">Royalty Automation &amp; Digital Ownership</p>
+      </div>
+      <ul class="dot-list">
+        <li><span><strong>Digital IP &amp; Royalty Management:</strong> Provides a unified framework to automate complex royalty distribution loops for creators, studios, and artists without costly intermediaries.</span></li>
+        <li><span><strong>Gaming &amp; Digital Ownership:</strong> Accelerates player onboarding by seamlessly integrating secure MPC wallets, enabling true ownership and secure trading of in-game assets.</span></li>
+        <li><span><strong>Ticketing &amp; Event Access:</strong> Reduces ticket fraud and scalping by issuing secure, tokenized event credentials that verify authenticity instantly.</span></li>
       </ul>
     </div>
   </div>
