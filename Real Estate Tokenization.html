@@ -568,6 +568,25 @@ nav{
   flex-shrink:0;font-size:11px;color:var(--blue);margin-top:1px;
 }
 
+/* BFSI VERTICAL CALLOUT (under hero) */
+.bfsi-wrap{width:100%;padding:0 3.5rem;display:flex;justify-content:center;margin:2.5rem 0 0;}
+.bfsi-inner{width:100%;max-width:1120px;}
+.bfsi-title{font-family:'Syne',sans-serif;font-weight:800;color:var(--navy);letter-spacing:-1px;text-align:center;
+  font-size:38px;line-height:1.1;margin-bottom:1.75rem;}
+.bfsi-card{background:#fff;border-radius:24px;padding:2.75rem 3rem;
+  box-shadow:0 20px 60px rgba(10,22,40,0.12);}
+.bfsi-sub{text-align:center;font-size:19px;font-weight:700;color:rgba(13,31,60,0.55);margin-bottom:2.25rem;}
+.bfsi-card .check-list{gap:1.4rem;max-width:900px;margin:0 auto;}
+.bfsi-card .check-list li{font-size:16px;line-height:1.65;color:rgba(13,31,60,0.75);}
+.bfsi-card .check-list li strong{color:var(--text);}
+.bfsi-card .check-icon{width:26px;height:26px;font-size:12px;}
+@media (max-width:680px){
+  .bfsi-wrap{padding:0 1.25rem;}
+  .bfsi-title{font-size:24px;}
+  .bfsi-card{padding:1.75rem 1.5rem;border-radius:18px;}
+  .bfsi-sub{font-size:16px;}
+}
+
 /* CTA FOOTER BAND */
 .cta-band{
   background:transparent;
@@ -987,6 +1006,21 @@ footer{
     <p class="re-sub">Unlock liquidity, streamline ownership management, automate compliance and administrative processes</p>
   </div>
 </section>
+
+<!-- BFSI VERTICAL CALLOUT -->
+<div class="bfsi-wrap" data-screen-label="BFSI Callout">
+  <div class="bfsi-inner">
+    <div class="bfsi-title">Banking, Financial Services &amp; Insurance (BFSI)</div>
+    <div class="bfsi-card">
+      <p class="bfsi-sub">Our most dominant vertical</p>
+      <ul class="check-list">
+        <li><span class="check-icon">✓</span><span><strong>Asset Management &amp; Private Markets:</strong> Provides industry-leading tokenization for Real-World Assets (RWAs) like private equity, venture capital, and safe offerings, unlocking fractional investment and borderless liquidity.</span></li>
+        <li><span class="check-icon">✓</span><span><strong>Institutional Finance:</strong> Accelerates time-to-market for compliant financial products with built-in KYC/AML identity layers and secure Multi-Party Computation (MPC) wallets.</span></li>
+        <li><span class="check-icon">✓</span><span><strong>Structured Finance &amp; Lending:</strong> Reduces manual administrative overhead by deploying Smart Intelligence to automate complex financial lifecycles, loan disbursements, and instant settlements.</span></li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 <!-- INTRO -->
 <div class="re-intro">
