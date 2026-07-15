@@ -298,7 +298,7 @@ nav{
   margin-bottom:0.55rem;
   text-wrap:balance;
 }
-.hero-title-coral{display:block;font-size:clamp(24px,2.5vw,36px);background:var(--accent-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;}
+.hero-title-coral{display:block;font-size:clamp(38px,5vw,68px);background:var(--accent-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;}
 .hero-title-sub{display:block;font-size:clamp(16px,1.6vw,21px);color:var(--navy);font-weight:700;margin-top:.5rem;letter-spacing:-0.3px;}
 .hero-intro{
   font-size:17.5px;
@@ -396,7 +396,7 @@ nav{
 
 /* MOBILE: stack labels under the chip */
 @media (max-width:980px){
-  .hero-title-coral{font-size:30px;}
+  .hero-title-coral{font-size:40px;}
   .hero-title-sub{font-size:18px;}
   .hero-stage{grid-template-columns:1fr;gap:1.25rem;max-width:520px;}
   .hero-chip-wrap{order:-1;max-width:640px;margin:0 auto;}
@@ -459,11 +459,11 @@ nav{
   color:#fff;text-align:center;font-weight:800;
   font-size:clamp(20px,3.4vw,42px);letter-spacing:-.6px;line-height:1.12;
   white-space:nowrap;
-  padding:2rem 1rem .25rem;
+  padding:.85rem 1rem .1rem;
 }
 .stats-grid{display:grid;grid-template-columns:repeat(4,1fr);}
 .stat{
-  text-align:center;padding:1.75rem 1rem;
+  text-align:center;padding:.75rem 1rem;
   border-right:1px solid rgba(255,255,255,0.07);
 }
 .stat:last-child{border-right:none;}
@@ -998,9 +998,7 @@ footer{
     </div>
   </div>
 
-  <p class="hero-grow-sub"><span class="lead-line">We don&rsquo;t just hand you software.</span><span style="color:var(--navy);">We deploy pre-engineered applications and Smart Intelligence AI to automate your processes.</span></p>
-
-  <!-- STATS float above the intro paragraph -->
+  <!-- STATS banner now sits above the intro paragraph -->
   <div class="stats-bar">
     <div class="stats-main">
     <h2 class="stats-title">We Help You Automate Your Business</h2>
@@ -1025,6 +1023,8 @@ footer{
     </div>
     <a href="#deployments" class="stats-cta">Proven<br/>Deployments</a>
   </div>
+
+  <p class="hero-grow-sub"><span class="lead-line">We don&rsquo;t just hand you software.</span><span style="color:var(--navy);">We deploy pre-engineered applications and Smart Intelligence AI to automate your processes.</span></p>
 
   <h2 class="hero-mission-title">What We Do</h2>
   <div class="text-card whatwedo-card">
