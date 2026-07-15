@@ -327,15 +327,15 @@ nav{
   align-items:center;
   gap:1.25rem;
 }
-.hero-chip-wrap{position:relative;width:100%;max-width:460px;display:block;isolation:isolate;}
+.hero-chip-wrap{position:relative;width:100%;max-width:410px;display:block;isolation:isolate;}
 .hero-chip-link{display:block;position:relative;cursor:pointer;isolation:isolate;text-decoration:none;}
 .hero-chip-hover{
   position:absolute;inset:0;pointer-events:none;
-  opacity:0;transition:opacity .28s ease;
+  opacity:0;transition:opacity .28s ease, transform .28s ease;
   transform-origin:50% 50%;
 }
 .hero-chip-link:hover .hero-chip-hover,
-.hero-chip-link:focus-visible .hero-chip-hover{opacity:1;}
+.hero-chip-link:focus-visible .hero-chip-hover{opacity:1;transform:translateY(3px);}
 .hero-chip{
   width:100%;height:auto;display:block;
   filter:drop-shadow(0 12px 28px rgba(26,95,170,0.20));
@@ -398,7 +398,7 @@ nav{
 @media (max-width:980px){
   .hero-title-coral{font-size:34px;}
   .hero-title-sub{font-size:20px;}
-  .hero-stage{grid-template-columns:1fr;gap:1.25rem;max-width:520px;}
+  .hero-stage{grid-template-columns:1fr;gap:1.25rem;max-width:520px;margin:0 auto 0;}
   .hero-chip-wrap{order:-1;max-width:640px;margin:0 auto;}
   .hero-col{flex-direction:column;gap:1rem;}
   .hero-col.left,.hero-col.right{align-items:stretch;}
@@ -659,7 +659,7 @@ nav{
 }
 .text-card .check-list{margin-left:0;}
 .whatwedo-card{max-width:1100px;margin:1.5rem auto 0;}
-.whatwedo-card{max-width:850px;padding-left:1.5rem;padding-right:1.5rem;}
+.whatwedo-card{max-width:988px;padding-left:1.5rem;padding-right:1.5rem;}
 
 .whatwedo-card .hero-mission-title{margin-top:0;}
 .whatwedo-card .hero-intro{margin-top:0;}
@@ -999,7 +999,7 @@ footer{
   </div>
 
   <!-- STATS banner now sits above the intro paragraph -->
-  <div class="stats-bar">
+  <a href="#deployments" class="stats-bar">
     <div class="stats-main">
     <h2 class="stats-title">We Help You Automate Your Business</h2>
     <div class="stats-grid">
@@ -1021,8 +1021,8 @@ footer{
     </div>
     </div>
     </div>
-    <a href="#deployments" class="stats-cta">Proven<br/>Deployments</a>
-  </div>
+    <span class="stats-cta">Proven<br/>Deployments</span>
+  </a>
 
   <p class="hero-grow-sub"><span class="lead-line">We don&rsquo;t just hand you software.</span><span style="color:var(--navy);">We deploy pre-engineered applications and AI to automate your processes.</span></p>
 
@@ -1031,6 +1031,23 @@ footer{
     <p class="hero-intro">As your enterprise technology partner, W3SaaS takes the time to understand your industry and solve your unique challenges to uncover new opportunities you may not have considered. We then bring that vision to life using our <strong>pre-engineered business application solutions.</strong> By deploying our custom-built <strong>Smart Intelligence</strong> agents, we automate complex business operations, eliminate friction, and reduce the massive costs holding traditional businesses back, allowing you to launch a fully operational platform in as little as 90 days.</p>
   </div>
 </div>
+
+<!-- ECOSYSTEM — Building with Giants -->
+<section class="eco-wrap" id="ecosystem">
+  <div class="eco-header">
+    <span class="re-badge bracket-badge">Ecosystem</span>
+    <div class="section-title" style="font-size:30px;margin-bottom:.5rem;">Building with Giants</div>
+    <p class="eco-sub">W3SaaS is built on and integrated with Tier 1 infrastructure, the same networks, settlement rails, and clouds trusted by the world’s leading financial institutions and enterprises.</p>
+  </div>
+  <div class="eco-grid">
+    <div class="eco-tile"><img class="eco-logo" src="eco-aws.png" alt="AWS"/><span class="eco-role">Cloud computing, scalability, hosting services</span></div>
+    <div class="eco-tile"><img class="eco-logo" src="eco-circle.png" alt="Circle"/><span class="eco-role">USDC stablecoin issuance, institutional capital velocity</span></div>
+    <div class="eco-tile"><img class="eco-logo" src="eco-flare.png" alt="Flare"/><span class="eco-role">Smart contracts for the XRP Ledger, interoperability</span></div>
+    <div class="eco-tile"><img class="eco-logo" src="eco-google.png" alt="Google"/><span class="eco-role">Cloud infrastructure, network hosting, big data & analytics</span></div>
+    <div class="eco-tile"><img class="eco-logo" src="eco-ripple.png" alt="Ripple"/><span class="eco-role">Global cross-border payments, XRP Ledger, CBDCs</span></div>
+    <div class="eco-tile"><img class="eco-logo" src="eco-uphold.png" alt="Uphold"/><span class="eco-role">Digital asset trading, crypto-to-fiat gateway</span></div>
+  </div>
+</section>
 
 <!-- PROVEN DEPLOYMENTS — 2x2 case-study cards -->
 <style id="pd-styles">
@@ -1119,22 +1136,7 @@ footer{
     .app-shot-2{width:100%;margin-left:0;}}
 </style>
 
-<!-- ECOSYSTEM — Building with Giants -->
-<section class="eco-wrap" id="ecosystem">
-  <div class="eco-header">
-    <span class="re-badge bracket-badge">Ecosystem</span>
-    <div class="section-title" style="font-size:30px;margin-bottom:.5rem;">Building with Giants</div>
-    <p class="eco-sub">W3SaaS is built on and integrated with Tier 1 infrastructure, the same networks, settlement rails, and clouds trusted by the world’s leading financial institutions and enterprises.</p>
-  </div>
-  <div class="eco-grid">
-    <div class="eco-tile"><img class="eco-logo" src="eco-aws.png" alt="AWS"/><span class="eco-role">Cloud computing, scalability, hosting services</span></div>
-    <div class="eco-tile"><img class="eco-logo" src="eco-circle.png" alt="Circle"/><span class="eco-role">USDC stablecoin issuance, institutional capital velocity</span></div>
-    <div class="eco-tile"><img class="eco-logo" src="eco-flare.png" alt="Flare"/><span class="eco-role">Smart contracts for the XRP Ledger, interoperability</span></div>
-    <div class="eco-tile"><img class="eco-logo" src="eco-google.png" alt="Google"/><span class="eco-role">Cloud infrastructure, network hosting, big data & analytics</span></div>
-    <div class="eco-tile"><img class="eco-logo" src="eco-ripple.png" alt="Ripple"/><span class="eco-role">Global cross-border payments, XRP Ledger, CBDCs</span></div>
-    <div class="eco-tile"><img class="eco-logo" src="eco-uphold.png" alt="Uphold"/><span class="eco-role">Digital asset trading, crypto-to-fiat gateway</span></div>
-  </div>
-</section>
+
 
 
 
