@@ -288,7 +288,7 @@ nav{
   flex-direction:column;
   align-items:center;
 }
-.hero-head{text-align:center;max-width:1340px;margin:0 auto;}
+.hero-head{text-align:center;max-width:1340px;margin:0 auto;position:relative;z-index:2;transform:translateY(-14px);}
 .hero-title{
   font-family:'Inter',sans-serif;
   font-weight:800;
@@ -298,8 +298,8 @@ nav{
   margin-bottom:0.55rem;
   text-wrap:balance;
 }
-.hero-title-coral{display:block;font-size:clamp(38px,5vw,68px);background:var(--accent-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;}
-.hero-title-sub{display:block;font-size:clamp(16px,1.6vw,21px);color:var(--navy);font-weight:700;margin-top:.5rem;letter-spacing:-0.3px;}
+.hero-title-coral{display:block;font-size:clamp(30px,4vw,54px);background:var(--accent-grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent;}
+.hero-title-sub{display:block;font-size:clamp(20px,2.2vw,28px);color:var(--navy);font-weight:700;margin-top:.25rem;letter-spacing:-0.3px;}
 .hero-intro{
   font-size:17.5px;
   line-height:1.62;
@@ -320,14 +320,15 @@ nav{
 
 /* STAGE — left labels | chip | right labels */
 .hero-stage{
+  position:relative;z-index:1;
   width:100%;max-width:1200px;
-  margin:-1.5rem auto -2rem;
+  margin:-2.75rem auto -6rem;
   display:flex;
   justify-content:center;
   align-items:center;
   gap:1.25rem;
 }
-.hero-chip-wrap{position:relative;width:100%;max-width:509px;display:block;isolation:isolate;}
+.hero-chip-wrap{position:relative;width:100%;max-width:680px;display:block;isolation:isolate;}
 .hero-chip-link{display:block;position:relative;cursor:pointer;isolation:isolate;text-decoration:none;}
 .hero-chip-hover{
   position:absolute;inset:0;pointer-events:none;
@@ -396,9 +397,10 @@ nav{
 
 /* MOBILE: stack labels under the chip */
 @media (max-width:980px){
+  .hero-head{transform:none;}
   .hero-title-coral{font-size:40px;}
   .hero-title-sub{font-size:18px;}
-  .hero-stage{grid-template-columns:1fr;gap:1.25rem;max-width:520px;}
+  .hero-stage{grid-template-columns:1fr;gap:1.25rem;max-width:520px;margin:0 auto 0;}
   .hero-chip-wrap{order:-1;max-width:640px;margin:0 auto;}
   .hero-col{flex-direction:column;gap:1rem;}
   .hero-col.left,.hero-col.right{align-items:stretch;}
